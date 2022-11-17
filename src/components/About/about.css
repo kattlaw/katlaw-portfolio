@@ -1,0 +1,73 @@
+#about {
+    background-color: #ebeff0;
+    background-image: url('../../assets/images/lightgrid.png');
+    width: 100vw;
+    height: auto;
+}
+
+.about-heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 0 auto;
+    color: #222d3e;
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+    top:0;
+}
+
+/*.info-background {
+    background-color: #ebeff0;
+    background-image: url('../../assets/images/lightgrid.png');
+    grid-area: 1/1;
+    z-index: 1;
+    margin-left: 1rem;
+    position: relative;
+    border: 1px transparent;
+    border-radius: 5px;
+    height: 340px;
+}*/
+
+.info-background {
+    background-color: #222d3e;
+    grid-area: 1/2/2/1;
+    left: 0;
+    height: 600px;
+    width: 85%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.info-text {
+    color: #ebeff0;
+    font-family: 'Shadows Into Light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 2rem;
+}
+
+.info-text p {
+    margin-bottom: 3rem;
+}
+
+.snorkel {
+    grid-area: 1/2;
+    place-self: center;
+    position: relative;
+}
+
+.snorkel img {
+    width: 50%;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-top: 34rem;
+    margin-left: 13rem;
+}
