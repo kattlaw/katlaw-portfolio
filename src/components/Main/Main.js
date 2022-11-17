@@ -1,12 +1,9 @@
 import './main.css';
-import Navbar
- from '../Navbar/Navbar';
- import { HiOutlineArrowCircleDown } from 'react-icons/hi';
+import { HiOutlineArrowCircleDown } from 'react-icons/hi';
 const Main = () => {
 
     return (
         <div className="main">
-            <Navbar />
             <div className="heading-container">
                 <h1 className="main-heading">
                     Katherine Law
@@ -16,7 +13,7 @@ const Main = () => {
                 Web Developer
             </div>
             <div className="arrow-down">
-                <a href="#">< HiOutlineArrowCircleDown/></a>
+                <a href="#"><HiOutlineArrowCircleDown/></a>
             </div>
         </div>
     )

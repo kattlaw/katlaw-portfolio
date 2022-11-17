@@ -1,15 +1,33 @@
 #about {
     background-color: #ebeff0;
-    background-image: url('../../assets/images/lightgrid.png');
     width: 100vw;
-    height: auto;
+    margin-top: 4rem;
 }
 
 .about-heading {
-    text-align: center;
-    font-size: 4rem;
-    padding: 1rem;
-    margin: 0 auto;
+    text-align: left;
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+    margin-left: 3rem;
+    color: #222d3e;
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+.heading-line {
+    width: 100px;
+    margin-left: 3rem;
+    border-radius: 5px;
+    height: 4px;
+    background: #78c4c8;
+}
+
+.about-info {
+    text-align: left;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    margin-left: 3rem;
     color: #222d3e;
     font-family: 'Shadows Into Light', sans-serif;
 }
@@ -17,57 +35,99 @@
 .info-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
+    grid-template-rows: repeat(2, auto);
+    height: auto;
     width: 100vw;
-    top:0;
+    margin-left: 3rem;
 }
 
-/*.info-background {
-    background-color: #ebeff0;
-    background-image: url('../../assets/images/lightgrid.png');
-    grid-area: 1/1;
-    z-index: 1;
-    margin-left: 1rem;
-    position: relative;
-    border: 1px transparent;
+.info-one {
+    width: 300px;
     border-radius: 5px;
-    height: 340px;
-}*/
+    height: 1px;
+    background: #222d3e;
+    margin-top: -58rem;
+    margin-left: 10rem;
+}
+
+.info-two {
+    width: 250px;
+    border-radius: 5px;
+    height: 1px;
+    background: #78c4c8;
+    margin-top: -56rem;
+    margin-left: -15rem;
+    position: relative;
+}
 
 .info-background {
-    background-color: #222d3e;
-    grid-area: 1/2/2/1;
     left: 0;
-    height: 600px;
-    width: 85%;
+    width: 100%;
+    height: auto;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 1;
+    grid-row-end: 2;
     position: relative;
+    margin-top: 25rem;
 }
 
 .info-text {
-    color: #ebeff0;
+    color: #222d3e;
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 1px;
-    font-size: 20px;
-    margin: 2rem;
+    font-size: 1.3rem;
 }
 
 .info-text p {
-    margin-bottom: 3rem;
+    padding-bottom: 10px;
+}
+
+.scroll-down {
+    grid-area: 1/2;
+    place-self: center;
+    font-family: 'Shadows Into Light', sans-serif;
+    letter-spacing: 4px;
+    margin-top: -13rem;
+}
+
+.scroll-line {
+    height: 350px;
+    border-left: 1px solid #222d3e;
+    place-self: center;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
 }
 
 .snorkel {
-    grid-area: 1/2;
+    grid-area: 2/1;
     place-self: center;
     position: relative;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
 }
 
 .snorkel img {
     width: 50%;
     border-radius: 50%;
-    padding: 1rem;
-    margin-top: 34rem;
-    margin-left: 13rem;
+}
+
+.more-info {
+    grid-area: 2/2;
+    place-self: center;
+    position: relative;
+    margin-right: 1rem;
+    margin-top: 10rem;
+    color: #222d3e;
+    font-family: 'Shadows Into Light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+.more-info-line {
+    width: 300px;
+    border-top: 1px solid #222d3e;
+    height: 1px;
+    margin-bottom: 5rem;
 }

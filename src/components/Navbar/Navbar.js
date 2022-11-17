@@ -1,4 +1,5 @@
-import { useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { gsap } from "gsap";
 import './navbar.css';
 
@@ -7,8 +8,9 @@ const Navbar = () => {
 
     const [navColor, setNavColor] = useState("transparent");
     const listenScrollEvent = () => {
-        window.scrollY > 10 ? setNavColor("#4f88a4") : setNavColor("transparent");
+        window.scrollY > 10 ? setNavColor("#626d86") : setNavColor("transparent");
    }
+
    useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
     return () => {
@@ -25,11 +27,10 @@ const Navbar = () => {
     const menuRef = useRef(null);
 
 
-    useEffect(() => {
+useEffect(() => {
 
-        const ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
   
-
         animation
             .from(menuRef.current, {
                 x: "400%",
@@ -46,8 +47,15 @@ const Navbar = () => {
                 y: "-0.8rem",
                 width: "100%"
             }, "<")
-            
-    })
+           /* .from(".menu-links li", {
+                duration: 0.5,
+                delay: 0.3,
+                opacity: 0,
+                stagger: 0.3,
+                ease: "power1.in",
+                y:0
+            }, [])   */    
+        })
 
     return () => ctx.revert()
 
@@ -59,7 +67,7 @@ const Navbar = () => {
       /*const handleNavLinkClick = () => {
         animation.reverse()
       }*/
-    
+      
 
     return (
         <div 
@@ -69,7 +77,9 @@ const Navbar = () => {
                 transform: "1s"
             }}
             
-        >   <div className="left-logo"><a href="#main">KL</a></div>
+        >   <div className="left-logo"><Link to="/">KL<span style={{color:"#78c4c8", fontSize: "2rem"}}>.</span></Link> 
+                <span className="right-text">Menu</span>
+            </div>
             <div className="menu" onClick={handleMenuClick}>
                 <div className="line1" ref={line1}></div>
                 <div className="line2" ref={line2}></div>
@@ -77,10 +87,10 @@ const Navbar = () => {
             <div className="menu-page" ref={menuRef} onClick={handleMenuClick}>
                 <div className="menu-links">
                     <ul>
-                        <li><a href="main">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

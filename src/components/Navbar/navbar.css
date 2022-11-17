@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    height: 54px;
+    height: 64px;
     top: 0;
     position: fixed;
     color: #ebdfd4;
@@ -29,17 +29,26 @@
 .left-logo a{
   text-decoration: none;
   font-size: 2rem;
-  color: #ebeff0;
+  color: #222D3E;
   font-family: 'Shadows Into Light', sans-serif;
-  margin: 1rem;
-  
+  margin: 1rem; 
+}
+
+.right-text {
+  font-size: 1.1rem;
+  margin-right: 6rem;
+  margin-top: 1rem;
+  padding: 0;
+  float: right;
+  color: #222D3E;
+  font-family: 'Shadows Into Light', sans-serif;
 }
 
 .line1 {
     width: 100%;
     border-radius: 5px;
     height: 2px;
-    background: #ebeff0;  
+    background: #78c4c8;  
   }
   
   .line2 {
@@ -47,14 +56,14 @@
     border-radius: 5px;
     height: 2px;
     margin-top: .7rem;
-    background: #ebeff0;
+    background: #78c4c8;
   }
 
   .menu-page {
     position: fixed;
     top:0;
     right: 0;
-    background: #78c4c8;
+    background: #222D3E;
     width: 30%;
     height: 100vh;
     z-index: 1;
@@ -87,6 +96,6 @@
   }
 
   .menu-links li a:hover {
-   color:#212121;
+   color:#78c4c8;
   }
 
