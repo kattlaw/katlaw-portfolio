@@ -4,10 +4,21 @@
     margin-top: 4rem;
 }
 
+.heading-background {
+    background-color: #ebeff0;
+    background-size: 10px 10px;
+    background-attachment: fixed;
+    width: 70%;
+    height: 180px;
+    margin-left: 12.5rem;
+    margin-top: 4rem;
+    background-image: repeating-linear-gradient(45deg, #aedbde 0, #aedbde 1px, #ebeff0 0, #ebeff0 50%);
+}
+
 .about-heading {
     text-align: left;
     font-size: 5rem;
-    margin-top: 5rem;
+    margin-top: -11rem;
     margin-bottom: .5rem;
     margin-left: 3rem;
     color: #222d3e;
@@ -30,13 +41,14 @@
     margin-left: 3rem;
     color: #222d3e;
     font-family: 'Shadows Into Light', sans-serif;
+    width: 60%;
 }
 
 .info-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    height: auto;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(4);
+    height: 100%;
     width: 100vw;
     margin-left: 3rem;
 }
@@ -46,8 +58,9 @@
     border-radius: 5px;
     height: 1px;
     background: #222d3e;
-    margin-top: -58rem;
     margin-left: 10rem;
+    grid-area: 1/1;
+    margin-top: 10rem;
 }
 
 .info-two {
@@ -55,9 +68,10 @@
     border-radius: 5px;
     height: 1px;
     background: #78c4c8;
-    margin-top: -56rem;
-    margin-left: -15rem;
     position: relative;
+    grid-area: 1/1;
+    margin-top: 12rem;
+    margin-left: 15rem;
 }
 
 .info-background {
@@ -100,11 +114,18 @@
 
 .snorkel {
     grid-area: 2/1;
-    place-self: center;
     position: relative;
     margin-top: 5rem;
-    margin-left: 5rem;
     margin-bottom: 1rem;
+    width: 80%;
+    margin-right: 4rem;
+    margin-bottom: 10rem;
+    background-color: #ebeff0;
+    background-image:  linear-gradient(135deg, #cee9eb 25%, transparent 25%), linear-gradient(225deg, #cee9eb 25%, transparent 25%), linear-gradient(45deg, #cee9eb 25%, transparent 25%), linear-gradient(315deg, #cee9eb 25%, #ebeff0 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 .snorkel img {
@@ -116,13 +137,14 @@
     grid-area: 2/2;
     place-self: center;
     position: relative;
-    margin-right: 1rem;
-    margin-top: 10rem;
+    margin-right: 15rem;
+    margin-top: 5rem;
     color: #222d3e;
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 1px;
     font-size: 1.3rem;
-    width: 80%;
+    width: 100%;
+    margin-left: 5rem;
 }
 
 .more-info-line {
@@ -130,4 +152,5 @@
     border-top: 1px solid #222d3e;
     height: 1px;
     margin-bottom: 5rem;
+    grid-area: 3/2;
 }

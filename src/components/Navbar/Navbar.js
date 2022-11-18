@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const [navColor, setNavColor] = useState("transparent");
     const listenScrollEvent = () => {
-        window.scrollY > 10 ? setNavColor("#626d86") : setNavColor("transparent");
+        window.scrollY > 10 ? setNavColor("#78c4c8") : setNavColor("transparent");
    }
 
    useEffect(() => {
@@ -77,7 +77,7 @@ useEffect(() => {
                 transform: "1s"
             }}
             
-        >   <div className="left-logo"><Link to="/">KL<span style={{color:"#78c4c8", fontSize: "2rem"}}>.</span></Link> 
+        >   <div className="left-logo"><Link to="/">KL<span style={{color:"#ebdfd8", fontSize: "2rem"}}>.</span></Link> 
                 <span className="right-text">Menu</span>
             </div>
             <div className="menu" onClick={handleMenuClick}>

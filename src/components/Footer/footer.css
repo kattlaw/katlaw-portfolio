@@ -1,0 +1,27 @@
+.footer-container {
+    background-color: #ebeff0;
+    width: 100vw;
+    height: 80px;
+    text-align: center;
+    border-top: .5px solid #222d3e;
+}
+
+.footer-info {
+    color:#222d3e;
+    font-family: 'Shadows Into Light', sans-serif;
+    margin-top: .1rem;
+    font-size: .8rem;
+}
+
+.footer-socials {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: #222d3e;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}

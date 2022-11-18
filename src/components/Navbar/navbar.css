@@ -36,11 +36,13 @@
 
 .right-text {
   font-size: 1.1rem;
-  margin-right: 6rem;
+  margin-right: 5rem;
   margin-top: 1rem;
-  padding: 0;
+  padding-right: 15px;
   float: right;
   color: #222D3E;
+  border-right: .5px solid #ebdfd4;
+  border-spacing: 10px;
   font-family: 'Shadows Into Light', sans-serif;
 }
 
@@ -48,7 +50,7 @@
     width: 100%;
     border-radius: 5px;
     height: 2px;
-    background: #78c4c8;  
+    background: #ebdfd4;  
   }
   
   .line2 {
@@ -56,7 +58,7 @@
     border-radius: 5px;
     height: 2px;
     margin-top: .7rem;
-    background: #78c4c8;
+    background: #ebdfd4;
   }
 
   .menu-page {

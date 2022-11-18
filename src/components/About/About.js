@@ -4,9 +4,10 @@ import snorkel from '../../assets/images/snorkel.jpeg';
 const About = () => {
     return (
         <section id="about">
+            <div className="heading-background"></div>
             <h1 className="about-heading">About me<span style={{color: "#78c4c8"}}>.</span></h1>
             <div className="heading-line"></div>
-            <h2 className="about-info">I'm a developer with a passion for <span style={{color: "#78c4c8"}}>designing</span> and <span style={{color: "#78c4c8"}}>implementing</span> the UI/UX experience.</h2>
+            <h2 className="about-info">Just a girl that is having fun writing <span style={{color: "#78c4c8"}}>code</span> and <span style={{color: "#78c4c8"}}>pursuing a career</span> in the world of tech.</h2>
             <div className="info-container">
                 <div className="info-one"></div>
                 <div className="info-two"></div>
@@ -16,7 +17,7 @@ const About = () => {
                             My tech journey started from my love for puzzles. I often found myself engrossed in challenging mind-games, and have always wanted to explore my creative-side as well. So, I took a leap of faith and started down a new career path.
                         </p>
                         <p>
-                            I attended NuCamp's Fullstack Software Engineering program and graduated in July 2022.  
+                            I attended NuCamp's Fullstack Software Engineering program and graduated in July 2022.
                         </p>
                         <p>
                             Needless to say, this puzzle-lover has found web design to be a perfect fit, and I am beyond thrilled to continue with my journey.
