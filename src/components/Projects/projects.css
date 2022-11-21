@@ -1,0 +1,206 @@
+#projects {
+    background-color: #ebeff0;
+    width: 100vw;
+    margin-top: 4rem;
+}
+
+.projects-container {
+   
+    margin-top: 2rem;
+}
+
+.projects-heading {
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    margin-left: 3rem;
+    color: #222d3e;
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+.projects-line {
+    width: 100px;
+    margin-left: 3rem;
+    border-radius: 5px;
+    height: 4px;
+    background: #78c4c8;
+    margin-top: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top: 5rem;
+}
+
+.project-one {
+    grid-area: 1/1;
+    place-self: center;
+    margin-left: 3rem;
+}
+
+.project-one img {
+    width: 80%;
+}
+
+.project-one-info {
+    grid-area: 1/2; 
+    width: 80%;
+    font-family: 'Shadows Into Light';
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    color:#222d3e;
+    text-align: left;
+}
+
+.project-one-info p {
+    font-family: 'Shadows Into Light';
+    font-size: 2.5rem;
+    color:#222d3e;
+    text-decoration: underline;
+    text-decoration-color: #78c4c8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-one-info span {
+    color:#78c4c8;
+}
+
+.code-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.code-info a {
+    color: #222d3e;
+    text-decoration: none;
+    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.code-info .btn {
+    width: 120px;
+    height: 40px;
+    margin-left: 1rem;
+    text-align: center;
+    font-family: 'Shadows Into Light', sans-serif;
+    border: 1px solid #222d3e;
+    background-color: #ebeff0;
+    background: repeating-linear-gradient( -45deg, #cee9eb, #cee9eb 2px, #ebeff0 2px, #ebeff0 10px );
+}
+
+.project-two {
+    grid-area: 2/2;
+    place-self: center;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+
+.project-two img {
+    width: 80%;
+}
+
+.project-two-info {
+    grid-area: 2/1; 
+    width: 80%;
+    font-family: 'Shadows Into Light';
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    color:#222d3e;
+    text-align: left;
+    margin-top: 8rem;
+    margin-left: 3rem;
+}
+
+.project-two-info p {
+    font-family: 'Shadows Into Light';
+    font-size: 2.5rem;
+    color:#222d3e;
+    text-decoration: underline;
+    text-decoration-color: #78c4c8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-two-info span {
+    color: #78c4c8;
+}
+
+.project-three {
+    grid-area: 3/1;
+    place-self: center;
+    margin-left: 3rem;
+    margin-top: 4rem; 
+}
+
+.project-three img {
+    width: 80%;
+}
+
+.project-three-info {
+    grid-area: 3/2;
+    width: 80%;
+    font-family: 'Shadows Into Light';
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    color:#222d3e;
+    text-align: left;
+    margin-top: 8rem;
+    margin-left: 3rem;
+}
+
+.project-three-info p {
+    font-family: 'Shadows Into Light';
+    font-size: 2.5rem;
+    color:#222d3e;
+    text-decoration: underline;
+    text-decoration-color: #78c4c8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-three-info span {
+    color: #78c4c8;
+}
+
+.project-four {
+    grid-area: 4/2;
+    place-self: center;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.project-four img {
+    width: 80%;
+}
+
+.project-four-info {
+    grid-area: 4/1;
+    width: 80%;
+    font-family: 'Shadows Into Light';
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    color:#222d3e;
+    text-align: left;
+    margin-top: 8rem;
+    margin-left: 3rem;
+}
+
+.project-four-info p {
+    font-family: 'Shadows Into Light';
+    font-size: 2.5rem;
+    color:#222d3e;
+    text-decoration: underline;
+    text-decoration-color: #78c4c8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-four-info span {
+    color: #78c4c8;
+}

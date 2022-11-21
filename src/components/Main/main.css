@@ -151,6 +151,18 @@
    margin-top: -28px;
  }
  
+.tech-stack {
+  margin-left: 13rem;
+}
+
+.tech-stack span {
+  opacity: .3;
+  margin: 1rem;
+  font-family: 'Shadows Into Light', sans-serif;
+  color: #222d3e;
+  display: inline-flex;
+}
+
 
  .intro-container {
    display: grid;

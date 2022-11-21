@@ -29,6 +29,24 @@ const Main = () => {
             </div>
             <hr className="zig"></hr>
             <hr className="zag"></hr>
+            <div className="tech-stack">
+                <span>Javascript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>React</span>
+                <span>React Native</span>
+                <span>GSAP</span>
+                <br />
+                <span style={{marginLeft:"30px"}}>React-Redux</span>
+                <span>Git</span>
+                <span>Node</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>REST</span>
+               
+               
+            </div>
             <div className="intro-scroll">Scroll
                 <div className="intro-scroll-line"></div>
             </div>
