@@ -13,13 +13,18 @@
    position: relative;
    margin: 0;
    width: 350px;
-   height: 80px;
-   border-top: 2px solid #ebeff0;
-   border-bottom: 2px solid #ebeff0;
+   height: 160px;
+   /*border-top: 2px solid #ebeff0;
+   border-bottom: 2px solid #ebeff0;*/
    top: 40%;
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%, -50%)
+}
+
+.heading-container hr {
+  color: #ebeff0;
+  border: 1px solid;
 }
 
 .main-heading {
@@ -31,6 +36,7 @@
    letter-spacing: 2px;
    font-size: 2.5rem;
    padding: 5px;
+   
 }
 
 .title {
@@ -46,7 +52,8 @@
    top: 40%;
    left: 50%;
    margin-right: -50%;
-   transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%);
+   margin-top: -4rem;
 }
 
 .arrow-down a {
@@ -54,19 +61,26 @@
    font-size: 2.5rem;
    bottom: 5%;
    position: absolute;
-   margin-right: -50%;
-   left: 50%;
-   transform: translateX(50%), translateY(-50%);
+   text-align: center;
+   right: 5%;
  }
 
  #intro-section {
    background: #ebeff0;
  }
 
+ /*.welcome-back {
+
+   height: 160px;
+   width: 300px;
+   margin-top: 5rem;
+   margin-left: 14rem;
+ }*/
+
  .intro-heading {
    text-align: left;
    font-size: 1.7rem;
-   margin-top: 4rem;
+   margin-top: 10rem;
    margin-left: 3rem;
    color: #222d3e;
    font-family: 'Shadows Into Light', sans-serif;
@@ -106,7 +120,7 @@
    font-family: 'Shadows Into Light', sans-serif;
    letter-spacing: 4px;
    float: right;
-   margin-top: -10rem;
+   margin-top: -25rem;
    margin-right: 5rem;
    margin-bottom: 5rem;
 }
@@ -119,45 +133,52 @@
    margin-top: .5rem;
 }
 
- hr.zig, hr.zag {
-   border: none;
-   height: 30px;
-   margin: 0 15%;
-   width: 500px;
- }
+/*.zigzag {
+  margin: 0 auto;
+  position: relative;
+  height: 16px;
+  width: 51%;
+  overflow: hidden;
+}
 
- hr.zig {
-   margin-top: 10rem;
+.zigzag:before, .zigzag:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 
- }
- 
- hr.zig{
-   background: linear-gradient(-135deg, #ebeff0 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #ebeff0 20px, rgba(0, 0, 0, 0) 0) 0 5px;
-   background-color: rgba(0, 0, 0, 0);
-   background-position: center bottom;
-   background-repeat: repeat-x;
-   background-size: 20px 40px;
-   z-index: 100;
-   position: relative;
- }
- 
- hr.zag {
-   background: linear-gradient(-135deg, #78c4c8 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #222d3e 20px, #ebeff0 0) 0 5px;
-   background-color: rgba(0, 0, 0, 0);
-   background-position: center bottom;
-   background-repeat: repeat-x;
-   background-size: 20px 40px;
-   z-index: 50;
-   margin-top: -28px;
- }
- 
+.zigzag:before {
+  height: 12px;
+  top: 110%;
+  background: linear-gradient(-135deg, #222d3e 8px, transparent 0) 0 8px, linear-gradient(135deg, #222d3e 8px, transparent 0) 0 8px;
+  background-position: top left;
+  background-repeat: repeat-x;
+  background-size: 16px 16px;
+}
+.zigzag:after {
+  height: 16px;
+  top: 100%;
+  background: linear-gradient(-135deg, #ebeff0 8px, transparent 0) 0 8px, linear-gradient(135deg, #ebeff0 8px, transparent 0) 0 8px;
+  background-position: top left;
+  background-repeat: repeat-x;
+  background-size: 16px 16px;
+}
+ */
+
 .tech-stack {
-  margin-left: 13rem;
+  overflow: hidden;
+  height: 420px;
+  width: 80%;
+  margin-top: 5rem;
+  margin-left: 2rem;
 }
 
 .tech-stack span {
   opacity: .3;
   margin: 1rem;
+  padding: 1rem;
   font-family: 'Shadows Into Light', sans-serif;
   color: #222d3e;
   display: inline-flex;
@@ -196,4 +217,47 @@
    margin-left: 5rem;
    margin-top: 0;
    width: 60%;
+ }
+
+
+
+ @media only screen and (min-width: 300px) and (max-width: 575px) {
+
+ 
+  .arrow-down a {
+    bottom: 5%;
+    position: absolute;
+    margin-right: -48%;
+    left: 48%;
+    transform: translateX(50%), translateY(-50%);
+  }
+
+  .intro-subtitle {
+    width: 70%;
+  }
+   
+  .tech-stack {
+      margin-left: 1rem;
+      margin-top: 3rem;
+      width: 90%;
+    }
+
+    .intro-scroll {
+      margin-right: 2rem;
+      margin-top: -28rem;
+    }
+
+    .intro-scroll-line {
+      height: 300px;
+    }
+  
+    .intro-projects {
+      margin-left: 3rem;
+    }
+
+    .intro-background {
+      margin-left: 5rem;
+      margin-top: 1.5rem;
+    }
+
  }

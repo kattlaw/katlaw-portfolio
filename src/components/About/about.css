@@ -46,8 +46,8 @@
 
 .info-container {
     display: grid;
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(4);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
     height: 100%;
     width: 100vw;
     margin-left: 3rem;
@@ -153,4 +153,69 @@
     height: 1px;
     margin-bottom: 5rem;
     grid-area: 3/2;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .heading-background {
+        margin-left: 6rem;
+    }
+
+    .about-info {
+        margin-top: 4rem;
+    }
+
+    .info-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: auto;
+    }
+
+    .info-one {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .info-two {
+        margin-left: 5rem;
+        margin-top: 4rem;
+    }
+
+    .scroll-down {
+        grid-area: 1/1;
+        margin-top: -35rem;
+        margin-left: 12rem; 
+    }
+
+    .scroll-line {
+        height: 250px;
+    }
+
+    .info-text {
+        padding-top: 6rem;
+        font-size: 1.3rem;
+        padding-right: 1rem;
+    }
+
+    .snorkel {
+        margin-bottom: 5rem;
+        width: 90%;
+    }
+    .snorkel img {
+        width: 70%;
+    }
+
+    .more-info {
+        grid-area: 3;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+
+    .more-info p {
+        padding-right: 2rem;
+    }
+
 }

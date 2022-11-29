@@ -30,7 +30,8 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    /*grid-template-rows: repeat(2, auto);*/
+
     margin-top: 5rem;
 }
 
@@ -189,6 +190,7 @@
     text-align: left;
     margin-top: 8rem;
     margin-left: 3rem;
+    margin-bottom: 2rem;
 }
 
 .project-four-info p {
@@ -203,4 +205,52 @@
 
 .project-four-info span {
     color: #78c4c8;
+}
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .projects-grid {
+        display: block;
+    }
+
+    .project-one, .project-two, .project-three {
+      align-items: center;
+      margin: 2rem;
+    }
+
+    .project-one img {
+        width: 100%;
+    }
+
+    .project-one-info, .project-two-info, .project-three-info {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .project-two img {
+        width: 100%;
+    }
+
+    .project-three img {
+        width: 100%;
+    }
+
+    .project-four {
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .project-four img {
+        width: 100%;
+    }
+
+    .project-four-info {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+
 }

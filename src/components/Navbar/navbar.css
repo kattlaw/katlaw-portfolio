@@ -98,6 +98,19 @@
   }
 
   .menu-links li a:hover {
-   color:#78c4c8;
+    color:#78c4c8;
   }
 
+
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .menu-page {
+      width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 575px) {
+    .menu-page {
+      width: 50%;
+    }
+  }
