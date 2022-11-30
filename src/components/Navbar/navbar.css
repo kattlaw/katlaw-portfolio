@@ -8,7 +8,7 @@
     padding: 0;
     margin: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
 .menu {
@@ -26,12 +26,16 @@
     z-index: 10;
 }
 
-.left-logo a{
+.left-logo a {
   text-decoration: none;
   font-size: 2rem;
   color: #222D3E;
   font-family: 'Shadows Into Light', sans-serif;
   margin: 1rem; 
+}
+
+.left-logo a:hover {
+  color: #ebdfd4;
 }
 
 .right-text {

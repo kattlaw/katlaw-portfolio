@@ -25,3 +25,7 @@
     padding-left: .5rem;
     padding-right: .5rem;
 }
+
+.footer-socials a:hover {
+    color: #78c4c8;
+}

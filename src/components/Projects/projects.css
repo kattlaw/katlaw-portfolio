@@ -4,18 +4,29 @@
     margin-top: 4rem;
 }
 
-.projects-container {
-   
-    margin-top: 2rem;
-}
 
 .projects-heading {
     text-align: left;
+    z-index: 1;
+    position: relative;
     font-size: 5rem;
     margin-bottom: .5rem;
     margin-left: 3rem;
     color: #222d3e;
+    margin-top: 4rem;
     font-family: 'Shadows Into Light', sans-serif;
+}
+
+.projects-background {
+    background-color: #ebeff0;
+    background-size: 10px 10px;
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: 180px;
+    margin-top: -8.5rem;
+    margin-left: 10rem;
+    background-image: repeating-linear-gradient(45deg, #aedbde 0, #aedbde 1px, #ebeff0 0, #ebeff0 50%);
 }
 
 .projects-line {
@@ -24,15 +35,43 @@
     border-radius: 5px;
     height: 4px;
     background: #78c4c8;
-    margin-top: 1rem;
+    margin-top: -2.5rem;
 }
 
+.projects-scroll {
+   font-family: 'Shadows Into Light', sans-serif;
+   letter-spacing: 4px;
+   margin-left: 10rem;
+   margin-top: 10rem;
+}
+
+.projects-scroll-line {
+    height: 250px;
+    border-left: .5px solid #222d3e;
+    place-self: center;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+}
+
+.code-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20rem;
+    margin-left: 25rem;
+}
+
+.code {
+    width: 200px;
+    display: inline-flex;
+    font-size: 5rem;
+    font-family: 'Shadows Into Light', sans-serif;
+    color: #78c4c8;
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /*grid-template-rows: repeat(2, auto);*/
-
-    margin-top: 5rem;
+    margin-top: 15rem;
 }
 
 .project-one {
@@ -53,6 +92,7 @@
     letter-spacing: .5px;
     color:#222d3e;
     text-align: left;
+    margin: 0 auto;
 }
 
 .project-one-info p {
@@ -190,7 +230,7 @@
     text-align: left;
     margin-top: 8rem;
     margin-left: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .project-four-info p {
@@ -210,8 +250,29 @@
 
 
 
+/*-----MEDIA QUERIES----*/
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
+    
+    .projects-background {
+        margin-left: 6rem;
+    }
+    .projects-line {
+        margin-top: -2.5rem;
+    }
+    .projects-scroll {
+        margin-left: 3rem;
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .projects-scroll-line {
+        height: 220px;
+    }
+    .code-container {
+        margin-left: 12rem;
+        margin-top: -23rem;
+    }
     .projects-grid {
         display: block;
     }

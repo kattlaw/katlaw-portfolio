@@ -8,6 +8,7 @@
     background-color: #ebeff0;
     background-size: 10px 10px;
     background-attachment: fixed;
+    position: relative;
     width: 70%;
     height: 180px;
     margin-left: 12.5rem;
@@ -17,6 +18,8 @@
 
 .about-heading {
     text-align: left;
+    position: relative;
+    z-index: 1;
     font-size: 5rem;
     margin-top: -10.5rem;
     margin-bottom: .5rem;
@@ -90,6 +93,7 @@
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 1px;
     font-size: 1.3rem;
+    margin-top: 5rem;
 }
 
 .info-text p {
@@ -101,7 +105,7 @@
     place-self: center;
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 4px;
-    margin-top: -13rem;
+    margin-top: -15rem;
 }
 
 .scroll-line {
@@ -156,7 +160,59 @@
 }
 
 
+@media only screen and (min-width: 576px) and (max-width: 800px) {
+    
+    .info-one {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .info-two {
+        margin-left: 5rem;
+        margin-top: 4rem;
+    }
+
+    
+    .scroll-down {
+        grid-area: 1/1;
+        margin-top: -25rem;
+        margin-left: 20rem; 
+    }
+
+    .scroll-line {
+        height: 260px;
+    }
+
+    .info-text {
+        padding-top: 5rem;
+        padding-right: 5rem;
+    }
+
+    .snorkel {
+        margin-bottom: 5rem;
+        width: 80%;
+    }
+    .snorkel img {
+        width: 40%;
+    }
+
+    .more-info {
+        grid-area: 3;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+
+    .more-info p {
+        padding-right: 5rem;
+    }
+
+  }
+
 @media only screen and (min-width: 300px) and (max-width: 575px) {
+    
     .heading-background {
         margin-left: 6rem;
     }
@@ -183,8 +239,8 @@
 
     .scroll-down {
         grid-area: 1/1;
-        margin-top: -35rem;
-        margin-left: 12rem; 
+        margin-top: -30rem;
+        margin-left: 16rem; 
     }
 
     .scroll-line {

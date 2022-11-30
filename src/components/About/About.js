@@ -1,7 +1,108 @@
 import './about.css';
+import { useEffect } from 'react';
 import snorkel from '../../assets/images/snorkel.jpeg';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+
+    const mainTl = gsap.timeline(({
+        scrollTrigger: {
+            trigger: '#about',
+            start: "15% top",
+            end: "bottom bottom",
+            markers: true,
+            scrub: 1,
+            //toggleActions: "play pause resume reset",
+        }
+    }));
+
+    const aboutTl = gsap.timeline();
+    useEffect(() => {
+       
+
+        const ctx = gsap.context(() => {
+            aboutTl.from(".heading-background", {
+                ease: "power1.in",
+                duration: 1,
+                x: "1000",
+            })
+            aboutTl.from(".about-heading", {
+                opacity: 0,
+                ease: "power1.inOut",
+                duration: 1,
+                x:"-10",
+                y:"-10"
+            });
+            aboutTl.from(".heading-line", {
+                opacity: 0,
+                ease: "power1.in",
+                duration: 1,
+                x: "1000"
+            });
+            aboutTl.from(".about-info", {
+                opacity: 0,
+                ease: "power1",
+                duration: 1,
+                x: "-100"
+            });
+            aboutTl.from(".info-one", {
+                opacity: 0,
+                duration: .5,
+                ease: "power1.in",
+                x: "-1000"
+            });
+            aboutTl.from(".info-two", {
+                opacity: 0,
+                duration: .5,
+                ease: "power1.in",
+                x: "-1000"
+            });
+            aboutTl.from(".scroll-down", {
+                opacity: 0,
+                ease: "power1.in",
+                duration: 1,
+                y:"-100",
+            })
+
+        })  
+            return () => ctx.revert()
+        
+    },[aboutTl]);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            mainTl.from(".info-text", {
+                opacity: 0,
+                ease: "power1",
+                duration: 2,
+            });
+            mainTl.from(".snorkel", {
+                opacity: 0,
+                ease:"power1.in",
+                duration:1,
+                delay: 2
+            });
+            mainTl.from(".more-info-line", {
+                opacity: 0,
+                duration: 2,
+                ease: "power1.in",
+                x: "400",
+                delay: 1
+            });
+            mainTl.from(".more-info p", {
+                opacity: 0,
+                duration: 2,
+                ease: "power1.in",
+                x: "0",
+                delay: 1
+            })
+        })
+            return () => ctx.revert()
+    }, [mainTl]);
+
     return (
         <section id="about">
             <div className="heading-background"></div>
