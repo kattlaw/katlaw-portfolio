@@ -1,4 +1,4 @@
-.main {
+#main {
    background-image: url('../../assets/images/cbeach.jpeg');
    background-position: center;
    background-repeat: no-repeat; 
@@ -11,29 +11,17 @@
 .heading-container {
    position: relative;
    margin: 0;
-   width: 350px;
-   height: 160px;
-   /*border-top: 2px solid #ebeff0;
-   border-bottom: 2px solid #ebeff0;*/
+   padding: 0;
    top: 40%;
-   left: 50%;
-   margin-right: -50%;
-   transform: translate(-50%, -50%)
-}
-
-.heading-container hr {
-  color: #ebeff0;
-  border: 1px solid;
 }
 
 .main-heading {
    text-align: center;
-   margin: 0;
    color: #ebeff0;
    font-family: 'Shadows Into Light', sans-serif;
    text-transform: uppercase;
    letter-spacing: 2px;
-   font-size: 2.5rem;
+   font-size: 3.5rem;
    padding: 5px;
    
 }
@@ -44,21 +32,46 @@
    margin: 0;
    color: #ebeff0;
    font-family: 'Shadows Into Light', sans-serif;
-   text-transform: uppercase;
    letter-spacing: 2px;
    font-size: 1.5rem;
-   margin-top: .5rem;
+   margin-top: -2rem;
    top: 40%;
    left: 50%;
-   margin-right: -50%;
+   margin-right: 50%;
    transform: translate(-50%, -50%);
-   margin-top: -4rem;
 }
 
-.section a span {
+.title-socials {
+  font-size: 1.3rem;
   position: absolute;
-  bottom: 5%;
-  left: 50%;
+  display: inline-flex;
+  bottom: 1%;
+  margin-left: 1rem;
+  /*left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+.title-socials a {
+  text-decoration: none;
+  color: #222d3e;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: 3rem;
+}
+
+.title-socials a:hover {
+  color: #ebeff0;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.mouse a span {
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
   width: 30px;
   height: 50px;
   margin-left: -15px;
@@ -67,11 +80,7 @@
   box-sizing: border-box;
 }
 
-.section a span:hover {
-  color:#78c4c8;
-}
-
-.section a span::before {
+.mouse a span::before {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -85,17 +94,24 @@
   box-sizing: border-box;
 }
 
-.section-arrow {
+.mouse-scroll {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -11px;
+  bottom: 7%;
+  right: 3.4%;
+  margin-left: 5px;
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 10px;
 }
 
-.section-arrow a {
+.mouse-scroll a {
   text-decoration: none;
   color: #222d3e;
-  font-size: 22px;
+  font-size: 18px;
+}
+
+.mouse-scroll a:hover {
+  color: #78c4c8;
+  text-shadow: .5px .5px #222d3e;
 }
 
 
@@ -197,40 +213,6 @@
    margin-top: .5rem;
 }
 
-/*.zigzag {
-  margin: 0 auto;
-  position: relative;
-  height: 16px;
-  width: 51%;
-  overflow: hidden;
-}
-
-.zigzag:before, .zigzag:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.zigzag:before {
-  height: 12px;
-  top: 110%;
-  background: linear-gradient(-135deg, #222d3e 8px, transparent 0) 0 8px, linear-gradient(135deg, #222d3e 8px, transparent 0) 0 8px;
-  background-position: top left;
-  background-repeat: repeat-x;
-  background-size: 16px 16px;
-}
-.zigzag:after {
-  height: 16px;
-  top: 100%;
-  background: linear-gradient(-135deg, #ebeff0 8px, transparent 0) 0 8px, linear-gradient(135deg, #ebeff0 8px, transparent 0) 0 8px;
-  background-position: top left;
-  background-repeat: repeat-x;
-  background-size: 16px 16px;
-}
- */
-
 .tech-stack {
   overflow: hidden;
   height: 420px;
@@ -279,16 +261,66 @@
    font-size: 1.5rem;
    grid-row: 1;
    grid-column: 1;
-   margin-left: 5rem;
+   margin-left: 7rem;
    margin-top: 0;
    width: 60%;
    z-index: 1;
+ }
+
+ .bottom-container {
+  width: 90%;
+  background-color: #78c4c8;
+  margin: auto;
+ }
+
+ .intouch {
+  color: #ebeff0;
+  font-family: 'Shadows Into Light';
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+ }
+
+ .intouch-line {
+  width: 100px;
+  margin-left: 1rem;
+  border-radius: 5px;
+  height: 4px;
+  background: #222d3e;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
  }
 
 
 
  @media only screen and (min-width: 300px) and (max-width: 575px) {
 
+
+  .arrow {
+    visibility: visible;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .arrow a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .arrow a:hover {
+    color:#78c4c8;
+  }
+
+  .mouse-scroll {
+   display: none;
+  }
+
+  .mouse a span{
+    display: none;
+  }
 
   .intro-subtitle {
     width: 70%;

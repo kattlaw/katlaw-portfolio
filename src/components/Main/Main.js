@@ -1,6 +1,6 @@
 import './main.css';
-import { BsArrowDownCircle } from 'react-icons/bs';
-import { IoIosArrowDown } from 'react-icons/io';
+import { BsArrowDownCircle, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -11,32 +11,25 @@ gsap.registerPlugin(ScrollTrigger);
 const Main = () => {
   
     const titleTl = gsap.timeline();
-    const topLine = useRef(null);
-    const bottomLine = useRef(null);
-    const arrow = useRef(null);
+    const name = useRef();
+    const mouse = useRef();
 
     useEffect(() => {
         
         const ctx = gsap.context(() => {
-            titleTl.from(topLine.current, {
-                opacity: 0,
-                x: "1000%",
-                ease: "sine.inOut",
-                duration: 1, 
-            });
-            titleTl.from(bottomLine.current, {
+            titleTl.from(name.current, {
                 opacity: 0,
                 ease: 'sine.inOut',
-                duration: 1,
-                x:"-1000%",  
-            });
+                duration: 2,
+                scale: 1.5,
+            })
             titleTl.from('.title', {
                 opacity: 0,
                 ease: "sine.inOut",
                 duration: 1,
                 scale: 1.2,
             });
-            titleTl.from(arrow.current, {
+            titleTl.from(mouse.current, {
                 opacity: 0,
                 ease: "sine.inOut",
                 duration: 1,
@@ -50,7 +43,7 @@ const Main = () => {
 
     const spanTl = gsap.timeline(({
         scrollTrigger: {
-            trigger: '.main',
+            trigger: "main",
             start: "center bottom",
             markers: true,
             scrub: 1,
@@ -120,9 +113,7 @@ const Main = () => {
                 duration: 1,
                 delay: 1
             });
-         
-           
-           
+          
         })
     
         return () => ctx.revert()
@@ -131,27 +122,28 @@ const Main = () => {
     
     return (
         <>
-        <div className="main">
+        <div id="main">
             <div className="heading-container">
-                <h1 className="main-heading">
-                    <hr ref={topLine}></hr>
-                    Katherine Law
-                    <hr ref={bottomLine}></hr>
+                <h1 className="main-heading" ref={name}>
+                    Katherine Law<span style={{color:"#222d3e"}}>.</span>
                 </h1>
             </div>
             <div className="title">
                 Web Developer
             </div>
-            <div className="section">
+            <div className="title-socials">
+                <a href="http://github.com/kattlaw"><BsGithub /></a>
+                <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
+                <a href="mailto: katherine.law2@gmail.com"><FiMail /></a>
+            </div>
+            <div className="arrow"><a href="#intro-section"><BsArrowDownCircle/></a></div>
+            <div className="mouse-scroll" ref={mouse}>
+            <a href="#intro-section"> scroll down </a>
+            </div>
+          
+            <div className="mouse">
                 <a href="#intro-section"><span></span></a>
-            </div>
-            <div className="section-arrow">
-            <a href="#intro-section"><IoIosArrowDown/></a>
-            </div>
-            <div className="arrow-down">
-                <a href="#intro-section" ref={arrow}><BsArrowDownCircle/></a>
-            </div>
-           
+            </div> 
         </div>
         <div id="intro-section">
             <div className="intro-heading">
@@ -198,6 +190,12 @@ const Main = () => {
                         Recently, I have been building most of my web apps with React. You can check out some of those <Link to="/projects" style={{color: "#222d3e", textDecorationColor:"#78c4c8"}}>here.</Link>
                     </p>
                 </div>
+           </div>
+           <div className="bottom-container">
+                <div className="intouch">
+                    <h1>Let's Connect<span style={{color: "#222d3e"}}>.</span></h1>
+                </div>
+                <div className="intouch-line"></div>
            </div>
         </div>
       </>
