@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
 
+    //gsap animation 
     const workTl = gsap.timeline();
 
     useEffect(() => {

@@ -55,11 +55,54 @@
     margin-bottom: 10rem;
 }
 
+.resume-info {
+    font-family: 'Shadows Into Light', sans-serif;
+    color: #222d3e;
+    font-size: 1.5rem;
+    margin-left: 10rem;
+    margin-top: 8rem;
+    position: relative;
+    display: inline-flex;
+}
+
+.flower-svg {
+    position: absolute;
+    display: inline-flex;
+    margin-top: 5rem
+}
+
+
+.resume-scroll {
+    font-family: 'Shadows Into Light', sans-serif;
+    letter-spacing: 4px;
+    margin-top: 10rem;
+    margin-left: 5rem;
+  
+}
+
+.resume-scroll-line {
+    height: 220px;
+    border-left: 1px solid #222d3e;
+    place-self: center;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
+}
+
+.timeline-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 8rem;
+}
+
 /* The vertical timeline */
 .timeline {
     position: relative;
     margin: 0 auto;
-    margin-bottom: 1rem;
 }
 
 .timeline::after {
@@ -82,6 +125,7 @@
     width: 50%;
     overflow-x: visible !important;
     box-sizing: border-box;
+    z-index: 1;
 }
   
 /* Circles */ 
@@ -135,7 +179,7 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid #ffff;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
 }
@@ -149,15 +193,15 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid #ffff;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #ffff transparent transparent;
 }
   
 /* content information */
 .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: #ffff;
     font-family: 'Shadows Into Light';
     letter-spacing: .5px;
     position: relative;
@@ -184,8 +228,78 @@
 .content p span {
     color: #78c4c8;
 }
-  
+
+
+/* media queries */
+
+@media only screen and (min-width: 576px) and (max-width: 850px) {
+
+    .resume-info {
+        margin-left: 3rem;
+        width: 60%;
+    }
+
+    .flower-svg {
+       margin-left: -4rem;
+    }
+
+    .timeline-container {
+        padding-bottom: 9rem;
+    }
+}
+
 @media only screen and (min-width: 300px) and (max-width: 575px) {
+    
+    .resume-background {
+        margin-left: 6rem;
+    }
+
+    .resume-heading {
+        margin-top: -10.5rem;
+        font-size: 4.6rem;
+        margin-left: 3rem;
+    }
+
+    .resume-line {
+        margin-bottom: 3rem;
+    }
+
+    .resume-subtitle {
+        width: 80%;
+        margin-top: 0;
+        
+    }
+
+    .resume-info {
+        margin-left: 3rem;
+        margin-top: 6rem;
+        font-size: 1rem;
+        width: 45%;
+    }
+
+    .flower-svg {
+        margin-top: -7rem;
+        position: relative;
+        margin-left: 10rem;
+        padding-left: 1.5rem;
+    }
+
+    .resume-scroll {
+        float: none;
+        margin-left: 5rem;
+        margin-top: 3rem;
+
+    }
+
+    .timeline-container {
+        padding-bottom: 10rem;
+        margin-top: 1rem;
+    }
+
+    .timeline {
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+    }
 
     /* Place timelime to left side */
     .timeline::after {

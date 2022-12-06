@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
 
+    //gsap animation
     const mainTl = gsap.timeline(({
         scrollTrigger: {
             trigger: '#about',
@@ -118,7 +119,7 @@ const About = () => {
                             My tech journey started from my love for puzzles. I often found myself engrossed in challenging mind-games, and have always wanted to explore my creative-side as well. So, I took a leap of faith and started down a new career path.
                         </p>
                         <p>
-                            I attended NuCamp's Fullstack Software Engineering program and graduated in July 2022.
+                            I attended NuCamp's Full Stack Web and Mobile Development program and graduated in July 2022.
                         </p>
                         <p>
                             Needless to say, this puzzle-lover has found web design to be a perfect fit, and I am beyond thrilled to continue with my journey.

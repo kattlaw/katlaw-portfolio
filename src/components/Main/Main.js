@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Main = () => {
   
+    //gsap animation 
     const titleTl = gsap.timeline();
     const name = useRef();
     const mouse = useRef();
@@ -43,7 +44,7 @@ const Main = () => {
 
     const spanTl = gsap.timeline(({
         scrollTrigger: {
-            trigger: "main",
+            trigger: "#main",
             start: "center bottom",
             markers: true,
             scrub: 1,
@@ -96,7 +97,7 @@ const Main = () => {
                 scale: 1,
                 stagger: {
                 each: 0.3,
-                x: "random(-20, 20, 5)", //chooses a random number between -20 and 20 for each target, rounding to the closest 5!
+                x: "random(-20, 20, 5)", //chooses a random number between -20 and 20 for each target, rounding to the closest 5
                 y: "random(-20, 10, 3)", 
                 from: "random"
                 }
@@ -194,8 +195,27 @@ const Main = () => {
            <div className="bottom-container">
                 <div className="intouch">
                     <h1>Let's Connect<span style={{color: "#222d3e"}}>.</span></h1>
-                </div>
+                    </div>
+                <svg className="message-svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: "75px", height: "100px", transform: "rotateY(180deg)"}}>
+                    <g filter="url(#filter0_ii)">
+                    <path className="fill1" d="M84.5 13H15C10.5817 13 7 16.5817 7 21V59.5C7 63.9183 10.5817 67.5 15 67.5H18V85.0858C18 85.9767 19.0771 86.4229 19.7071 85.7929L37.7071 67.7929C37.8946 67.6054 38.149 67.5 38.4142 67.5H84.5C88.9183 67.5 92.5 63.9183 92.5 59.5V21C92.5 16.5817 88.9183 13 84.5 13Z" fill="#ebeff0" strokeWidth="2.6px"></path>
+                    </g>
+                    <path className="stroke1" d="M84.5 13H15C10.5817 13 7 16.5817 7 21V59.5C7 63.9183 10.5817 67.5 15 67.5H18V85.0858C18 85.9767 19.0771 86.4229 19.7071 85.7929L37.7071 67.7929C37.8946 67.6054 38.149 67.5 38.4142 67.5H84.5C88.9183 67.5 92.5 63.9183 92.5 59.5V21C92.5 16.5817 88.9183 13 84.5 13Z" stroke="rgba(34,45,62,1)" strokeWidth="2.6px"></path>
+                    <path className="line-message3-line1 stroke2" d="M21 53H49" stroke="#222d3e" strokeWidth="2.6px"></path>
+                    <path className="line-message3-line2 stroke2" d="M21 41H77" stroke="#222d3e" strokeWidth="2.6px"></path>
+                    <path className="line-message3-line3 stroke2" d="M21 29H77" stroke="#222d3e" strokeWidth="2.6px"></path>
+                    <defs><filter id="filter0_ii" x="4" y="8" width="93.5" height="81.0898" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB"><feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="4" dy="-4"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"></feColorMatrix><feBlend mode="normal" in2="shape" result="effect1_innerShadow"></feBlend><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="-4" dy="4"></feOffset><feGaussianBlur stdDeviation="1"></feGaussianBlur><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"></feColorMatrix><feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"></feBlend></filter></defs>
+                </svg>
+              
+               
                 <div className="intouch-line"></div>
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: "50px", height: "50px"}} className="download-svg">
+                <path className="stroke1" d="M36 65C36 65 9 62.5 9 40.5C9 18.5 26.9391 11 35 11C43.0609 11 48.8314 12.2672 54.75 17C60.0465 21.2353 63.5 32 63.5 32C63.5 32 71.5 25.9212 80.25 29.75C87.3707 32.8658 91 39.7274 91 47.5C91 67.5 66 65 66 65" stroke="rgba(34,45,62,1)" strokeWidth="4px" style={{animationDuration: "2s"}}></path>
+                <path className="line-download1 stroke2" d="M52.0802 50.5L52.0802 85.5M52.0802 85.5L66.0833 71.5593M52.0802 85.5L38.375 71.5593" stroke="rgba(235,239,240,1)" strokeWidth="4px" strokeLinecap="round" style={{animationDuration: "2s"}}></path>
+                </svg>
+                <div className="intouch-resume">
+                    <p>Check out a brief summary of my <Link to="/resume" style={{color: "#222d3e", textDecorationColor:"#ebeff0"}}>resume.</Link> You can also download a PDF file.</p>
+                </div>
            </div>
         </div>
       </>

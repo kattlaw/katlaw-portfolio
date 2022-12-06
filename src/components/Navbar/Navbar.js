@@ -6,11 +6,13 @@ import './navbar.css';
 
 const Navbar = () => {
 
+    //set navbar color on scroll 
     const [navColor, setNavColor] = useState("transparent");
     const listenScrollEvent = () => {
         window.scrollY > 10 ? setNavColor("#78c4c8") : setNavColor("transparent");
    }
 
+   //scroll listener for navbar color change
    useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
     return () => {
@@ -18,10 +20,8 @@ const Navbar = () => {
     };
     }, []);
 
-
+    //gsap animation to open/close side menu bar
     const animation = gsap.timeline({ paused: true, reversed: true })
-
-  
     const line1 = useRef(null);
     const line2 = useRef(null);
     const menuRef = useRef(null);
@@ -61,6 +61,7 @@ useEffect(() => {
 
 }, [animation]);
 
+    // gsap animation function to open/close menu on click
     const handleMenuClick = () => {
         animation.reversed() ? animation.play() : animation.reverse()
       }
