@@ -65,6 +65,14 @@
     display: inline-flex;
 }
 
+
+.desk-svg {
+    top: 63%;
+    left: 58%;
+    margin: -50px 0 0 -50px;
+    position: absolute;
+}
+
 .flower-svg {
     position: absolute;
     display: inline-flex;
@@ -76,8 +84,7 @@
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 4px;
     margin-top: 10rem;
-    margin-left: 5rem;
-  
+    margin-left: 15rem;   
 }
 
 .resume-scroll-line {
@@ -87,6 +94,7 @@
     margin-left: 1.5rem;
     margin-top: .5rem;
 }
+
 
 .timeline-container {
     width: 90%;
@@ -239,6 +247,10 @@
         width: 60%;
     }
 
+    .desk-svg {
+        top: 48%;
+    }
+
     .flower-svg {
        margin-left: -4rem;
     }
@@ -266,8 +278,7 @@
 
     .resume-subtitle {
         width: 80%;
-        margin-top: 0;
-        
+        margin-top: 0;  
     }
 
     .resume-info {
@@ -275,6 +286,16 @@
         margin-top: 6rem;
         font-size: 1rem;
         width: 45%;
+    }
+
+    .desk-svg {
+        margin-top: 2rem;
+        position: relative;
+        left: 60%;
+    }
+
+    .desk-svg img {
+        width: 170px;
     }
 
     .flower-svg {
@@ -287,7 +308,7 @@
     .resume-scroll {
         float: none;
         margin-left: 5rem;
-        margin-top: 3rem;
+        margin-top: -8rem;
 
     }
 

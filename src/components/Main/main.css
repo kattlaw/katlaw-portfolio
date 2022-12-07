@@ -307,18 +307,18 @@
 
 .message-svg {
   display: inline-block;
-  margin-left: 3rem;
-  margin-top: -1rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
 }
 
 .line-message3-line1 {
-  animation:line-message3-line 3s 600ms infinite; 
+  animation: line-message3-line 3s 600ms infinite; 
   stroke-dasharray: 150; 
   stroke-dashoffset: 160;
 }
 
 .line-message3-line2 {
-  animation:line-message3-line 3s 300ms infinite; 
+  animation: line-message3-line 3s 300ms infinite; 
   stroke-dasharray: 150; 
   stroke-dashoffset: 160;
 }
@@ -354,47 +354,6 @@
       opacity: 0;
     }
  }
-
-@media (prefers-reduced-motion: reduce) {
-    .line-message3-line1, .line-message3-line2, .line-message3-line3 {
-        animation: none;
-     }
- }
-
-.download-svg {
-  display: inline-flex;
-  float: right;
-  margin-right: 5rem;
-  margin-top: 1rem;
-}
-
-.line-download1 {
-    animation:line-download1-arrow 2s infinite;
-}
-
-@keyframes line-download1-arrow {
-    0% 
-      {
-        transform:translate3d(0, 0px, 0);
-      }
-    50%  
-      {
-        transform:translate3d(0, 6px, 0);
-      }
-
-    100% 
-      {
-        transform:translate3d(0, 0px, 0);
-      }
- }
-
-@media (prefers-reduced-motion: reduce) {
-
-     .line-download1 {
-         animation: none;
-     }
-}
-
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
@@ -453,4 +412,27 @@
     margin-top: 1.5rem;
   }
 
+  .intouch {
+    color: #ebeff0;
+    font-family: 'Shadows Into Light';
+    font-size: 1.3rem;
+    margin: 0;
+    margin-left: 1rem;
+  }
+  
+  .message-svg {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .download-svg {
+    margin-top: 10rem;
+    margin-right: 1rem;
+  }
+
+  .intouch-resume p {
+    width: 100%;
+  }
+ 
  }

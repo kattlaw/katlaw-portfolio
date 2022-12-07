@@ -102,7 +102,8 @@ const Projects = () => {
                 </h1>
                 <div className="projects-background"></div>
                 <div className="projects-line"></div>
-                <div className="projects-scroll">Scroll
+                <div className="projects-scroll">
+                    Scroll
                     <div className="projects-scroll-line"></div>
                 </div>
                 <div className="code-container">
@@ -115,16 +116,13 @@ const Projects = () => {
                     <div className="project-one-info">
                         <p>Zia Mia<span>.</span></p>
                         A mock restaurant app built with <span>HTML</span>, <span>Javascript</span>, <span>CSS</span>, <span>React</span>, <span>React-Hook-Form</span>, and <span>GSAP</span>. Features a reservation form in a modal
-                        coded using <span>React Context</span>. This site is also mobile responsive.
-                      
+                        coded using <span>React Context</span>. This site is also mobile responsive.  
                     <br />
-                
                         <div className="code-info">
                             <a href="https://github.com/kattlaw/restaurant-site"><AiOutlineGithub /></a>
                             <div className="btn">
                                 <a href="https://zia-mia.netlify.app"> Live Site </a>
                             </div>
-                           
                         </div>
                     </div>
                     <div className="project-two">

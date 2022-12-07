@@ -40,11 +40,21 @@
     text-align: left;
     font-size: 1.7rem;
     margin-top: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 5rem;
     margin-left: 3rem;
     color: #222d3e;
     font-family: 'Shadows Into Light', sans-serif;
     width: 60%;
+    display: inline-block;
+}
+
+.about-image {
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-left: -1rem;
+    position: relative; 
 }
 
 .info-container {
@@ -63,7 +73,7 @@
     background: #222d3e;
     margin-left: 10rem;
     grid-area: 1/1;
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
 .info-two {
@@ -73,7 +83,7 @@
     background: #78c4c8;
     position: relative;
     grid-area: 1/1;
-    margin-top: 12rem;
+    margin-top: 4rem;
     margin-left: 15rem;
 }
 
@@ -101,15 +111,17 @@
 }
 
 .scroll-down {
-    grid-area: 1/2;
+    grid-area: 1/1;
     place-self: center;
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 4px;
-    margin-top: -15rem;
+    margin-top: -32rem;
+    margin-left: 35rem;
+    padding-top: 3rem;
 }
 
 .scroll-line {
-    height: 350px;
+    height: 250px;
     border-left: 1px solid #222d3e;
     place-self: center;
     margin-left: 1.5rem;

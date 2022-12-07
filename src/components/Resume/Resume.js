@@ -4,6 +4,7 @@ import { BsEmojiFrown, BsEmojiSmile } from 'react-icons/bs';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ReactVivus from 'react-vivus';
+import desk from '../../assets/images/desk.svg';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +42,12 @@ const Resume = () => {
                 duration: 1,
                 x: "-100"
             });
-        
+            resumeTl.from(".desk-svg img", {
+                opacity: 0,
+                ease: "power1.in",
+                duration: 1,
+                x: "0"
+            })
             resumeTl.from(".resume-scroll", {
                 opacity: 0,
                 ease:"power1",
@@ -51,12 +57,12 @@ const Resume = () => {
             });
             resumeTl.from(".resume-info", {
                 opacity: 0,
-                ease: "power1.in",
+                ease: "power1",
                 scale: 0.9,
-                duration: 1,
-                x: "-300",
+                duration: 1.5,
+                x: "-1000",
                 scrollTrigger: {
-                    trigger: "#resume",
+                    trigger: ".resume-heading",
                     start: "top top",
                     end: "+=400",
                     scrub: true,
@@ -121,6 +127,9 @@ const Resume = () => {
             <div className="resume-subtitle">
                 <h2><span>A look</span> at some <span>brief highlights</span> of my <span>career</span> and <span>educational</span> milestones.</h2>
             </div>
+            <div className="desk-svg">
+                <img src={desk} alt="desk with computer and lamp" />
+            </div>
             <div className="resume-scroll">Scroll
                 <div className="resume-scroll-line"></div>
             </div>
@@ -128,14 +137,14 @@ const Resume = () => {
                 <p>Fast forward from a late Maryland spring in the 80s...</p>
             </div>
             <div className="flower-svg">
-            <svg id="flower" xmlns="http://www.w3.org/2000/svg" width="250" height="270" fill="none" viewBox="0 0 270 580">
+            <svg id="flower" xmlns="http://www.w3.org/2000/svg" width="250" height="270"     fill="none" viewBox="0 0 270 580">
                 <path stroke="#222d3e" strokeLinecap="round" strokeWidth="10" d="M119.16 122c4.167-38.667 21.5-111.5 63-106.5 26 3.133-29.5 79.5-63 106.5Z" className="petal4"/>
                 <path stroke="#78c4c8" strokeLinecap="round" strokeWidth="10" d="M115.66 124.5c-5-40-27.1-121.7-43.5-118.5-31 20.5-2.1 87.7 43.5 118.5Z" className="petal3"/>
                 <path stroke="#222d3e" strokeLinecap="round" strokeWidth="10" d="M104.995 126.975c-27.5-31.5-87-80.5-95.5-72-18 27 36.5 76.5 95.5 72Z" className="petal2"/>
                 <path stroke="#74c4c8" strokeLinecap="round" strokeWidth="10" d="M112.66 133c-45 10.5-110.316 33-106.5 47.5 10 25 63 22.5 106.5-47.5Z" className="petal1"/>
                 <path stroke="#222d3e" strokeLinecap="round" strokeWidth="10" d="M264 574c11.5-38.5-102.5-315-151-447" className="stem"/>
                 <path stroke="#74c4c8" strokeLinecap="round" strokeWidth="10" d="M119.16 129c22.5 8 111.165 3 107.5-18.5-7.5-44-93.5-4-107.5 18.5Z" className="petal5"/>
-                </svg>
+            </svg>
             <ReactVivus
                 id="flower"
                 option={{
@@ -146,9 +155,7 @@ const Resume = () => {
                 }}
                 callback={console.log}
             />
-          
             </div>
-         
             <div className="timeline-container">
             <div className="timeline">
                 <div className="container-left">

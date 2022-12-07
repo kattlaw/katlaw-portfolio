@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Main = () => {
@@ -196,7 +197,7 @@ const Main = () => {
                 <div className="intouch">
                     <h1>Let's Connect<span style={{color: "#222d3e"}}>.</span></h1>
                     </div>
-                <svg className="message-svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: "75px", height: "100px", transform: "rotateY(180deg)"}}>
+                <svg className="message-svg" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: "68px", height: "80px", transform: "rotateY(180deg)"}}>
                     <g filter="url(#filter0_ii)">
                     <path className="fill1" d="M84.5 13H15C10.5817 13 7 16.5817 7 21V59.5C7 63.9183 10.5817 67.5 15 67.5H18V85.0858C18 85.9767 19.0771 86.4229 19.7071 85.7929L37.7071 67.7929C37.8946 67.6054 38.149 67.5 38.4142 67.5H84.5C88.9183 67.5 92.5 63.9183 92.5 59.5V21C92.5 16.5817 88.9183 13 84.5 13Z" fill="#ebeff0" strokeWidth="2.6px"></path>
                     </g>
@@ -209,12 +210,13 @@ const Main = () => {
               
                
                 <div className="intouch-line"></div>
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: "50px", height: "50px"}} className="download-svg">
-                <path className="stroke1" d="M36 65C36 65 9 62.5 9 40.5C9 18.5 26.9391 11 35 11C43.0609 11 48.8314 12.2672 54.75 17C60.0465 21.2353 63.5 32 63.5 32C63.5 32 71.5 25.9212 80.25 29.75C87.3707 32.8658 91 39.7274 91 47.5C91 67.5 66 65 66 65" stroke="rgba(34,45,62,1)" strokeWidth="4px" style={{animationDuration: "2s"}}></path>
-                <path className="line-download1 stroke2" d="M52.0802 50.5L52.0802 85.5M52.0802 85.5L66.0833 71.5593M52.0802 85.5L38.375 71.5593" stroke="rgba(235,239,240,1)" strokeWidth="4px" strokeLinecap="round" style={{animationDuration: "2s"}}></path>
-                </svg>
+                
                 <div className="intouch-resume">
-                    <p>Check out a brief summary of my <Link to="/resume" style={{color: "#222d3e", textDecorationColor:"#ebeff0"}}>resume.</Link> You can also download a PDF file.</p>
+                    <p>Check out a brief summary of my <Link to="/resume" style={{color: "#222d3e", textDecorationColor:"#ebeff0"}}>resume.
+                    </Link></p>
+                    <p>Download the PDF version as well.</p>
+                   
+
                 </div>
            </div>
         </div>
