@@ -58,14 +58,13 @@ const Resume = () => {
             resumeTl.from(".resume-info", {
                 opacity: 0,
                 ease: "power1",
-                scale: 0.9,
                 duration: 1.5,
-                x: "-1000",
+                x: "-100%",
                 scrollTrigger: {
                     trigger: ".resume-heading",
                     start: "top top",
                     end: "+=400",
-                    scrub: true,
+                    scrub: 2,
                 }
             });
 
@@ -79,7 +78,8 @@ const Resume = () => {
                     start: "top top",
                     end: "+=700",
                     scrub: true,
-                    markers: true,
+                    //markers: true,
+                   
                 }
             });
       
@@ -94,7 +94,7 @@ const Resume = () => {
                         start: "top center",
                         end: "bottom bottom",
                         scrub: true,
-                        markers: true,
+                        //markers: true,
                     }
                 })
             });
@@ -109,7 +109,8 @@ const Resume = () => {
                         start: "top center",
                         end: "bottom bottom",
                         scrub: true,
-                        markers: true,
+                        //markers: true,
+                       
                     }
                 })
             });

@@ -68,6 +68,7 @@
     font-family: 'Shadows Into Light', sans-serif;
     color: #78c4c8;
 }
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -297,7 +298,15 @@
     color: #78c4c8;
 }
 
+.project-one, .project-two, .project-three, .project-four {
+    transition-duration: 1s;
+    
+}
 
+.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover {
+    filter:brightness(120%);
+    scale: 1.02;
+}
 
 
 /*-----MEDIA QUERIES----*/
@@ -307,9 +316,11 @@
     .projects-background {
         margin-left: 6rem;
     }
+
     .projects-line {
         margin-top: -2.5rem;
     }
+
     .projects-scroll {
         margin-left: 3rem;
         margin-top: 10rem;
@@ -319,10 +330,12 @@
     .projects-scroll-line {
         height: 220px;
     }
+
     .code-container {
         margin-left: 12rem;
         margin-top: -23rem;
     }
+
     .projects-grid {
         display: block;
     }

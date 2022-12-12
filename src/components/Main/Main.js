@@ -3,6 +3,7 @@ import { BsArrowDownCircle, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
+import avatar from '../../assets/images/avatar.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -45,14 +46,16 @@ const Main = () => {
 
     const spanTl = gsap.timeline(({
         scrollTrigger: {
-            trigger: "#main",
+            id: "main",
             start: "center bottom",
-            markers: true,
-            scrub: 1,
+            end: "bottom bottom",
+         
+            //markers: true
+          
             //toggleActions: "play pause resume reset",
         }
     }));
-
+   
     useEffect(() => {
 
         const ctx = gsap.context(() => {
@@ -60,21 +63,21 @@ const Main = () => {
             spanTl.from(".intro-heading", {
                 opacity: 0,
                 ease: "power1",
-                duration: 1,
+                //duration: 1,
                 x: "-100"
             });
             spanTl.from(".intro-line", {
                 opacity: 0,
                 ease: "power1",
                 duration: 1,
-                delay: 1,
+                //delay: 1,
                 x: "-100"
             });
             spanTl.from(".intro-subtitle", {
                 opacity: 0,
                 ease: "power1",
                 duration: 1,
-                delay: 1,
+                //delay: 1,
                 x: "0"
             });
             spanTl.from(".intro-scroll", {
@@ -82,14 +85,14 @@ const Main = () => {
                 ease:"power1",
                 scale: 1.2,
                 duration: 1,
-                delay: 2,
+               // delay: 2,
                 y:"-300"
             });
             spanTl.fromTo('.tech-stack span', {
                 opacity: 0,
                 scale: 1.2,
                 duration:1,
-                delay: 1,
+               // delay: 1,
                 ease:"none",
                 repeatRefresh:true // gets a new random x and y value on each repeat
             },
@@ -107,13 +110,23 @@ const Main = () => {
                 ease: "power1.in",
                 duration: 1,
                 x: "1000",
-                delay: 1
+                scrollTrigger: {
+                    scrub: 1,
+                    end: "bottom bottom"
+                 
+                }
+                //delay: 1
             })
             spanTl.from(".intro-projects", {
                 opacity: 0,
                 ease: "power1.in",
                 duration: 1,
-                delay: 1
+                x: "-1000",
+                scrollTrigger: {
+                   scrub: 1,
+                   end: "bottom bottom"
+                }
+                //delay: 1
             });
           
         })
@@ -121,7 +134,7 @@ const Main = () => {
         return () => ctx.revert()
     
     }, [spanTl]);
-    
+
     return (
         <>
         <div id="main">
@@ -150,7 +163,9 @@ const Main = () => {
         <div id="intro-section">
             <div className="intro-heading">
                 <h1>Hi, welcome to my page<span style={{color:"#78c4c8", fontSize:"4rem"}}>.</span></h1>
+          
             </div>
+          
             <div className="intro-line"></div>
             <div className="intro-subtitle">
                 <h2>I'm a developer with a passion for <span style={{color: "#78c4c8"}}>designing</span> and <span style={{color: "#78c4c8"}}>building</span> things for the web.</h2>
@@ -189,7 +204,7 @@ const Main = () => {
                 <div className="intro-background"></div>
                 <div className="intro-projects">
                     <p>
-                        Recently, I have been building most of my web apps with React. You can check out some of those <Link to="/projects" style={{color: "#222d3e", textDecorationColor:"#78c4c8"}}>here.</Link>
+                        Recently, I have been building a lot of my applications using React. Feel free to check them out <Link to="/projects" style={{color: "#222d3e", textDecorationColor:"#78c4c8"}}>here.</Link>
                     </p>
                 </div>
            </div>

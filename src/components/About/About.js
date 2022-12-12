@@ -3,25 +3,16 @@ import { useEffect } from 'react';
 import snorkel from '../../assets/images/snorkel.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import svg from '../../assets/images/avataaars.svg';
+import me from '../../assets/images/inbaja.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
 
     //gsap animation
-    const mainTl = gsap.timeline(({
-        scrollTrigger: {
-            trigger: '#about',
-            start: "15% top",
-            end: "bottom bottom",
-            markers: true,
-            scrub: 1,
-            //toggleActions: "play pause resume reset",
-        }
-    }));
 
     const aboutTl = gsap.timeline();
+
     useEffect(() => {
        
 
@@ -50,6 +41,13 @@ const About = () => {
                 duration: 1,
                 x: "-100"
             });
+            aboutTl.from(".about-image", {
+                opacity: 0,
+                ease: "power1.inOut",
+                duration: 1,
+                x:"0",
+               
+            });
             aboutTl.from(".info-one", {
                 opacity: 0,
                 duration: .5,
@@ -74,11 +72,24 @@ const About = () => {
         
     },[aboutTl]);
 
+    const mainTl = gsap.timeline(({
+        scrollTrigger: {
+            trigger: "#about",
+            start: "15% top",
+            end: "bottom bottom",
+            scrub: 2,
+            //markers: true,
+            //toggleActions: "play pause resume reset",
+        }
+       
+    }));
+
     useEffect(() => {
         const ctx = gsap.context(() => {
             mainTl.from(".info-text", {
                 opacity: 0,
-                ease: "power1",
+                ease: "power1.in",
+                delay: 2,
                 duration: 2,
             });
             mainTl.from(".snorkel", {
@@ -106,13 +117,13 @@ const About = () => {
     }, [mainTl]);
 
     return (
-        <section id="about">
+        <div id="about">
             <div className="heading-background"></div>
             <h1 className="about-heading">About me<span style={{color: "#78c4c8"}}>.</span></h1>
             <div className="heading-line"></div>
             <h2 className="about-info">Just a girl who is <span style={{color: "#78c4c8"}}> pursing a career </span> in tech while having fun<span style={{color: "#78c4c8"}}> writing code</span>.</h2>
             <div className="about-image">
-            <img src={svg} alt="female avatar"/>
+                <img src={me} alt="female avatar"/>
             
             </div>
             <div className="info-container">
@@ -148,7 +159,7 @@ const About = () => {
                     </p>  
                 </div>
            </div>
-        </section>
+        </div>
     )
 }
 

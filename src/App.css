@@ -6,3 +6,9 @@
 html, body {
   margin: 0;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .background-image {
+  background-attachment: scroll;
+  }
+}

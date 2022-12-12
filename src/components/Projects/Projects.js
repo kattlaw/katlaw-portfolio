@@ -55,14 +55,20 @@ const Projects = () => {
 
         const tlTwo = gsap.timeline({
             scrollTrigger: {
-                trigger: '.projects-grid',
+                trigger: "#projects",
                 start: "top top",
                 end: "bottom bottom",
-                scrub: 1,
-                markers: true,
+          
+                ease: "power1.in",
+                toggleActions: "play none none none",
+                //markers: true,
+           
+               
             },
         });
 
+
+     
     useEffect(() => {
         const ctx = gsap.context(() => {
             tlTwo.from('.project-one img', {
@@ -72,30 +78,31 @@ const Projects = () => {
                 xPercent: 100, opacity: 0, duration: 1,
             })
             tlTwo.from('.project-two img', {
-                xPercent: 100, opacity: 0, duration: 1,
+                xPercent: 100, opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-two-info', {
-                xPercent: -100, opacity: 0, duration: 1,   
+                xPercent: -100, opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-three img', {
-                xPercent: -100, opacity: 0, duration: 1 
+                xPercent: -100, opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-three-info', {
-                xPercent: 100, opacity: 0, duration: 1 
+                xPercent: 100, opacity: 0, duration: 1, delay: .1
+            });
+            tlTwo.from('.project-four-info', {   
+                xPercent: -100, opacity: 0, duration: 1, delay: .1 
             });
             tlTwo.from('.project-four img', {
                 xPercent: 100, opacity: 0, duration: 1 
-            });
-            tlTwo.from('.project-four-info', {
-                xPercent: -100, opacity: 0, duration: 1 
             })
         })
             return () => ctx.revert()
+          
     }, [tlTwo]);
 
 
     return (
-        <div section id="projects">
+        <div id="projects">
             <div className="projects-container">
                 <h1 className="projects-heading">
                     My work<span style={{color: "#78c4c8"}}>.</span>

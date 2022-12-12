@@ -164,6 +164,7 @@
    margin-left: 3rem;
    color: #222d3e;
    font-family: 'Shadows Into Light', sans-serif;
+   display: inline-block;
  }
 
  .intro-line {
@@ -174,6 +175,16 @@
    background: #78c4c8;
    margin-top: -1rem;
    margin-bottom: 1rem;
+ }
+
+ #intro-section img {
+  width: 400px;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  opacity: .6;
+  display: inline-block;
+  border-radius: 5%;
+  background-image: cross-fade(5);
  }
 
  .intro-subtitle {
@@ -308,7 +319,7 @@
 .message-svg {
   display: inline-block;
   margin-bottom: 1rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .line-message3-line1 {
@@ -354,6 +365,8 @@
       opacity: 0;
     }
  }
+
+
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
