@@ -5,6 +5,7 @@ import StJohn from '../../assets/images/stjohn.png';
 import TicTacToe from '../../assets/images/tictactoe.png';
 import Quotes from '../../assets/images/quotes.png';
 import { AiOutlineGithub } from 'react-icons/ai';
+import { BsGlobe2 } from 'react-icons/bs';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -55,7 +56,7 @@ const Projects = () => {
 
         const tlTwo = gsap.timeline({
             scrollTrigger: {
-                trigger: "#projects",
+                id: "#projects",
                 start: "top top",
                 end: "bottom bottom",
           
@@ -72,28 +73,28 @@ const Projects = () => {
     useEffect(() => {
         const ctx = gsap.context(() => {
             tlTwo.from('.project-one img', {
-                xPercent: -100, opacity: 0, duration: 1,
+                opacity: 0, duration: 1,
             });
             tlTwo.from('.project-one-info', {
-                xPercent: 100, opacity: 0, duration: 1,
+                 opacity: 0, duration: 1,
             })
             tlTwo.from('.project-two img', {
-                xPercent: 100, opacity: 0, duration: 1, delay: .1
+                 opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-two-info', {
-                xPercent: -100, opacity: 0, duration: 1, delay: .1
+                opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-three img', {
-                xPercent: -100, opacity: 0, duration: 1, delay: .1
+                 opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-three-info', {
-                xPercent: 100, opacity: 0, duration: 1, delay: .1
+                 opacity: 0, duration: 1, delay: .1
             });
             tlTwo.from('.project-four-info', {   
-                xPercent: -100, opacity: 0, duration: 1, delay: .1 
+                opacity: 0, duration: 1, delay: .1 
             });
             tlTwo.from('.project-four img', {
-                xPercent: 100, opacity: 0, duration: 1 
+                 opacity: 0, duration: 1 
             })
         })
             return () => ctx.revert()
@@ -121,60 +122,56 @@ const Projects = () => {
                         <a href="https://zia-mia.netlify.app"><img src={ZiaMia} alt="Zia Mia Restaurant Website" /></a>
                     </div>
                     <div className="project-one-info">
-                        <p>Zia Mia<span>.</span></p>
-                        A mock restaurant app built with <span>HTML</span>, <span>Javascript</span>, <span>CSS</span>, <span>React</span>, <span>React-Hook-Form</span>, and <span>GSAP</span>. Features a reservation form in a modal
-                        coded using <span>React Context</span>. This site is also mobile responsive.  
+                        <p>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></p>
+                        A mock restaurant app built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
+                        coded using React Context. This site is also mobile responsive.  
                     <br />
                         <div className="code-info">
                             <a href="https://github.com/kattlaw/restaurant-site"><AiOutlineGithub /></a>
-                            <div className="btn">
-                                <a href="https://zia-mia.netlify.app"> Live Site </a>
-                            </div>
+                        
+                                <a href="https://zia-mia.netlify.app"><BsGlobe2/></a>
+                         
                         </div>
                     </div>
                     <div className="project-two">
                         <a href="https://travel-st-john.netlify.app"><img src={StJohn} alt="St. John Travel Website" /></a>
                     </div>
                     <div className="project-two-info">
-                        <p>St. John Travel<span>.</span></p>
-                        A mock travel app built with <span>HTML</span>, <span>Javascript</span>, <span>CSS</span>, <span>React</span>, <span>Reactstrap</span>, 
-                        <span> Swiper JS</span>, <span>Formik</span>, <span>Lightbox Gallery</span>, and <span>GSAP</span>. App features mobile-responsiveness.
+                       <p>S<span className="underline">t. John Travel.<div className="highlights"></div></span></p>
+                        A mock travel app built with HTML, Javascript, CSS, React, Reactstrap, 
+                        Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness.
                     <br />
                          <div className="code-info">
                             <a href="https://github.com/kattlaw/stjohn-travel"><AiOutlineGithub /></a>
-                            <div className="btn">
-                                <a href="https://travel-st-john.netlify.app"> Live Site </a> 
-                            </div>
-                        </div>
+                                <a href="https://travel-st-john.netlify.app"><BsGlobe2 /> </a> 
+                        </div>  
+                     
+
                     </div>
                     <div className="project-three">
                         <a href="https://klaw-tic-tac-toe.netlify.app"><img src={TicTacToe} alt="Tic Tac Toe app" /></a>
                     </div>
                     <div className="project-three-info">
-                        <p>Tic Tac Toe<span>.</span></p>
-                        This app was built with <span>HTML</span>, <span>Javascript</span>, <span>CSS</span>, and <span>React</span>.
+                        <p>T<span className="underline">ic Tac Toe.<div className="highlights"></div></span></p>
+                        This app was built with HTML, Javascript, CSS, and React.
                         Features include: next turn prompter, named winner/if resulted in a tie, and a game reset button. 
                     <br />
                         <div className="code-info">
                             <a href="https://github.com/kattlaw/tic-tac-toe"><AiOutlineGithub /></a>
-                            <div className="btn">
-                                <a href="https://klaw-tic-tac-toe.netlify.app"> Live Site </a>
-                            </div> 
+                                <a href="https://klaw-tic-tac-toe.netlify.app"><BsGlobe2 /></a>
                         </div>
                     </div>
                     <div className="project-four">
                         <a href="https://katlaw-quote-gen.netlify.app"><img src={Quotes} alt="Quote Generator App" /></a>
                     </div>
                     <div className="project-four-info">
-                        <p>Random Quote Generator<span>.</span></p>
-                        This project was built with <span>HTML</span>, <span>Javascript</span>, <span>CSS</span>, and <span> React</span>.
+                        <p>R<span className="underline">andom Quote Generator.<div className="highlights"></div></span></p>
+                        This project was built with HTML, Javascript, CSS, and React.
                         Quote button generator takes an array of quotes and renders them randomly. With each render, the quote and background colors also change at random.
                     <br />
-                    <div className="code-info">
+                        <div className="code-info">
                             <a href="https://github.com/kattlaw/random-quotes-generator"><AiOutlineGithub /></a>
-                            <div className="btn">
-                                <a href="https://katlaw-quote-gen.netlify.app"> Live Site </a>
-                            </div> 
+                                <a href="https://katlaw-quote-gen.netlify.app"><BsGlobe2 /> </a>
                         </div>
                     </div>
                 </div>

@@ -281,19 +281,19 @@
   width: 90%;
   background-color: #78c4c8;
   margin: auto;
+
 }
 
 .intouch {
   color: #ebeff0;
   font-family: 'Shadows Into Light';
   font-size: 1.7rem;
-  margin: 0;
   margin-left: 1rem;
   display: inline-block;
 }
 
 .intouch h1 {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 1rem;
   display: inline-block;
 }
@@ -306,14 +306,42 @@
   background: #222d3e;
   margin-top: -1rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .intouch-resume {
-  color: #ebeff0;
+  color: #222d3e;
   font-family:'Shadows Into Light', sans-serif;
   letter-spacing: .5px;
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.3rem;
   margin-left: 1rem;
+  display: inline-block;
+ 
+}
+
+.underlined {
+  display: inline;
+  position: relative;
+  z-index: 1;
+  color: #222d3e;
+ 
+}
+
+.intouch-resume a {
+  text-decoration-line: none;
+  color: #222d3e;
+}
+
+.highlight {
+  position: absolute;
+  background-color: #ebeff0;
+  top: 55%;
+  left: 4%;
+  bottom: auto;
+  height: 36%;
+  width: 100%;
+  z-index: -1;
 }
 
 .message-svg {

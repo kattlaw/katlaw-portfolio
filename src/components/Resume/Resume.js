@@ -1,6 +1,5 @@
 import './resume.css';
 import { useEffect } from 'react';
-import { BsEmojiFrown, BsEmojiSmile } from 'react-icons/bs';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ReactVivus from 'react-vivus';
@@ -231,30 +230,13 @@ const Resume = () => {
                 </div>
                 <div className="container-left">
                     <div className="content">
-                        <h2>2020</h2>
-                        <h3 style={{fontSize: "22px"}}><BsEmojiFrown/></h3>
-                        <p>Laid off due to the Pandemic.</p>
-                    </div>
-                </div>
-                <div className="container-right">
-                    <div className="content">
-                        <h2>2021</h2>
-                        <h3 style={{fontSize:"22px"}}><BsEmojiFrown /> <BsEmojiFrown /></h3>
-                        <p>Believe it or not, <span>2021 was an even tougher year</span> for me.</p>
-                        <p>But after <span>some time</span>, and <span>self-care</span>, I <span>began a new journey</span>...</p>
-                    </div>
-                </div>
-                <div className="container-left">
-                    <div className="content">
                         <h2>January 2022</h2>
-                        <h3 style={{fontSize:"22px"}}><BsEmojiSmile /></h3>
                         <p>Started on a <span>new journey</span> towards a <span>career in tech</span>, and began coding bootcamp classes at <span>NuCamp</span>.</p>
                     </div>
                 </div>
                 <div className="container-right">
                     <div className="content">
                         <h2>July 2022</h2>
-                        <h3 style={{fontSize:"22px"}}><BsEmojiSmile /> <BsEmojiSmile /></h3>
                         <p><span>Graduated </span>from NuCamp's <span>Full Stack Web and Mobile Development</span> bootcamp.</p>
                     </div>
                 </div>

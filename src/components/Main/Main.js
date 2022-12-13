@@ -3,7 +3,6 @@ import { BsArrowDownCircle, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
-import avatar from '../../assets/images/avatar.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -204,7 +203,7 @@ const Main = () => {
                 <div className="intro-background"></div>
                 <div className="intro-projects">
                     <p>
-                        Recently, I have been building a lot of my applications using React. Feel free to check them out <Link to="/projects" style={{color: "#222d3e", textDecorationColor:"#78c4c8"}}>here.</Link>
+                        Recently, I have been building a lot of my applications using React. See some of my work <Link to="/projects" style={{color: "#222d3e", textDecorationColor:"#78c4c8"}}>here.</Link>
                     </p>
                 </div>
            </div>
@@ -227,9 +226,9 @@ const Main = () => {
                 <div className="intouch-line"></div>
                 
                 <div className="intouch-resume">
-                    <p>Check out a brief summary of my <Link to="/resume" style={{color: "#222d3e", textDecorationColor:"#ebeff0"}}>resume.
-                    </Link></p>
-                    <p>Download the PDF version as well.</p>
+                    Check out a <span className="underlined"><Link to="/resume"> brief summary of my resume.</Link><div className="highlight"></div></span>
+                   
+                    
                    
 
                 </div>
