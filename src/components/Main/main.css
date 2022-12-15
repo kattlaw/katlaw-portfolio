@@ -253,9 +253,10 @@
 .intro-background {
    grid-row-start: 1;
    grid-column: 1/2;
-   margin-left: 30rem;
+   margin-left: 18rem;
    margin-right: 1rem;
    margin-bottom: 4rem;
+   width: 70%;
    height: 200px;
    position: relative;
    background-color: #ebeff0;
@@ -280,14 +281,16 @@
 .bottom-container {
   width: 90%;
   background-color: #78c4c8;
-  margin: auto;
-
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 10rem;
 }
 
 .intouch {
   color: #ebeff0;
   font-family: 'Shadows Into Light';
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin-left: 1rem;
   display: inline-block;
 }
@@ -305,27 +308,27 @@
   height: 4px;
   background: #222d3e;
   margin-top: -1rem;
-  margin-bottom: 2rem;
-  position: relative;
+}
+
+.intouch-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-left: 5rem;
 }
 
 .intouch-resume {
   color: #222d3e;
   font-family:'Shadows Into Light', sans-serif;
   letter-spacing: .5px;
-  text-align: center;
   font-size: 1.3rem;
-  margin-left: 1rem;
-  display: inline-block;
- 
 }
 
 .underlined {
   display: inline;
   position: relative;
   z-index: 1;
-  color: #222d3e;
- 
+  color: #ebeff0;
 }
 
 .intouch-resume a {
@@ -344,55 +347,13 @@
   z-index: -1;
 }
 
-.message-svg {
-  display: inline-block;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
+.connect-info {
+  font-family: 'Shadows into Light', sans-serif;
+  letter-spacing: .5px;
+  font-size: 1.3rem;
+  padding-top: 1rem;
 }
 
-.line-message3-line1 {
-  animation: line-message3-line 3s 600ms infinite; 
-  stroke-dasharray: 150; 
-  stroke-dashoffset: 160;
-}
-
-.line-message3-line2 {
-  animation: line-message3-line 3s 300ms infinite; 
-  stroke-dasharray: 150; 
-  stroke-dashoffset: 160;
-}
-
-.line-message3-line3 {
-  animation:line-message3-line 3s infinite; 
-  stroke-dasharray: 150; 
-  stroke-dashoffset: 160;
-}
-
-@keyframes line-message3-line {
-  0%
-    {
-      stroke-dashoffset: 160;
-    }
-  20% 
-    {
-      stroke-dashoffset: 160;
-    }
-  50%
-    {
-      stroke-dashoffset: 0; 
-      opacity: 1;
-    }
-  80% 
-    {
-      stroke-dashoffset: 0; 
-      opacity: 0;
-    }
-  100%
-    {
-      stroke-dashoffset: 150; 
-      opacity: 0;
-    }
- }
 
 
 
@@ -424,15 +385,28 @@
     display: none;
   }
 
+  .intro-heading {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 100%;
+  }
+
+  .intro-line {
+    margin-left: 1rem;
+  }
+
   .intro-subtitle {
-    width: 70%;
+    width: 80%;
+    margin-left: 1rem;
+    font-size: 1.2rem;
   }
    
   .tech-stack {
     margin-left: 1rem;
     margin-top: 3rem;
     width: 90%;
-    height: 690px;
+    height: 700px;
   }
 
   .intro-scroll {
@@ -445,12 +419,34 @@
   }
   
   .intro-projects {
-    margin-left: 3rem;
+    margin-left: 1rem;
+    width: 80%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
   }
 
   .intro-background {
     margin-left: 5rem;
     margin-top: 1.5rem;
+  }
+
+  .bottom-container {
+    width: 90%;
+    padding-left: 0rem;
+    padding-bottom: 5rem;
+  }
+
+  .intouch-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding-left: 5px;
+    margin: 0 auto;
+  }
+
+  .intouch-line {
+    margin-bottom: 2rem;
   }
 
   .intouch {
@@ -460,20 +456,13 @@
     margin: 0;
     margin-left: 1rem;
   }
+
+  .intouch-resume {
+    font-size: 1.2rem;
+  }
+
+  .connect-info {
+    font-size: 1.2rem;
+  }
   
-  .message-svg {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-
-  .download-svg {
-    margin-top: 10rem;
-    margin-right: 1rem;
-  }
-
-  .intouch-resume p {
-    width: 100%;
-  }
- 
  }

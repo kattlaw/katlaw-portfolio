@@ -243,7 +243,7 @@ const Resume = () => {
                 <div className="container-left">
                      <div className="content">
                         <h2>July 2022 - Present</h2>
-                        <p>Coding, <span>learning</span>, coding, <span>building</span>, coding, <span>developing</span>. </p>
+                        <p>Coding, <span>learning</span>, coding, <span>building</span>, coding, <span>developing</span>. Seeking an opportunity for a full-time role as a Web Developer. </p>
                     </div>
                  </div>    
             </div>

@@ -1,5 +1,5 @@
 import './projects.css';
-import { useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import ZiaMia from '../../assets/images/ZiaMia.png';
 import StJohn from '../../assets/images/stjohn.png';
 import TicTacToe from '../../assets/images/tictactoe.png';
@@ -14,9 +14,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
 
     //gsap animation 
-    const workTl = gsap.timeline();
 
-    useEffect(() => {
+
+    useLayoutEffect(() => {
+        const workTl = gsap.timeline();
         const ctx = gsap.context(() => {
             workTl.from(".projects-background", {
                 ease: "power1.in",
@@ -52,8 +53,12 @@ const Projects = () => {
         })
             return () => ctx.revert()
 
-    }, [workTl]);
+    }, []);
 
+     
+
+     
+    useLayoutEffect(() => {
         const tlTwo = gsap.timeline({
             scrollTrigger: {
                 id: "#projects",
@@ -68,9 +73,6 @@ const Projects = () => {
             },
         });
 
-
-     
-    useEffect(() => {
         const ctx = gsap.context(() => {
             tlTwo.from('.project-one img', {
                 opacity: 0, duration: 1,
@@ -99,9 +101,19 @@ const Projects = () => {
         })
             return () => ctx.revert()
           
-    }, [tlTwo]);
+    }, []);
 
+    const [showMore, setShowMore] = useState(false);
 
+    
+    function handleMoreClick(e) {
+       e.preventDefault();
+       
+        setShowMore(!showMore)
+  
+        
+    }
+    
     return (
         <div id="projects">
             <div className="projects-container">
@@ -122,7 +134,7 @@ const Projects = () => {
                         <a href="https://zia-mia.netlify.app"><img src={ZiaMia} alt="Zia Mia Restaurant Website" /></a>
                     </div>
                     <div className="project-one-info">
-                        <p>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></p>
+                        <h3>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></h3>
                         A mock restaurant app built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
                         coded using React Context. This site is also mobile responsive.  
                     <br />
@@ -137,9 +149,9 @@ const Projects = () => {
                         <a href="https://travel-st-john.netlify.app"><img src={StJohn} alt="St. John Travel Website" /></a>
                     </div>
                     <div className="project-two-info">
-                       <p>S<span className="underline">t. John Travel.<div className="highlights"></div></span></p>
+                       <h3>S<span className="underline">t. John Travel.<div className="highlights"></div></span></h3>
                         A mock travel app built with HTML, Javascript, CSS, React, Reactstrap, 
-                        Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness.
+                        Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness, animations, and a ton of beautiful pictures.
                     <br />
                          <div className="code-info">
                             <a href="https://github.com/kattlaw/stjohn-travel"><AiOutlineGithub /></a>
@@ -152,7 +164,7 @@ const Projects = () => {
                         <a href="https://klaw-tic-tac-toe.netlify.app"><img src={TicTacToe} alt="Tic Tac Toe app" /></a>
                     </div>
                     <div className="project-three-info">
-                        <p>T<span className="underline">ic Tac Toe.<div className="highlights"></div></span></p>
+                        <h3>T<span className="underline">ic Tac Toe.<div className="highlights"></div></span></h3>
                         This app was built with HTML, Javascript, CSS, and React.
                         Features include: next turn prompter, named winner/if resulted in a tie, and a game reset button. 
                     <br />
@@ -165,7 +177,7 @@ const Projects = () => {
                         <a href="https://katlaw-quote-gen.netlify.app"><img src={Quotes} alt="Quote Generator App" /></a>
                     </div>
                     <div className="project-four-info">
-                        <p>R<span className="underline">andom Quote Generator.<div className="highlights"></div></span></p>
+                        <h3>R<span className="underline">andom Quote Generator.<div className="highlights"></div></span></h3>
                         This project was built with HTML, Javascript, CSS, and React.
                         Quote button generator takes an array of quotes and renders them randomly. With each render, the quote and background colors also change at random.
                     <br />
@@ -176,8 +188,30 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            <section id="more-projects">
+                <div className="show-more">  
+                <button onClick={handleMoreClick}>
+                      <h3>{showMore ? '- Show Less Work' : '+ Show More Work'}
+                      </h3>
+                </button>
+                      {showMore && <p>
+                        <a href="https://github.com/kattlaw/Campsite-React-Project">Campsite Webpage</a>
+                        <br />
+                        <a href="https://github.com/kattlaw/nucampsiteServer">NuCamp Server</a>
+                        <br />
+                        <a href="https://github.com/kattlaw/React-Native-NuCamp-App">Mobile NuCamp Site</a>
+                        <br />
+                        <a href="https://kl-color-guess-game.netlify.app">Color Game</a><a href="https://github.com/kattlaw/Color-Guessing-Game" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <br />
+                        <a href="https://emoji-match-game.netlify.app/">Emoji Game</a>
+                        <a href="https://github.com/kattlaw/matching-game" style={{color: "#222d3e", paddingLeft:"15px"}}><AiOutlineGithub /></a>
+                        </p>}
+                  
+                </div>
+            </section>    
+        </div>      
     )
 }
+    
 
 export default Projects;
