@@ -85,7 +85,7 @@ const Resume = () => {
             containers.forEach(container => {
                 resumeTl.from(container, {
                     opacity: 0,
-                    ease: "power1.in",
+                    ease: "sine.out",
                     duration: 1,
                     delay: 1,
                     scrollTrigger: {
@@ -100,7 +100,7 @@ const Resume = () => {
             containersRight.forEach(container => {
                 resumeTl.from(container, {
                     opacity: 0,
-                    ease: "power1.in",
+                    ease: "sine.out",
                     duration: 1,
                     delay: 1,
                     scrollTrigger: {

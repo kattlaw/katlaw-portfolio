@@ -64,8 +64,7 @@ const Projects = () => {
                 id: "#projects",
                 start: "top top",
                 end: "bottom bottom",
-          
-                ease: "power1.in",
+                ease: "sine.out",
                 toggleActions: "play none none none",
                 //markers: true,
            
@@ -75,28 +74,28 @@ const Projects = () => {
 
         const ctx = gsap.context(() => {
             tlTwo.from('.project-one img', {
-                opacity: 0, duration: 1,
+                opacity: 0, duration: 1, 
             });
             tlTwo.from('.project-one-info', {
-                 opacity: 0, duration: 1,
+                 opacity: 0, duration: 1, y: -15
             })
             tlTwo.from('.project-two img', {
-                 opacity: 0, duration: 1, delay: .1
+                 opacity: 0, duration: 1, delay: .1, 
             });
             tlTwo.from('.project-two-info', {
-                opacity: 0, duration: 1, delay: .1
+                opacity: 0, duration: 1, delay: .1, y: -15
             });
             tlTwo.from('.project-three img', {
-                 opacity: 0, duration: 1, delay: .1
+                 opacity: 0, duration: 1, delay: .1, 
             });
             tlTwo.from('.project-three-info', {
-                 opacity: 0, duration: 1, delay: .1
+                 opacity: 0, duration: 1, delay: .1, y: -15
             });
-            tlTwo.from('.project-four-info', {   
-                opacity: 0, duration: 1, delay: .1 
+            tlTwo.from('.project-four img', {   
+                opacity: 0, duration: 1, delay: .1, 
             });
-            tlTwo.from('.project-four img', {
-                 opacity: 0, duration: 1 
+            tlTwo.from('.project-four-info', {
+                 opacity: 0, duration: 1, delay: .1, y: -15
             })
         })
             return () => ctx.revert()
@@ -108,10 +107,7 @@ const Projects = () => {
     
     function handleMoreClick(e) {
        e.preventDefault();
-       
-        setShowMore(!showMore)
-  
-        
+        setShowMore(!showMore)   
     }
     
     return (
@@ -142,7 +138,6 @@ const Projects = () => {
                             <a href="https://github.com/kattlaw/restaurant-site"><AiOutlineGithub /></a>
                         
                                 <a href="https://zia-mia.netlify.app"><BsGlobe2/></a>
-                         
                         </div>
                     </div>
                     <div className="project-two">
@@ -157,8 +152,6 @@ const Projects = () => {
                             <a href="https://github.com/kattlaw/stjohn-travel"><AiOutlineGithub /></a>
                                 <a href="https://travel-st-john.netlify.app"><BsGlobe2 /> </a> 
                         </div>  
-                     
-
                     </div>
                     <div className="project-three">
                         <a href="https://klaw-tic-tac-toe.netlify.app"><img src={TicTacToe} alt="Tic Tac Toe app" /></a>

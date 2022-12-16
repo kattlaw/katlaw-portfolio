@@ -354,8 +354,16 @@
   padding-top: 1rem;
 }
 
+.connect-info-two {
+  padding-top: 20px;
+}
 
 
+@media only screen and (min-width: 576px) and (max-width: 945px) {
+  .intouch-line {
+    margin-bottom: 3rem;
+  }
+}
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
@@ -463,6 +471,13 @@
 
   .connect-info {
     font-size: 1.2rem;
+  }
+
+  .connect-info-two {
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: left;
   }
   
  }

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import snorkel from '../../assets/images/snorkel.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import me from '../../assets/images/inbaja.jpeg';
+import me from '../../assets/images/me.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 

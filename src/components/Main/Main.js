@@ -99,7 +99,7 @@ const Main = () => {
                 opacity: 0.2,
                 scale: 1,
                 stagger: {
-                each: 0.3,
+                each: 0.1,
                 x: "random(-20, 20, 5)", //chooses a random number between -20 and 20 for each target, rounding to the closest 5
                 y: "random(-20, 10, 3)", 
                 from: "random"
@@ -107,32 +107,68 @@ const Main = () => {
             });
             spanTl.from(".intro-background", {
                 ease: "power1.in",
-                duration: 1,
-                x: "500",
+                duration: 1.2,
+                delay: 1,
+                x: "1000",
                 scrollTrigger: {
-                    scrub: 1,
+                    toggleActions: "play none none none",
                     end: "bottom bottom"
                  
                 }
                 //delay: 1
-            })
+            });
             spanTl.from(".intro-projects", {
                 opacity: 0,
                 ease: "power1.in",
-                duration: 1,
-                x: "-500",
+                duration: 1.2,
+                delay: 1,
+                x: "-1000",
                 scrollTrigger: {
-                   scrub: 1,
+                   toggleActions: "play none none none",
                    end: "bottom bottom"
                 }
                 //delay: 1
             });
+            spanTl.from(".intouch", {
+                opacity: 0,
+                ease: "power1",
+                delay: 2,
+                duration: 1.5,
+                x: "-100",
+                scrollTrigger: {
+                    toggleActions: "play none none none",
+                    end: "bottom bottom"
+                }
+            });
+            spanTl.from(".intouch-line", {
+                opacity: 0,
+                ease: "power1",
+                duration: 1.5,
+                delay: 2,
+                x: "-100",
+                scrollTrigger: {
+                    toggleActions: "play none none none",
+                    end: "bottom bottom"
+                }
+            });
+            spanTl.from(".intouch-resume", {
+                opacity: 0,
+                ease: "power1",
+                duration: 1.5,
+                delay: 3,
+                x: "0",
+                scrollTrigger: {
+                    toggleActions: "play none none none",
+                    end: "bottom bottom",
+                }
+            })
           
         })
     
         return () => ctx.revert()
     
     }, [spanTl]);
+
 
     return (
         <>
@@ -217,6 +253,11 @@ const Main = () => {
                     Check out a <span className="underlined"><Link to="/resume"> brief summary of my resume.</Link><div className="highlight"></div></span>
                 <div className="connect-info">
                     Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> Feel free to send me a note!</a><div className="highlight"></div></span>
+                
+                </div>
+                <div className="connect-info-two">
+                       
+                I am available for<span className="underlined"><a href="mailto:katherine.law2@gmail.com"> freelance projects and full-time employment.</a><div className="highlight"></div></span>
                 </div>
                 </div>
                 </div>
