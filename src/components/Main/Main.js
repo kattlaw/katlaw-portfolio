@@ -108,7 +108,7 @@ const Main = () => {
             spanTl.from(".intro-background", {
                 ease: "power1.in",
                 duration: 1.2,
-                delay: 1,
+            
                 x: "1000",
                 scrollTrigger: {
                     toggleActions: "play none none none",
@@ -121,7 +121,7 @@ const Main = () => {
                 opacity: 0,
                 ease: "power1.in",
                 duration: 1.2,
-                delay: 1,
+               
                 x: "-1000",
                 scrollTrigger: {
                    toggleActions: "play none none none",
@@ -132,7 +132,7 @@ const Main = () => {
             spanTl.from(".intouch", {
                 opacity: 0,
                 ease: "power1",
-                delay: 2,
+                delay: 1,
                 duration: 1.5,
                 x: "-100",
                 scrollTrigger: {
@@ -239,7 +239,7 @@ const Main = () => {
                 <div className="intro-background"></div>
                 <div className="intro-projects">
                     <p>
-                        Attention to detail and creativty are both important to me. I focus on combining programming technologies and designs to produce appealing user-friendly interfaces for practical web applications. See some of my work <Link to="/projects" style={{color: "#222d3e", textDecorationColor:"#78c4c8"}}>here.</Link>
+                        Attention to detail and creativty are both important to me. I focus on combining programming technologies and designs to produce appealing user-friendly interfaces for practical web applications. See some of my work <button className="button-work"><Link to="/projects">here.</Link></button>
                     </p>
                 </div>
            </div>

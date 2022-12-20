@@ -278,6 +278,30 @@
    z-index: 1;
 }
 
+.button-work {
+  font-family: 'Shadows into Light', sans-serif;
+  font-size: 1.5rem;
+  border: .5px solid transparent;
+  transition: .5s ease;
+  font-weight: bolder;
+  background-color: transparent;
+  padding: 0;
+}
+
+.button-work a {
+  text-decoration-color: #78c4c8;
+  color: #222d3e;
+}
+
+.button-work:hover {
+  scale: .9;
+}
+
+.button-work a:hover {
+  text-decoration-color: #fff;
+
+}
+
 .bottom-container {
   width: 90%;
   background-color: #78c4c8;
@@ -345,6 +369,26 @@
   height: 36%;
   width: 100%;
   z-index: -1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underlined::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 4%;
+  background-color: #222d3e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underlined:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .connect-info {
@@ -363,6 +407,8 @@
   .intouch-line {
     margin-bottom: 3rem;
   }
+
+
 }
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
@@ -432,6 +478,11 @@
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 5rem;
+  }
+
+  .button-work {
+    font-size: 1.2rem;
+    padding: 0;
   }
 
   .intro-background {
