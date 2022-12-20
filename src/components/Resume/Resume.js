@@ -216,31 +216,24 @@ const Resume = () => {
                 </div>
                 <div className="container-left">
                     <div className="content">
-                        <h2>2019</h2>
-                        <h3>Frederick, MD</h3>
-                        <p><span>Earned</span> a prestigious <span>certification from the National Strength and Conditioning Association</span> as a Certified Strength and Conditioning Coach (CSCS).</p>
-                    </div>
-                </div>
-                <div className="container-right">
-                    <div className="content">
                         <h2>2019 - 2020</h2>
                         <h3>Washington, D.C.</h3>
                         <p><span>Personal Trainer</span> and <span>exercise program prescriber</span> at One to One Fitness.</p>
                     </div>
                 </div>
-                <div className="container-left">
+                <div className="container-right">
                     <div className="content">
                         <h2>January 2022</h2>
                         <p>Started on a <span>new journey</span> towards a <span>career in tech</span>, and began coding bootcamp classes at <span>NuCamp</span>.</p>
                     </div>
                 </div>
-                <div className="container-right">
+                <div className="container-left">
                     <div className="content">
                         <h2>July 2022</h2>
                         <p><span>Graduated </span>from NuCamp's <span>Full Stack Web and Mobile Development</span> bootcamp.</p>
                     </div>
                 </div>
-                <div className="container-left">
+                <div className="container-right">
                      <div className="content">
                         <h2>July 2022 - Present</h2>
                         <p>Coding, <span>learning</span>, coding, <span>building</span>, coding, <span>developing</span>. Seeking an opportunity for a full-time role as a Web Developer. </p>

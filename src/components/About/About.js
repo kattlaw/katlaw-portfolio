@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 import snorkel from '../../assets/images/snorkel.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import me from '../../assets/images/me.jpeg';
+import me from '../../assets/images/inbaja.jpeg';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -121,12 +122,13 @@ const About = () => {
             <div className="heading-background"></div>
             <h1 className="about-heading">About me<span style={{color: "#78c4c8"}}>.</span></h1>
             <div className="heading-line"></div>
-            <h2 className="about-info">Just a girl who is <span style={{color: "#78c4c8"}}> pursing a career </span> in tech while having fun<span style={{color: "#78c4c8"}}> writing code</span>.</h2>
+            <div className="about-info">Just a girl who is <span style={{color: "#78c4c8"}}> pursing a career </span> in tech while having fun<span style={{color: "#78c4c8"}}> writing code</span>.</div>
             <div className="about-image">
-                <img src={me} alt="female avatar"/>
+               <img src={me} alt="katherine in Baja" />
             
             </div>
             <div className="info-container">
+    
                 <div className="info-one"></div>
                 <div className="info-two"></div>
                 <div className="scroll-down">Scroll

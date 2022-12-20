@@ -49,10 +49,10 @@
 }
 
 .about-image {
-    margin-top: 4rem;
-    margin-left: -1rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
     display: inline-block;
-    width: 200px;
+    width: 150px;
     z-index: 1;
     position: absolute;
     transform: translate3D(0);
@@ -63,8 +63,8 @@
 .about-image::before {
     content: "";
     display: block;
-    width: 195px;
-    height: 195px;
+    width: 143px;
+    height: 229px;
     background: transparent;
     position: absolute;
     transform: translateX(-1.15rem) translateY(-1.15rem);
@@ -144,16 +144,16 @@
 
 .scroll-down {
     grid-area: 1/1;
-    place-self: center;
+    position: fixed;
+    position: absolute;
+    right: 40px;
     font-family: 'Shadows Into Light', sans-serif;
     letter-spacing: 4px;
-    margin-top: -30rem;
-    margin-left: 35rem;
     padding-top: 3rem;
 }
 
 .scroll-line {
-    height: 250px;
+    height: 200px;
     border-left: 1px solid #222d3e;
     place-self: center;
     margin-left: 1.5rem;
@@ -207,24 +207,24 @@
 @media only screen and (min-width: 576px) and (max-width: 850px) {
     
     .about-image {
-        margin-left: -3rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
     }
 
     .info-one {
         margin-left: 2rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .info-two {
         margin-left: 5rem;
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     
     .scroll-down {
         grid-area: 1/1;
-        margin-top: -20rem;
-        margin-left: 20rem; 
+        margin-top: 8rem;
     }
 
     .scroll-line {
@@ -270,37 +270,28 @@
         margin-top: 3rem;
         width: 80%;
         margin-bottom: 1rem;
+        display: block;
     }
 
-    .about-info h2 {
-        margin-bottom: 1rem;
-    }
-    
-    
     .about-image {
-        width: 200px;
-        position: absolute;
+        width: 150px;
+        position: relative;
         top: 50%;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+        margin-top: 12rem;
     }
     
     .about-image img {
         border-radius: 5px;
         opacity: .8;
-        margin: 0 auto;
-      
     }
 
     .info-container {
         width: 100%;
         margin: 1rem;
-        margin-top: 12rem;
-
+        margin-top: -15rem;
     }
 
     .info-one {
@@ -315,12 +306,12 @@
 
     .scroll-down {
         grid-area: 1/1;
-        margin-top: -28rem;
+        margin-top: 10rem;
         margin-left: 15rem; 
     }
 
     .scroll-line {
-        height: 250px;
+        height: 210px;
     }
 
     .info-text {
