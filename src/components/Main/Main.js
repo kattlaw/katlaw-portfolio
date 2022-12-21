@@ -84,14 +84,12 @@ const Main = () => {
                 ease:"power1",
                 scale: 1.2,
                 duration: 1,
-               // delay: 2,
                 y:"-300"
             });
             spanTl.fromTo('.tech-stack span', {
                 opacity: 0,
                 scale: 1.2,
                 duration:1,
-               // delay: 1,
                 ease:"none",
                 repeatRefresh:true // gets a new random x and y value on each repeat
             },
@@ -105,69 +103,64 @@ const Main = () => {
                 from: "random"
                 }
             });
-            spanTl.from(".intro-background", {
-                ease: "power1.in",
-                duration: 1.2,
-            
-                x: "1000",
-                scrollTrigger: {
-                    toggleActions: "play none none none",
-                    end: "bottom bottom"
-                 
-                }
-                //delay: 1
-            });
-            spanTl.from(".intro-projects", {
-                opacity: 0,
-                ease: "power1.in",
-                duration: 1.2,
-               
-                x: "-1000",
-                scrollTrigger: {
-                   toggleActions: "play none none none",
-                   end: "bottom bottom"
-                }
-                //delay: 1
-            });
-            spanTl.from(".intouch", {
-                opacity: 0,
-                ease: "power1",
-                delay: 1,
-                duration: 1.5,
-                x: "-100",
-                scrollTrigger: {
-                    toggleActions: "play none none none",
-                    end: "bottom bottom"
-                }
-            });
-            spanTl.from(".intouch-line", {
-                opacity: 0,
-                ease: "power1",
-                duration: 1.5,
-                delay: 2,
-                x: "-100",
-                scrollTrigger: {
-                    toggleActions: "play none none none",
-                    end: "bottom bottom"
-                }
-            });
-            spanTl.from(".intouch-resume", {
-                opacity: 0,
-                ease: "power1",
-                duration: 1.5,
-                delay: 3,
-                x: "0",
-                scrollTrigger: {
-                    toggleActions: "play none none none",
-                    end: "bottom bottom",
-                }
-            })
-          
         })
     
         return () => ctx.revert()
     
     }, [spanTl]);
+
+    const secondTl = gsap.timeline(({
+        scrollTrigger: {
+            trigger:".intro-container",
+            start: "center",
+          
+            //toggleActions: "play pause resume reset",
+        }
+    }));
+
+    useEffect(() => {
+
+        const ctx = gsap.context(() => {
+
+            secondTl.from(".intro-background", {
+                ease: "power1.in",
+                duration: 1.2,
+                x: "1000",
+          
+            });
+            secondTl.from(".intro-projects", {
+                opacity: 0,
+                ease: "power1.in",
+                duration: 1.2,
+                x: "-1000",
+           
+            });
+            secondTl.from(".intouch", {
+                opacity: 0,
+                ease: "power1",
+                duration: 1,
+                x: "-100",
+            
+            });
+            secondTl.from(".intouch-line", {
+                opacity: 0,
+                ease: "power1",
+                duration: 1,
+                x: "-100",
+        
+            });
+            secondTl.from(".intouch-resume", {
+                opacity: 0,
+                ease: "power1",
+                duration: 1,
+                x: "0",
+                
+            })
+        })
+
+        return () => ctx.revert()
+    
+    }, [secondTl]);
 
 
     return (
