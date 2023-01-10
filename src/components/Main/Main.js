@@ -203,7 +203,7 @@ const Main = () => {
             <div id="spring1" className="layer" data-speed="-7"><SiSpringCreators /></div>
             <div id="right" className="layer" data-speed="4"><BiRightArrow /></div>
             <div id="spring2" className="layer" data-speed="-2"><SiSpringCreators /></div>
-            <div id="down" className="layer" data-speed="-8"><BiDownArrow /></div>
+            <div id="down" className="layer" data-speed="8"><BiDownArrow /></div>
             <div id="up" className="layer" data-speed="3"><BiUpArrow /></div>
             <div id="slash" className="layer" data-speed="9"><BsSlashLg /></div>
             <div id="backslash" className="layer" data-speed="-10"><FaSlash /></div>
