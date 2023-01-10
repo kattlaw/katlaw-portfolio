@@ -12,7 +12,7 @@
 
 #main .layer {
   position: absolute;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
@@ -248,6 +248,20 @@
 
 .arrow {
   visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.arrow a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.arrow a:hover {
+  color:#78c4c8;
 }
 
 .mouse a span {
@@ -314,19 +328,6 @@
     opacity: 0;
   }
 }
-
-.arrow-down a {
-   color: #222d3e;
-   font-size: 2.5rem;
-   bottom: 5%;
-   position: absolute;
-   text-align: center;
-   right: 5%;
- }
-
- .arrow-down a:hover {
-  color: #78c4c8;
- }
 
  #intro-section {
    background: #ebeff0;
@@ -676,6 +677,8 @@
   #spring2 {
     padding-left: 73%;
   }
+
+  
   .main-heading {
     margin-left: 1.5rem;
     padding-right: 5rem;
@@ -696,29 +699,13 @@
   }
 
   .title-socials {
-    bottom: 0%;
+    left: 0;
+    bottom: 1;
     padding: 5px;
   }
 
   .arrow {
     visibility: visible;
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-  }
-
-  .arrow a {
-    font-size: 40px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-  }
-
-  .arrow a:hover {
-    color:#78c4c8;
   }
 
   .mouse-scroll {
