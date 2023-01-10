@@ -144,7 +144,7 @@ const Main = () => {
     const secondTl = gsap.timeline(({
         scrollTrigger: {
            trigger: ".intro-scroll-line",
-           start: "top 10%",
+           start: "center",
            
             //toggleActions: "play pause resume reset",
         }

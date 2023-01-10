@@ -90,8 +90,6 @@
 }
 
 .title {
-  /*text-align: center;*/
-
   position: relative;
   color: #ebeff0;
   font-family:'Roboto', sans-serif;
@@ -706,14 +704,14 @@
     visibility: hidden;
   }
 
-  .title-socials a {
-    left: 0;
+  .title-socials {
     bottom: 0;
+    margin-top: 4rem;
   }
 
-  /*.arrow {
-    visibility: visible;
-  }*/
+  .arrow {
+    display: none;
+  }
 
   .mouse-scroll {
    display: none;
