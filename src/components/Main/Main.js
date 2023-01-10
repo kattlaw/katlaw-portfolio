@@ -57,7 +57,7 @@ const Main = () => {
             });
             titleTl.from('.page-links a', {
                 opacity: 0,
-                stagger: 0.5,
+                stagger: 0.3,
                 ease:'power1.in',
                 y: 0,
             })
@@ -198,7 +198,6 @@ const Main = () => {
     return (
         <>
         <div id="main">
-            <div className="main-container">
             <div id="halfcircle" className="layer" data-speed="-5"><AiOutlineLoading /></div>
             <div id="zigzag" className="layer" data-speed="5"><CgShapeZigzag /></div>
             <div id="spring1" className="layer" data-speed="-7"><SiSpringCreators /></div>
@@ -239,7 +238,6 @@ const Main = () => {
             <div className="mouse">
                 <a href="#intro-section"><span></span></a>
             </div> 
-        </div>
         </div>
         <div id="intro-section">
             <div className="intro-heading">
