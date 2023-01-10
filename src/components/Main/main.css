@@ -486,7 +486,6 @@
 
 .button-work a:hover {
   text-decoration-color: #fff;
-
 }
 
 .bottom-container {
@@ -678,7 +677,15 @@
     padding-left: 73%;
   }
 
-  
+  #up {
+    top: 730px;
+  }
+
+  #backslash {
+    top: 730px;
+  }
+
+
   .main-heading {
     margin-left: 1.5rem;
     padding-right: 5rem;
@@ -704,16 +711,16 @@
     padding: 5px;
   }
 
-  .arrow {
+  /*.arrow {
     visibility: visible;
-  }
+  }*/
 
   .mouse-scroll {
-   display: none;
+   visibility: hidden;
   }
 
   .mouse a span{
-    display: none;
+    visibility: hidden;
   }
 
   .intro-heading {
