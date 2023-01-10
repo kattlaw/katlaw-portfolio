@@ -664,10 +664,10 @@
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
-  .layer {
-      margin-bottom: clamp(10px, 5vh, 40px);
+  .background-layer {
+    height: auto;
   }
-
+  
   #zigzag {
     top: 339px;
   }
