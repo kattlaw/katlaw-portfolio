@@ -313,7 +313,7 @@
     }
 
     .projects-scroll-line {
-        height: 220px;
+        height: 150px;
     }
 
     .code-container {
@@ -325,6 +325,10 @@
         display: block;
     }
 
+    .projects-grid h3 {
+        font-size: 1.7rem;
+    }
+
     .projects-grid img {
         width: 100%;
     }
@@ -332,22 +336,18 @@
     .project-one, .project-two, .project-three {
       align-items: center;
       margin: 2rem;
+     
     }
-
 
     .project-one-info, .project-two-info, .project-three-info {
         text-align: center;
         margin: 0 auto;
     }
 
-
-
     .project-four {
         align-items: center;
         margin: 2rem;
     }
-
-
 
     .project-four-info {
         text-align: center;
@@ -361,7 +361,15 @@
     }
 
     .show-more {
-       margin: 0 auto;  
+       margin: 0 auto; 
+    }
+
+    .show-more button {
+        font-size: 1.3rem;
+    }
+
+    .show-more p a {
+        font-size: 1.2rem;
     }
 
 
