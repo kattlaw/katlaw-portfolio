@@ -5,6 +5,7 @@
    background-size: cover;
    height: 100vh;
    width: 100vw;
+   position: relative;
 }
 
 .background-layer .layer {
@@ -705,7 +706,8 @@
   }
 
   .title-socials {
-    top: 95%;
+    
+   
   }
 
   .arrow {
