@@ -207,24 +207,19 @@ const Main = () => {
             <div id="up" className="layer" data-speed="3"><BiUpArrow /></div>
             <div id="slash" className="layer" data-speed="9"><BsSlashLg /></div>
             <div id="backslash" className="layer" data-speed="-5"><FaSlash /></div>
-         
-                <h1 className="main-heading" ref={name}>
-                    Katherine Law<span style={{color:"#78c4c8", fontSize: "3.2rem"}}>,</span>
-                </h1>
-            
+            <h1 className="main-heading" ref={name}>
+                Katherine Law<span style={{color:"#78c4c8", fontSize: "3.2rem"}}>,</span>
+            </h1>
             <div className="title">
                 Web Developer
             </div>
-            
-            <div className="pdf-button"><Link to="/about"><button>About Me</button><CgArrowLongRight className="right-arrow"/></Link></div>
-     
-        <div className="page-links">
-            <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
-            <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
-            <Link to="/resume">Resume<span style={{color:"#78c4c8"}}>.</span></Link>
-        </div>
-
-
+            <div className="pdf-button">
+                <Link to="/about"><button>About Me</button><CgArrowLongRight className="right-arrow"/></Link></div>
+            <div className="page-links">
+                <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
+                <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
+                <Link to="/resume">Resume<span style={{color:"#78c4c8"}}>.</span></Link>
+            </div>
             <div className="title-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>
                 <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
@@ -234,7 +229,6 @@ const Main = () => {
             <div className="mouse-scroll" ref={mouse}>
             <a href="#intro-section"> scroll </a>
             </div>
-          
             <div className="mouse">
                 <a href="#intro-section"><span></span></a>
             </div> 
@@ -242,9 +236,7 @@ const Main = () => {
         <div id="intro-section">
             <div className="intro-heading">
                 <h1>Hi, welcome to my page<span style={{color:"#78c4c8", fontSize:"4rem"}}>.</span></h1>
-          
             </div>
-          
             <div className="intro-line"></div>
             <div className="intro-subtitle">
                 <h2>I'm a developer with a passion for <span style={{color: "#78c4c8"}}>designing</span> and <span style={{color: "#78c4c8"}}>building</span> things for the web.</h2>
@@ -273,8 +265,7 @@ const Main = () => {
                 <span>Postman</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Expo</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span>
-                <span>SCSS</span>
-                
+                <span>SCSS</span>  
             </div>
             <div className="intro-scroll">Scroll
                 <div className="intro-scroll-line"></div>
