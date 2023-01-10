@@ -206,7 +206,7 @@ const Main = () => {
             <div id="down" className="layer" data-speed="8"><BiDownArrow /></div>
             <div id="up" className="layer" data-speed="3"><BiUpArrow /></div>
             <div id="slash" className="layer" data-speed="9"><BsSlashLg /></div>
-            <div id="backslash" className="layer" data-speed="-10"><FaSlash /></div>
+            <div id="backslash" className="layer" data-speed="-5"><FaSlash /></div>
          
                 <h1 className="main-heading" ref={name}>
                     Katherine Law<span style={{color:"#78c4c8", fontSize: "3.2rem"}}>,</span>

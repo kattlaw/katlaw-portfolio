@@ -226,8 +226,7 @@
 .title-socials {
   font-size: 1.3rem;
   position: absolute;
-  display: block;
-  bottom: 1%;
+  bottom: 0;
   margin-left: 1rem;
   /*left: 50%;
   margin-right: 50%;
@@ -239,7 +238,7 @@
   color: #ebeff0;
   padding-left: .5rem;
   padding-right: .5rem;
-  padding-top: 3rem;
+  bottom: 0;
 }
 
 .title-socials a:hover {
@@ -705,10 +704,9 @@
     visibility: hidden;
   }
 
-  .title-socials {
+  .title-socials a {
     left: 0;
-    bottom: 1;
-    padding: 5px;
+    bottom: 0;
   }
 
   /*.arrow {
