@@ -318,7 +318,7 @@
 
     .code-container {
         margin-left: 12rem;
-        margin-top: -23rem;
+        margin-top: -15rem;
     }
 
     .projects-grid {
@@ -366,6 +366,10 @@
 
     .show-more button {
         font-size: 1.3rem;
+    }
+
+    .show-more p {
+        margin-left: 1rem;
     }
 
     .show-more p a {

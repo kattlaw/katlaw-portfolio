@@ -279,8 +279,8 @@
     }
 
     .resume-subtitle {
-        width: 80%;
-        font-size: .9rem;
+        width: 75%;
+        font-size: 1.2rem;
         margin-top: 4rem;  
     }
 
@@ -292,7 +292,7 @@
     }
 
     .desk-svg {
-        margin-top: 2rem;
+        margin-top: 3rem;
         position: relative;
         left: 60%;
     }
@@ -302,7 +302,7 @@
     }
 
     .flower-svg {
-        margin-top: -7rem;
+        margin-top: 1rem;
         position: relative;
         margin-left: 10rem;
         padding-left: 1.5rem;

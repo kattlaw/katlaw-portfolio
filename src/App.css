@@ -6,9 +6,9 @@
 
 html, body {
   margin: 0;
-  width: 100vw;
-  padding: 0;
+  width: 100vw
 }
+
 
 @supports (-webkit-overflow-scrolling: touch) {
   .background-image {

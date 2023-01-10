@@ -21,8 +21,8 @@ const Main = () => {
     this.querySelectorAll(".layer").forEach((layer) => {
     const speed = layer.getAttribute("data-speed");
 
-    const x = (window.innerWidth - e.pageX * speed) / 100 ;
-    const y = (window.innerHeight - e.pageY * speed) / 100;
+    const x = (window.innerWidth - e.pageX * speed) / 90 ;
+    const y = (window.innerHeight - e.pageY * speed) / 90;
 
     layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
 
@@ -198,6 +198,7 @@ const Main = () => {
     return (
         <>
         <div id="main">
+            <div className="background-layer">
             <div id="halfcircle" className="layer" data-speed="-5"><AiOutlineLoading /></div>
             <div id="zigzag" className="layer" data-speed="5"><CgShapeZigzag /></div>
             <div id="spring1" className="layer" data-speed="-7"><SiSpringCreators /></div>
@@ -207,6 +208,7 @@ const Main = () => {
             <div id="up" className="layer" data-speed="3"><BiUpArrow /></div>
             <div id="slash" className="layer" data-speed="9"><BsSlashLg /></div>
             <div id="backslash" className="layer" data-speed="-5"><FaSlash /></div>
+            </div>
             <h1 className="main-heading" ref={name}>
                 Katherine Law<span style={{color:"#78c4c8", fontSize: "3.2rem"}}>,</span>
             </h1>
