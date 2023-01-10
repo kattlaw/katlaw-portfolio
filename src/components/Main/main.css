@@ -524,7 +524,6 @@
   align-items: center;
   justify-content: center;
   margin: .5rem;
-
 }
 
 .intouch-resume {
@@ -669,6 +668,13 @@
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
+  #zigzag {
+    top: 330px;
+  }
+
+  #spring2 {
+    padding-left: 73%;
+  }
   .main-heading {
     margin-left: 1.5rem;
     padding-right: 5rem;
@@ -688,11 +694,17 @@
     visibility: hidden;
   }
 
+  .title-socials {
+    bottom: 0%;
+    padding: 5px;
+  }
+
   .arrow {
     visibility: visible;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 50%;
+    margin-right: 50%;
     transform: translate(-50%, -50%);
   }
 
