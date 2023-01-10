@@ -170,7 +170,7 @@ const Projects = () => {
                         <a href="https://katlaw-quote-gen.netlify.app"><img src={Quotes} alt="Quote Generator App" /></a>
                     </div>
                     <div className="project-four-info">
-                        <h3>R<span className="underline">andom Quote Generator.<div className="highlights"></div></span></h3>
+                        <h3>Q<span className="underline">uote Generator.<div className="highlights"></div></span></h3>
                         This project was built with HTML, Javascript, CSS, and React.
                         Quote button generator takes an array of quotes and renders them randomly. With each render, the quote and background colors also change at random.
                     <br />

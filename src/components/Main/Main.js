@@ -1,6 +1,11 @@
 import './main.css';
-import { BsArrowDownCircle, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { AiOutlineLoading } from 'react-icons/ai';
+import { BsArrowDownCircle, BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
+import { FaSlash } from 'react-icons/fa';
+import { BiDownArrow, BiRightArrow, BiUpArrow} from 'react-icons/bi';
+import { SiSpringCreators } from 'react-icons/si';
+import { CgShapeZigzag, CgArrowLongRight } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -10,7 +15,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Main = () => {
-  
+    //parallax background shapes on mousemove
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+    this.querySelectorAll(".layer").forEach((layer) => {
+    const speed = layer.getAttribute("data-speed");
+
+    const x = (window.innerWidth - e.pageX * speed) / 100 ;
+    const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+
+  });
+}
+
     //gsap animation 
     const titleTl = gsap.timeline();
     const name = useRef();
@@ -23,19 +41,32 @@ const Main = () => {
                 opacity: 0,
                 ease: 'sine.inOut',
                 duration: 2,
-                scale: 1.5,
+                scale: 1.8,
             })
             titleTl.from('.title', {
                 opacity: 0,
                 ease: "sine.inOut",
                 duration: 1,
-                scale: 1.2,
+               
             });
+            titleTl.from('.pdf-button', {
+                opacity: 0,
+                ease: "sine.inOut",
+                duration: 1,
+                
+            });
+            titleTl.from('.page-links a', {
+                opacity: 0,
+                stagger: 0.5,
+                ease:'power1.in',
+                y: 0,
+            })
             titleTl.from(mouse.current, {
                 opacity: 0,
                 ease: "sine.inOut",
                 duration: 1,
                 scale: 1.2,
+                y: -1000,
             })
 
         })  
@@ -109,11 +140,12 @@ const Main = () => {
     
     }, [spanTl]);
 
+  
     const secondTl = gsap.timeline(({
         scrollTrigger: {
-            trigger:".intro-container",
-            start: "center",
-          
+           trigger: ".intro-scroll-line",
+           start: "top 10%",
+           
             //toggleActions: "play pause resume reset",
         }
     }));
@@ -166,14 +198,34 @@ const Main = () => {
     return (
         <>
         <div id="main">
+            <div className="main-container">
+            <div id="halfcircle" className="layer" data-speed="-5"><AiOutlineLoading /></div>
+            <div id="zigzag" className="layer" data-speed="5"><CgShapeZigzag /></div>
+            <div id="spring1" className="layer" data-speed="-7"><SiSpringCreators /></div>
+            <div id="right" className="layer" data-speed="4"><BiRightArrow /></div>
+            <div id="spring2" className="layer" data-speed="-2"><SiSpringCreators /></div>
+            <div id="down" className="layer" data-speed="-8"><BiDownArrow /></div>
+            <div id="up" className="layer" data-speed="3"><BiUpArrow /></div>
+            <div id="slash" className="layer" data-speed="9"><BsSlashLg /></div>
+            <div id="backslash" className="layer" data-speed="-10"><FaSlash /></div>
             <div className="heading-container">
                 <h1 className="main-heading" ref={name}>
-                    Katherine Law<span style={{color:"#222d3e"}}>.</span>
+                    Katherine Law<span style={{color:"#78c4c8", fontSize: "3.2rem"}}>,</span>
                 </h1>
-            </div>
+            
             <div className="title">
                 Web Developer
             </div>
+            
+            <div className="pdf-button"><Link to="/about"><button>About Me</button><CgArrowLongRight className="right-arrow"/></Link></div>
+        </div>
+        <div className="page-links">
+            <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
+            <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
+            <Link to="/resume">Resume<span style={{color:"#78c4c8"}}>.</span></Link>
+        </div>
+
+
             <div className="title-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>
                 <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
@@ -181,12 +233,13 @@ const Main = () => {
             </div>
             <div className="arrow"><a href="#intro-section"><BsArrowDownCircle/></a></div>
             <div className="mouse-scroll" ref={mouse}>
-            <a href="#intro-section"> scroll down </a>
+            <a href="#intro-section"> scroll </a>
             </div>
           
             <div className="mouse">
                 <a href="#intro-section"><span></span></a>
             </div> 
+        </div>
         </div>
         <div id="intro-section">
             <div className="intro-heading">
@@ -199,29 +252,29 @@ const Main = () => {
                 <h2>I'm a developer with a passion for <span style={{color: "#78c4c8"}}>designing</span> and <span style={{color: "#78c4c8"}}>building</span> things for the web.</h2>
             </div>
             <div className="tech-stack">
-                <span>Javascript</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Javascript</span>
                 <span>HTML</span>
-                <span>CSS</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>CSS</span>
                 <span>Bootstrap</span>
                 <span>React</span>
-                <span>React Native</span>
-                <span>GSAP</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React Native</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>GSAP</span>
                 <span>React-Redux</span>
-                <span>Git</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Git</span>
                 <span>Github</span>
                 <span>Node</span>
-                <span>React-Router</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React-Router</span>
                 <span>Express</span>
-                <span>MongoDB</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>MongoDB</span>
                 <span>REST</span>
-                <span>JSON</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>JSON</span>
                 <span>JQuery</span>
                 <span>Netlify</span>
                 <span>NPM</span>
-                <span>Visual Studio</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Visual Studio</span>
                 <span>Postman</span>
-                <span>Expo</span>
-                <span>Android Studio</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Expo</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span>
                 <span>SCSS</span>
                 
             </div>
@@ -246,11 +299,9 @@ const Main = () => {
                     Check out a <span className="underlined"><Link to="/resume"> brief summary of my resume.</Link><div className="highlight"></div></span>
                 <div className="connect-info">
                     Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> Feel free to send me a note!</a><div className="highlight"></div></span>
-                
                 </div>
-                <div className="connect-info-two">
-                       
-                I am available for<span className="underlined"><a href="mailto:katherine.law2@gmail.com"> freelance projects and full-time employment.</a><div className="highlight"></div></span>
+                <div className="connect-info-two"> 
+                    I am available for <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> freelance and full-time employment.</a><div className="highlight"></div></span>
                 </div>
                 </div>
                 </div>

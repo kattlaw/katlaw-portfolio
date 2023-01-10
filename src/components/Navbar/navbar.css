@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     transition: .5s;
-    z-index: 10;
+    z-index: 3;
 }
 
 .menu:hover {
@@ -33,32 +33,30 @@
 .left-logo a {
   text-decoration: none;
   font-size: 2rem;
-  color: #222D3E;
   font-family: 'Shadows Into Light', sans-serif;
-  margin: 1rem; 
+  margin: 1rem;
 }
 
-.left-logo a:hover {
-  color: #ebdfd4;
-}
-
-.right-text {
-  font-size: 1.1rem;
+/*.right-text {
+  visibility: hidden;
+  font-size: 1.3rem;
   margin-right: 5rem;
   margin-top: 1rem;
   padding-right: 15px;
   float: right;
-  color: #222D3E;
-  border-right: .5px solid #ebdfd4;
+  font-weight: bolder;
+  border-right: .5px solid #ebeff0;
   border-spacing: 10px;
-  font-family: 'Shadows Into Light', sans-serif;
-}
+  font-family: 'Roboto', sans-serif;
+}*/
 
 .line1 {
+  
     width: 100%;
     border-radius: 5px;
     height: 2px;
-    background: #ebdfd4;  
+    background: #5f667e; 
+    margin-top: -.5rem;
   }
   
   .line2 {
@@ -66,18 +64,17 @@
     border-radius: 5px;
     height: 2px;
     margin-top: .7rem;
-    background: #ebdfd4;
+    background: #5f667e;
   }
-
 
   .menu-page {
     position: fixed;
     top:0;
     right: 0;
-    background: #222D3E;
+    background: #78c4c8;
     width: 30%;
     height: 100vh;
-    z-index: 1;
+    z-index: 2;
   }
 
   .menu-links {
@@ -100,14 +97,14 @@
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: #ebeff0;
     font-size: 20px;
-    font-family: 'Shadows Into Light', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     transform: .5s;
   }
 
   .menu-links li a:hover {
-    color:#78c4c8;
+    color:#222d3e;
   }
 
 

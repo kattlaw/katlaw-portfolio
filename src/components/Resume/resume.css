@@ -26,7 +26,7 @@
     margin-bottom: 5rem;
     margin-left: 3rem;
     color: #222d3e;
-    font-family: 'Shadows Into Light', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .resume-subtitle {
@@ -35,8 +35,8 @@
     margin-bottom: .5rem;
     margin-left: 3rem;
     color: #222d3e;
-    margin-top: -9rem;
-    font-family: 'Shadows Into Light', sans-serif;
+    margin-top: -7rem;
+    font-family: 'Open Sans', sans-serif;
     width: 60%;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .resume-info {
-    font-family: 'Shadows Into Light', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #222d3e;
     font-size: 1.5rem;
     margin-left: 10rem;
@@ -81,14 +81,16 @@
 
 
 .resume-scroll {
-    font-family: 'Shadows Into Light', sans-serif;
-    letter-spacing: 4px;
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 3px;
     margin-top: 10rem;
-    margin-left: 15rem;   
+    margin-left: 15rem;
+    font-size: 11px;
+    text-transform: uppercase;  
 }
 
 .resume-scroll-line {
-    height: 220px;
+    height: 150px;
     border-left: 1px solid #222d3e;
     place-self: center;
     margin-left: 1.5rem;
@@ -210,7 +212,7 @@
 .content {
     padding: 20px 30px;
     background-color: #ffff;
-    font-family: 'Shadows Into Light';
+    font-family: 'Open Sans';
     letter-spacing: .5px;
     position: relative;
     border-radius: 6px; 

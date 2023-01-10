@@ -3,13 +3,14 @@ import { useEffect, useState, useRef } from 'react';
 import { gsap } from "gsap";
 import './navbar.css';
 
-
 const Navbar = () => {
 
     //set navbar color on scroll 
     const [navColor, setNavColor] = useState("transparent");
+    const [logoColor, setLogoColor] = useState("#78c4c8");
     const listenScrollEvent = () => {
         window.scrollY > 10 ? setNavColor("#78c4c8") : setNavColor("transparent");
+        window.scrollY > 10 ? setLogoColor("#222d3e") : setLogoColor("#78c4c8");
    }
 
    //scroll listener for navbar color change
@@ -47,14 +48,6 @@ useEffect(() => {
                 y: "-0.8rem",
                 width: "100%"
             }, "<")
-           /* .from(".menu-links li", {
-                duration: 0.5,
-                delay: 0.3,
-                opacity: 0,
-                stagger: 0.3,
-                ease: "power1.in",
-                y:0
-            }, [])   */    
         })
 
     return () => ctx.revert()
@@ -65,21 +58,21 @@ useEffect(() => {
     const handleMenuClick = () => {
         animation.reversed() ? animation.play() : animation.reverse()
       }
-      /*const handleNavLinkClick = () => {
-        animation.reverse()
-      }*/
       
-
     return (
         <div 
             className="navbar"
             style={{
                 backgroundColor: navColor,
                 transform: "1s"
+            }}  
+        >   
+        <div className="left-logo"><Link to="/" style={{color: logoColor}}>KL
+            <span style={{
+                color:"#ebeff0", 
+                fontSize: "2rem"
             }}
-            
-        >   <div className="left-logo"><Link to="/">KL<span style={{color:"#ebdfd8", fontSize: "2rem"}}>.</span></Link> 
-                <span className="right-text">Menu</span>
+            >.</span></Link> 
             </div>
             <div className="menu" onClick={handleMenuClick}>
                 <div className="line1" ref={line1}></div>
