@@ -12,6 +12,7 @@
 
 #main .layer {
   position: absolute;
+  height: auto;
   display: block;
 }
 
@@ -702,16 +703,18 @@
   .arrow {
     visibility: visible;
     position: absolute;
+    display: flex;
     bottom: 0;
+    align-items: center;
+    justify-content: center;
     left: 50%;
-    margin-right: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .arrow a {
     font-size: 40px;
     text-decoration: none;
     color: #fff;
+    text-align: center;
   }
 
   .arrow a:hover {

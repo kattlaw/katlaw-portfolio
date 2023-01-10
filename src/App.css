@@ -6,6 +6,8 @@
 
 html, body {
   margin: 0;
+  width: 100vw;
+  padding: 0;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
