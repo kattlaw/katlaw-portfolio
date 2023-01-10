@@ -202,12 +202,12 @@ const Main = () => {
             <div id="zigzag" className="layer" data-speed="5"><CgShapeZigzag /></div>
             <div id="spring1" className="layer" data-speed="-7"><SiSpringCreators /></div>
             <div id="right" className="layer" data-speed="4"><BiRightArrow /></div>
-            <div id="spring2" className="layer" data-speed="-2"><SiSpringCreators /></div>
+            <div id="spring2" className="layer" data-speed="2"><SiSpringCreators /></div>
             <div id="down" className="layer" data-speed="8"><BiDownArrow /></div>
             <div id="up" className="layer" data-speed="3"><BiUpArrow /></div>
             <div id="slash" className="layer" data-speed="9"><BsSlashLg /></div>
             <div id="backslash" className="layer" data-speed="-10"><FaSlash /></div>
-            <div className="heading-container">
+         
                 <h1 className="main-heading" ref={name}>
                     Katherine Law<span style={{color:"#78c4c8", fontSize: "3.2rem"}}>,</span>
                 </h1>
@@ -217,7 +217,7 @@ const Main = () => {
             </div>
             
             <div className="pdf-button"><Link to="/about"><button>About Me</button><CgArrowLongRight className="right-arrow"/></Link></div>
-        </div>
+     
         <div className="page-links">
             <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
             <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
