@@ -269,8 +269,12 @@
         margin-left: 6rem;
     }
 
+    .about-heading {
+        font-size: 4.3rem;
+    }
+
     .about-info {
-        margin-top: 3rem;
+        margin-top: 6rem;
         width: 80%;
         margin-bottom: 1rem;
         display: block;

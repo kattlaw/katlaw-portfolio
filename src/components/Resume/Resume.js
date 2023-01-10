@@ -125,7 +125,7 @@ const Resume = () => {
             <h1 className="resume-heading">My resume<span style={{color:"#78c4c8"}}>.</span></h1>
             <div className="resume-line"></div>
             <div className="resume-subtitle">
-                <h2><span>A look</span> at some <span>brief highlights</span> of my <span>career</span> and <span>educational</span> milestones.</h2>
+                <h2><span>A look</span> at some <span>brief career highlights</span>  <span></span> and <span>educational</span> milestones.</h2>
             </div>
             <div className="desk-svg">
                 <img src={desk} alt="desk with computer and lamp" />
