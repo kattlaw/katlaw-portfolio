@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import { gsap } from "gsap";
 import './navbar.css';
-import { BsArrowDownCircle, BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 
 const Navbar = () => {
@@ -10,9 +10,12 @@ const Navbar = () => {
     //set navbar color on scroll 
     const [navColor, setNavColor] = useState("transparent");
     const [logoColor, setLogoColor] = useState("#78c4c8");
+    const [burgerColor, setBurgerColor] = useState("#c33b73");
+
     const listenScrollEvent = () => {
         window.scrollY > 10 ? setNavColor("#78c4c8") : setNavColor("transparent");
         window.scrollY > 10 ? setLogoColor("#222d3e") : setLogoColor("#78c4c8");
+        window.scrollY > 10 ? setBurgerColor("#222d3e") : setBurgerColor("#c33b73");
    }
 
    //scroll listener for navbar color change
@@ -41,14 +44,16 @@ useEffect(() => {
             })
             .to(line1.current, {
                 rotationZ: "45deg", 
-                duration: .6
+                duration: .6,
+                backgroundColor: "#222d3e",
             }, "<")
             .to(line2.current, {
                 rotationZ: "-45deg",
                 duration: .6,
                 x: 0,
                 y: "-0.8rem",
-                width: "100%"
+                width: "100%",
+                backgroundColor: "#222d3e",
             }, "<")
         })
 
@@ -59,7 +64,7 @@ useEffect(() => {
     // gsap animation function to open/close menu on click
     const handleMenuClick = () => {
         animation.reversed() ? animation.play() : animation.reverse()
-      }
+    }
       
     return (
         <div 
@@ -77,8 +82,8 @@ useEffect(() => {
             >.</span></Link> 
             </div>
             <div className="menu" onClick={handleMenuClick}>
-                <div className="line1" ref={line1}></div>
-                <div className="line2" ref={line2}></div>
+                <div className="line1" ref={line1} style={{backgroundColor: burgerColor}}></div>
+                <div className="line2" ref={line2} style={{backgroundColor: burgerColor}}></div>
             </div>
             <div className="menu-page" ref={menuRef} onClick={handleMenuClick}>
                 <div className="menu-links">
