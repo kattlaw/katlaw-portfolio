@@ -13,7 +13,7 @@ const Footer = () => {
                 <a href="mailto: katherine.law2@gmail.com"><AiOutlineMail /></a>
             </div>
             <div className="footer-info">
-                <BiCopyright /> 2022 Designed by Katherine Law
+                <BiCopyright /> 2023 Built by Katherine Law
             </div>
         </div>
     )

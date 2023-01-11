@@ -1,6 +1,6 @@
 import './main.css';
 import { AiOutlineLoading } from 'react-icons/ai';
-import { BsArrowDownCircle, BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { FaSlash } from 'react-icons/fa';
 import { BiDownArrow, BiRightArrow, BiUpArrow} from 'react-icons/bi';
@@ -15,19 +15,18 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Main = () => {
+
     //parallax background shapes on mousemove
     document.addEventListener("mousemove", parallax);
+
     function parallax(e) {
-    this.querySelectorAll(".layer").forEach((layer) => {
-    const speed = layer.getAttribute("data-speed");
-
-    const x = (window.innerWidth - e.pageX * speed) / 90 ;
-    const y = (window.innerHeight - e.pageY * speed) / 90;
-
-    layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-
-  });
-}
+        this.querySelectorAll(".layer").forEach((layer) => {
+        const speed = layer.getAttribute("data-speed");
+        const x = (window.innerWidth - e.pageX * speed) / 100 ;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+    };
 
     //gsap animation 
     const titleTl = gsap.timeline();
@@ -46,14 +45,12 @@ const Main = () => {
             titleTl.from('.title', {
                 opacity: 0,
                 ease: "sine.inOut",
-                duration: 1,
-               
+                duration: 1,  
             });
             titleTl.from('.pdf-button', {
                 opacity: 0,
                 ease: "sine.inOut",
-                duration: 1,
-                
+                duration: 1, 
             });
             titleTl.from('.page-links a', {
                 opacity: 0,
@@ -68,10 +65,9 @@ const Main = () => {
                 scale: 1.2,
                 y: -1000,
             })
-
         })  
             return () => ctx.revert()
-        
+
     },[titleTl]);
 
     const spanTl = gsap.timeline(({
@@ -79,17 +75,12 @@ const Main = () => {
             id: "main",
             start: "center bottom",
             end: "bottom bottom",
-         
-            //markers: true
-          
-            //toggleActions: "play pause resume reset",
         }
     }));
    
     useEffect(() => {
 
         const ctx = gsap.context(() => {
-
             spanTl.from(".intro-heading", {
                 opacity: 0,
                 ease: "power1",
@@ -145,8 +136,6 @@ const Main = () => {
         scrollTrigger: {
            trigger: ".intro-scroll-line",
            start: "center",
-           
-            //toggleActions: "play pause resume reset",
         }
     }));
 
@@ -157,36 +146,31 @@ const Main = () => {
             secondTl.from(".intro-background", {
                 ease: "power1.in",
                 duration: 1.2,
-                x: "1000",
-          
+                x: "1200",
             });
             secondTl.from(".intro-projects", {
                 opacity: 0,
                 ease: "power1.in",
                 duration: 1.2,
                 x: "-1000",
-           
             });
             secondTl.from(".intouch", {
                 opacity: 0,
                 ease: "power1",
                 duration: 1,
                 x: "-100",
-            
             });
             secondTl.from(".intouch-line", {
                 opacity: 0,
                 ease: "power1",
                 duration: 1,
                 x: "-100",
-        
             });
             secondTl.from(".intouch-resume", {
                 opacity: 0,
                 ease: "power1",
                 duration: 1,
-                x: "0",
-                
+                x: "0",  
             })
         })
 
@@ -216,7 +200,7 @@ const Main = () => {
                 Web Developer
             </div>
             <div className="pdf-button">
-                <Link to="/about"><button>About Me</button><CgArrowLongRight className="right-arrow"/></Link></div>
+                <Link to="/about"><button>Get Resume</button><CgArrowLongRight className="right-arrow"/></Link></div>
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
@@ -227,7 +211,6 @@ const Main = () => {
                 <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
                 <a href="mailto: katherine.law2@gmail.com"><FiMail /></a>
             </div>
-            <div className="arrow"><a href="#intro-section"><BsArrowDownCircle/></a></div>
             <div className="mouse-scroll" ref={mouse}>
             <a href="#intro-section"> scroll </a>
             </div>
@@ -276,7 +259,7 @@ const Main = () => {
                 <div className="intro-background"></div>
                 <div className="intro-projects">
                     <p>
-                        Attention to detail and creativty are both important to me. I focus on combining programming technologies and designs to produce appealing user-friendly interfaces for practical web applications. See some of my work <button className="button-work"><Link to="/projects">here.</Link></button>
+                        Attention to detail and creativty are both important to me. I focus on combining programming technologies and designs to produce practical websites and applications. See some of my work <button className="button-work"><Link to="/projects">here.</Link></button>
                     </p>
                 </div>
            </div>
@@ -289,7 +272,7 @@ const Main = () => {
                 <div className="intouch-resume">
                     Check out a <span className="underlined"><Link to="/resume"> brief summary of my resume.</Link><div className="highlight"></div></span>
                 <div className="connect-info">
-                    Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> Feel free to send me a note!</a><div className="highlight"></div></span>
+                    Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> Feel free to get in touch!</a><div className="highlight"></div></span>
                 </div>
                 <div className="connect-info-two"> 
                     I am available for <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> freelance and full-time employment.</a><div className="highlight"></div></span>

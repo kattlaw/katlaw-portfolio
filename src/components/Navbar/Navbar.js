@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import { gsap } from "gsap";
 import './navbar.css';
+import { BsArrowDownCircle, BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 
 const Navbar = () => {
 
@@ -87,6 +89,11 @@ useEffect(() => {
                         <li><Link to="/resume">Resume</Link></li>
                     </ul>
                 </div>
+                <div className="menu-socials">
+                <a href="http://github.com/kattlaw"><BsGithub /></a>
+                <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
+                <a href="mailto: katherine.law2@gmail.com"><FiMail /></a>
+            </div>
             </div>
         </div>    
     )

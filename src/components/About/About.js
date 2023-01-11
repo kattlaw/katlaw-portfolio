@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import snorkel from '../../assets/images/snorkel.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import me from '../../assets/images/inbaja.jpeg';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,7 +15,6 @@ const About = () => {
 
     useEffect(() => {
        
-
         const ctx = gsap.context(() => {
             aboutTl.from(".heading-background", {
                 ease: "power1.in",
@@ -41,13 +39,6 @@ const About = () => {
                 ease: "power1",
                 duration: 1,
                 x: "-100"
-            });
-            aboutTl.from(".about-image", {
-                opacity: 0,
-                ease: "power1.inOut",
-                duration: 1,
-                x:"0",
-               
             });
             aboutTl.from(".info-one", {
                 opacity: 0,
@@ -78,9 +69,8 @@ const About = () => {
             trigger: "#about",
             start: "15% top",
             end: "bottom bottom",
-            scrub: 2,
             //markers: true,
-            //toggleActions: "play pause resume reset",
+            toggleActions: "play none none none",
         }
        
     }));
@@ -90,28 +80,28 @@ const About = () => {
             mainTl.from(".info-text", {
                 opacity: 0,
                 ease: "power1.in",
-                delay: 2,
-                duration: 2,
+                delay: 1,
+                duration: 1,
             });
             mainTl.from(".snorkel", {
                 opacity: 0,
                 ease:"power1.in",
-                duration:1,
-                delay: 2
+                duration:.5,
+                delay: .5
             });
             mainTl.from(".more-info-line", {
                 opacity: 0,
-                duration: 2,
+                duration: .5,
                 ease: "power1.in",
                 x: "400",
-                delay: 1
+                delay: .5
             });
             mainTl.from(".more-info p", {
                 opacity: 0,
-                duration: 2,
+                duration: .5,
                 ease: "power1.in",
                 x: "0",
-                delay: 1
+                delay: .5
             })
         })
             return () => ctx.revert()
@@ -120,15 +110,10 @@ const About = () => {
     return (
         <div id="about">
             <div className="heading-background"></div>
-            <h1 className="about-heading">About me<span style={{color: "#78c4c8"}}>.</span></h1>
+                <h1 className="about-heading">About me<span style={{color: "#78c4c8"}}>.</span></h1>
             <div className="heading-line"></div>
             <div className="about-info">Just a girl who is <span style={{color: "#78c4c8"}}> pursing a career </span> in tech while having fun<span style={{color: "#78c4c8"}}> writing code</span>.</div>
-            <div className="about-image">
-               <img src={me} alt="katherine in Baja" />
-            
-            </div>
             <div className="info-container">
-    
                 <div className="info-one"></div>
                 <div className="info-two"></div>
                 <div className="scroll-down">Scroll
@@ -137,17 +122,16 @@ const About = () => {
                 <div className="info-background">
                     <div className="info-text">
                         <p>
-                            My tech journey started from my love for puzzles. I often found myself engrossed in challenging mind-games, and have always wanted to explore my creative-side as well. So, I took a leap of faith and started down a new career path.
+                            My tech journey started from my love for all kinds of puzzles. I often found myself engrossed in challenging mind-games. On top of that, I have always wanted to explore my creative-side as well. So, I took a leap of faith and started down a new career path.
                         </p>
                         <p>
-                            I attended NuCamp's Full Stack Web and Mobile Development program and graduated in July 2022.
+                            I attended NuCamp's Full Stack Web and Mobile Development bootcamp program and graduated in July 2022. Since then, I have been honing my skills and creating side projects. 
                         </p>
                         <p>
-                            Needless to say, this puzzle-lover has found web design to be a perfect fit, and I am beyond thrilled to continue with my journey.
+                            Needless to say, this puzzle-lover has found web development to be a perfect fit, and I am beyond thrilled to continue with my journey.
                         </p>
                     </div>
                 </div>
-                
                 <div className="snorkel">
                     <img src={snorkel} alt="Katherine snorkeling in USVI" />
                 </div>

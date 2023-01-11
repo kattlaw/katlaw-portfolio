@@ -4,7 +4,6 @@
     margin-top: 4rem;
 }
 
-
 .projects-heading {
     text-align: left;
     z-index: 1;
@@ -61,7 +60,6 @@
     justify-content: center;
     margin-top: -15rem;
     margin-left: 27rem;
-
 }
 
 .code {
@@ -220,7 +218,6 @@
 .show-more {
     font-family: 'Open Sans', sans-serif;
     margin-left: 4rem;
-  
 }
 
 .show-more button {
@@ -248,7 +245,9 @@
 }
 
 
-/*-----MEDIA QUERIES----*/
+/*-- MEDIA QUERIES --*/
+
+/*--Small/Medium Screens--*/
 @media only screen and (min-width:576px) and (max-width: 945px){
     .projects-scroll {
         margin-left: 10rem;
@@ -292,6 +291,7 @@
     }
 }
 
+/*--Extra Small/Small Screens--*/
 @media only screen and (min-width: 300px) and (max-width: 575px) {
     
     .projects-background {
@@ -375,6 +375,4 @@
     .show-more p a {
         font-size: 1.2rem;
     }
-
-
 }

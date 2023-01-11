@@ -190,14 +190,14 @@ const Resume = () => {
                     <div className="content">
                         <h2>2011 - 2015 </h2>
                         <h3>Frederick, MD</h3>
-                        <p><span>Special Education Instructor</span> at Tuscarora HS.</p>
+                        <p><span>Special Education Instructor</span> for Frederick County Public Schools.</p>
                     </div>
                 </div>
                 <div className="container-right">
                     <div className="content">
                         <h2>2012 - 2015</h2>
                         <h3>Frederick, MD</h3>
-                        <p><span>Head Varsity Softball Coach</span> for Tuscarora HS.</p>
+                        <p><span>Head Varsity Softball Coach</span> and Assistant Varsity Soccer Coach for Frederick County Public Schools.</p>
                     </div>
                 </div>
                 <div className="container-left">
@@ -218,7 +218,7 @@ const Resume = () => {
                     <div className="content">
                         <h2>2019 - 2020</h2>
                         <h3>Washington, D.C.</h3>
-                        <p><span>Personal Trainer</span> and <span>exercise program prescriber</span> at One to One Fitness.</p>
+                        <p><span>Personal Trainer</span> and <span>exercise program writer</span> at One to One Fitness.</p>
                     </div>
                 </div>
                 <div className="container-right">

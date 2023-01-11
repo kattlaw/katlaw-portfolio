@@ -221,8 +221,7 @@
 .content h2 {
     color: #78c4c8;
     font-size: 1.8rem;
-    margin-top: -1rem;
-    
+    margin-top: -1rem;  
 }
 
 .content h3 {
@@ -240,8 +239,9 @@
 }
 
 
-/* media queries */
+/*--MEDIA QUERIES--*/
 
+/*--Small/Medium Screens--*/
 @media only screen and (min-width: 576px) and (max-width: 850px) {
 
     .resume-info {
@@ -262,6 +262,7 @@
     }
 }
 
+/*--Extra Small/Small Screens--*/
 @media only screen and (min-width: 300px) and (max-width: 575px) {
     
     .resume-background {
@@ -312,11 +313,10 @@
         float: none;
         margin-left: 5rem;
         margin-top: -8rem;
-
     }
 
     .timeline-container {
-        padding-bottom: 10rem;
+        padding-bottom: 1rem;
         margin-top: 1rem;
     }
 

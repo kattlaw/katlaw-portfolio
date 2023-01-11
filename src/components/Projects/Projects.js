@@ -54,10 +54,7 @@ const Projects = () => {
             return () => ctx.revert()
 
     }, []);
-
-     
-
-     
+ 
     useLayoutEffect(() => {
         const tlTwo = gsap.timeline({
             scrollTrigger: {
@@ -66,9 +63,7 @@ const Projects = () => {
                 end: "bottom bottom",
                 ease: "sine.out",
                 toggleActions: "play none none none",
-                //markers: true,
-           
-               
+                //markers: true, 
             },
         });
 
@@ -131,7 +126,7 @@ const Projects = () => {
                     </div>
                     <div className="project-one-info">
                         <h3>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></h3>
-                        A mock restaurant app built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
+                        A restaurant web page built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
                         coded using React Context. This site is also mobile responsive.  
                     <br />
                         <div className="code-info">
@@ -145,7 +140,7 @@ const Projects = () => {
                     </div>
                     <div className="project-two-info">
                        <h3>S<span className="underline">t. John Travel.<div className="highlights"></div></span></h3>
-                        A mock travel app built with HTML, Javascript, CSS, React, Reactstrap, 
+                        A travel web page built with HTML, Javascript, CSS, React, Reactstrap, 
                         Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness, animations, and a ton of beautiful pictures.
                     <br />
                          <div className="code-info">
@@ -158,7 +153,7 @@ const Projects = () => {
                     </div>
                     <div className="project-three-info">
                         <h3>T<span className="underline">ic Tac Toe.<div className="highlights"></div></span></h3>
-                        This app was built with HTML, Javascript, CSS, and React.
+                        This game was built with HTML, Javascript, CSS, and React.
                         Features include: next turn prompter, named winner/if resulted in a tie, and a game reset button. 
                     <br />
                         <div className="code-info">
