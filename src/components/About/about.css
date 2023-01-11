@@ -1,6 +1,5 @@
 #about {
     background-color: #ebeff0;
-    width: 100vw;
     margin-top: 4rem;
 }
 
@@ -46,7 +45,6 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     width: 60%;
-
 }
 
 .info-container {
@@ -102,6 +100,42 @@
     padding-bottom: 10px;
 }
 
+.timeline-button button {
+    color: #222d3e;
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    width: 100px;
+    height: 45px;
+    background-color:#78c4c8;
+    cursor: hand;
+    text-align: center;
+    position: relative;
+    transition: all .3s ease-in-out;  
+}
+
+.timeline-button button:hover{
+    cursor: pointer;
+    margin-right: 9px;
+    color:#ebeff0;
+}
+
+.timeline-arrow  {
+    font-size: 1.5rem;
+    color: #222d3e;
+    position: absolute;
+    z-index: 1;
+    margin-left: -.8rem;
+    padding-top: .6rem;
+    transition: .3s;
+}
+  
+.timeline-arrow:hover {
+    transform: translateX(9px);
+}
+   
 .scroll-down {
     grid-area: 1/1;
     position: absolute;
@@ -185,7 +219,7 @@
     }
 
     .scroll-line {
-        height: 260px;
+        height: 150px;
     }
 
     .info-text {

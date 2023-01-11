@@ -86,7 +86,6 @@ useEffect(() => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/projects">Work</Link></li>
-                        <li><Link to="/resume">Resume</Link></li>
                     </ul>
                 </div>
                 <div className="menu-socials">

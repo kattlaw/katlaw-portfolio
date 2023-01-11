@@ -1,5 +1,7 @@
 import './about.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { CgArrowLongRight } from 'react-icons/cg';
 import snorkel from '../../assets/images/snorkel.jpeg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -125,12 +127,19 @@ const About = () => {
                             My tech journey started from my love for all kinds of puzzles. I often found myself engrossed in challenging mind-games. On top of that, I have always wanted to explore my creative-side as well. So, I took a leap of faith and started down a new career path.
                         </p>
                         <p>
-                            I attended NuCamp's Full Stack Web and Mobile Development bootcamp program and graduated in July 2022. Since then, I have been honing my skills and creating side projects. 
+                            I attended NuCamp Full Stack Web and Mobile Development bootcamp and graduated in July 2022. I am inspired by both the creative and analytical sides of programming, and have set focus on using foundations I have built to further hone my skills.
                         </p>
                         <p>
-                            Needless to say, this puzzle-lover has found web development to be a perfect fit, and I am beyond thrilled to continue with my journey.
+                            Needless to say, this puzzle-lover has found web development to be a perfect fit.
                         </p>
+                        <p style={{fontSize:"1rem"}}>
+                            Feel free to check out more about my background!
+                        </p>
+                        <div className="timeline-button">
+                        <Link to="/resume"><button>Let's go!</button><CgArrowLongRight className="timeline-arrow"/></Link>
+                        </div>
                     </div>
+                    
                 </div>
                 <div className="snorkel">
                     <img src={snorkel} alt="Katherine snorkeling in USVI" />

@@ -122,7 +122,7 @@ const Resume = () => {
     return (
         <div id="resume">
             <div className="resume-background"></div>
-            <h1 className="resume-heading">My resume<span style={{color:"#78c4c8"}}>.</span></h1>
+            <h1 className="resume-heading">A bit more<span style={{color:"#78c4c8"}}>.</span></h1>
             <div className="resume-line"></div>
             <div className="resume-subtitle">
                 <h2><span>A look</span> at some <span>brief career highlights</span>  <span></span> and <span>educational</span> milestones.</h2>

@@ -200,11 +200,10 @@ const Main = () => {
                 Web Developer
             </div>
             <div className="pdf-button">
-                <Link to="/about"><button>Get Resume</button><CgArrowLongRight className="right-arrow"/></Link></div>
+                <Link to="/about"><button>Resume</button><CgArrowLongRight className="right-arrow"/></Link></div>
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
-                <Link to="/resume">Resume<span style={{color:"#78c4c8"}}>.</span></Link>
             </div>
             <div className="title-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>
@@ -270,7 +269,7 @@ const Main = () => {
                 <div className="intouch-line"></div>
                 <div className="intouch-wrapper">
                 <div className="intouch-resume">
-                    Check out a <span className="underlined"><Link to="/resume"> brief summary of my resume.</Link><div className="highlight"></div></span>
+                    Check out a <span className="underlined"><Link to="/resume"> brief summary of my background.</Link><div className="highlight"></div></span>
                 <div className="connect-info">
                     Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> Feel free to get in touch!</a><div className="highlight"></div></span>
                 </div>
