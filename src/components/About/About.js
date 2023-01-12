@@ -127,7 +127,7 @@ const About = () => {
                             My tech journey started from my love for all kinds of puzzles. I often found myself engrossed in challenging mind-games. On top of that, I have always wanted to explore my creative-side as well. So, I took a leap of faith and started down a new career path.
                         </p>
                         <p>
-                            I attended NuCamp Full Stack Web and Mobile Development bootcamp and graduated in July 2022. I am inspired by both the creative and analytical sides of programming, and have set focus on using foundations I have built to further hone my skills.
+                            I attended NuCamp Full Stack Web and Mobile Development bootcamp and graduated in July 2022. I am inspired by both the creative and analytical sides of programming, and have set focus on using the foundations I have built to further hone my skills.
                         </p>
                         <p>
                             Needless to say, this puzzle-lover has found web development to be a perfect fit.

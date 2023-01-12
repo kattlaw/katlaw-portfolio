@@ -28,6 +28,21 @@ const Main = () => {
         });
     };
 
+    const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('KLResume.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'KLresume.pdf';
+                alink.click();
+            })
+        })
+    }
+
     //gsap animation 
     const titleTl = gsap.timeline();
     const name = useRef();
@@ -200,7 +215,7 @@ const Main = () => {
                 Web Developer
             </div>
             <div className="pdf-button">
-                <Link to="/about"><button>Resume</button><CgArrowLongRight className="right-arrow"/></Link></div>
+                <Link to="/about"><button onClick={onButtonClick}>Resume</button><CgArrowLongRight className="right-arrow"/></Link></div>
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
@@ -208,7 +223,7 @@ const Main = () => {
             <div className="title-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>
                 <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
-                <a href="mailto: katherine.law2@gmail.com"><FiMail /></a>
+                <a href="mailto:klaw@klawdev.com"><FiMail /></a>
             </div>
             <div className="mouse-scroll" ref={mouse}>
             <a href="#intro-section"> scroll </a>
@@ -271,10 +286,10 @@ const Main = () => {
                 <div className="intouch-resume">
                     Check out a <span className="underlined"><Link to="/resume"> brief summary of my background.</Link><div className="highlight"></div></span>
                 <div className="connect-info">
-                    Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> Feel free to get in touch!</a><div className="highlight"></div></span>
+                    Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:klaw@klawdev.com"> Email me at klaw@klawdev.com</a><div className="highlight"></div></span>
                 </div>
                 <div className="connect-info-two"> 
-                    I am available for <span className="underlined"><a href="mailto:katherine.law2@gmail.com"> freelance and full-time employment.</a><div className="highlight"></div></span>
+                    I am available for <span className="underlined"><a href="mailto:klaw@klawdev.com"> freelance and full-time employment.</a><div className="highlight"></div></span>
                 </div>
                 </div>
                 </div>

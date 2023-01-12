@@ -96,7 +96,7 @@ useEffect(() => {
                 <div className="menu-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>
                 <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
-                <a href="mailto: katherine.law2@gmail.com"><FiMail /></a>
+                <a href="mailto:klaw@klawdev.com"><FiMail /></a>
             </div>
             </div>
         </div>    

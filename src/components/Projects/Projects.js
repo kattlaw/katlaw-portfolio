@@ -126,7 +126,7 @@ const Projects = () => {
                     </div>
                     <div className="project-one-info">
                         <h3>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></h3>
-                        A restaurant web page built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
+                        A mock restaurant web page built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
                         coded using React Context. This site is also mobile responsive.  
                     <br />
                         <div className="code-info">
@@ -140,7 +140,7 @@ const Projects = () => {
                     </div>
                     <div className="project-two-info">
                        <h3>S<span className="underline">t. John Travel.<div className="highlights"></div></span></h3>
-                        A travel web page built with HTML, Javascript, CSS, React, Reactstrap, 
+                        A mock travel web page built with HTML, Javascript, CSS, React, Reactstrap, 
                         Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness, animations, and a ton of beautiful pictures.
                     <br />
                          <div className="code-info">
