@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-socials">
                 <a href="http://github.com/kattlaw"><AiOutlineGithub /></a>
                 <a href="http://www.linkedin.com/in/katlawdev"><AiFillLinkedin /></a>
-                <a href="mailto: katherine.law2@gmail.com"><AiOutlineMail /></a>
+                <a href="mailto:klaw@klawdev.com"><AiOutlineMail /></a>
             </div>
             <div className="footer-info">
                 <BiCopyright /> 2023 Katherine Law
