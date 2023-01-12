@@ -215,7 +215,7 @@ const Main = () => {
                 Web Developer
             </div>
             <div className="pdf-button">
-                <Link to="/about"><button onClick={onButtonClick}>Resume</button><CgArrowLongRight className="right-arrow"/></Link></div>
+                <button onClick={onButtonClick}>Resume</button><CgArrowLongRight className="right-arrow"/></div>
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
