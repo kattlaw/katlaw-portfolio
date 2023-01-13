@@ -160,7 +160,7 @@ const Main = () => {
 
             secondTl.from(".intro-background", {
                 ease: "power1.in",
-                duration: 1.2,
+                duration: 1,
                 x: "1200",
             });
             secondTl.from(".intro-projects", {
@@ -288,7 +288,7 @@ const Main = () => {
                 <div className="intouch-resume">
                     Check out a <span className="underlined"><Link to="/resume"> brief summary of my background.</Link><div className="highlight"></div></span>
                 <div className="connect-info">
-                    Questions, comments, or work opportunities? <span className="underlined"><a href="mailto:klaw@klawdev.com"> Email me at klaw@klawdev.com</a><div className="highlight"></div></span>
+                    Questions, comments, or work opportunities? Get in touch! <span className="underlined" style={{fontWeight:"500"}}><a href="mailto:klaw@klawdev.com"> klaw@klawdev.com</a><div className="highlight"></div></span>
                 </div>
                 <div className="connect-info-two"> 
                     I am available for <span className="underlined"><a href="mailto:klaw@klawdev.com"> freelance and full-time employment.</a><div className="highlight"></div></span>
