@@ -549,6 +549,39 @@
   padding-top: 1rem;
 }
 
+.bottom-resume-button {
+  margin-right: 3rem;
+  margin-top: .2rem;
+  right: 0;
+  position: absolute;
+  border: none;
+  width: 135px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: transparent;
+  color: #ebeff0;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  transition: 4ms linear;
+  text-transform: uppercase;
+}
+
+ .bottom-resume-button:hover {
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+.pdf-icon {
+  font-size: 25px;
+  padding-top: 15px;
+  color: #222d3e;
+  position: absolute;
+  right: 0;
+  margin-right: 10rem;
+  margin-top: -.94rem;
+  
+}
+
 
 /*---MEDIA QUERIES---*/
 
@@ -618,7 +651,14 @@
 
   .connect-info-two {
     font-size: 1rem;
-   
+  }
+
+  .bottom-resume-button {
+    margin-right: .5rem;
+  }
+
+  .pdf-icon {
+    margin-right: 7rem;
   }
 }
 
@@ -752,6 +792,14 @@
 
   .connect-info-two {
     font-size: .9rem;
+  }
+
+  .bottom-resume-button {
+    margin-right: .5rem;
+  }
+
+  .pdf-icon {
+    margin-right: 7rem;
   }
   
  }

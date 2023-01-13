@@ -1,6 +1,6 @@
 import './main.css';
 import { AiOutlineLoading } from 'react-icons/ai';
-import { BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsSlashLg, BsFileEarmarkPdf } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { FaSlash } from 'react-icons/fa';
 import { BiDownArrow, BiRightArrow, BiUpArrow} from 'react-icons/bi';
@@ -29,12 +29,12 @@ const Main = () => {
     };
 
     const onButtonClick = () => {
-        // using Java Script method to get PDF file
+        // method to get PDF file
         fetch('KLResume.pdf').then(response => {
             response.blob().then(blob => {
-                // Creating new object of PDF file
+                // new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
+                // property values
                 let alink = document.createElement('a');
                 alink.href = fileURL;
                 alink.download = 'KLresume.pdf';
@@ -248,23 +248,21 @@ const Main = () => {
                 <span>React</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React Native</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>GSAP</span>
-                <span>React-Redux</span>
+                <span>Redux</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Git</span>
                 <span>Github</span>
-                <span>Node</span>
+                <span>Node.js</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React-Router</span>
                 <span>Express</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>MongoDB</span>
                 <span>REST</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>JSON</span>
                 <span>JQuery</span>
-                <span>Netlify</span>
                 <span>NPM</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Visual Studio</span>
                 <span>Postman</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Expo</span>
-                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span>
-                <span>SCSS</span>  
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span> 
             </div>
             <div className="intro-scroll">Scroll
                 <div className="intro-scroll-line"></div>
@@ -280,7 +278,11 @@ const Main = () => {
            <div className="bottom-container">
                 <div className="intouch">
                     <h1>Let's Connect<span style={{color: "#222d3e"}}>.</span></h1>
+                    <BsFileEarmarkPdf className="pdf-icon" />
+                    <button className="bottom-resume-button"
+                    onClick={onButtonClick}>Resume</button>
                 </div>
+
                 <div className="intouch-line"></div>
                 <div className="intouch-wrapper">
                 <div className="intouch-resume">

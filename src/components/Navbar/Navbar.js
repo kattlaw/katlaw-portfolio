@@ -26,6 +26,21 @@ const Navbar = () => {
     };
     }, []);
 
+    const onButtonClick = () => {
+        // method to get PDF file
+        fetch('KLResume.pdf').then(response => {
+            response.blob().then(blob => {
+                // new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'KLresume.pdf';
+                alink.click();
+            })
+        })
+    }
+
     //gsap animation to open/close side menu bar
     const animation = gsap.timeline({ paused: true, reversed: true })
     const line1 = useRef(null);
@@ -91,6 +106,7 @@ useEffect(() => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/projects">Work</Link></li>
+                        <li><button onClick={onButtonClick}>Resume</button></li>
                     </ul>
                 </div>
                 <div className="menu-socials">
