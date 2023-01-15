@@ -292,9 +292,6 @@ const Main = () => {
                 <div className="connect-info">
                     Questions, comments, or work opportunities? Get in touch! <span className="underlined" style={{fontWeight:"500"}}><a href="mailto:klaw@klawdev.com"> klaw@klawdev.com</a><div className="highlight"></div></span>
                 </div>
-                <div className="connect-info-two"> 
-                    I am available for <span className="underlined"><a href="mailto:klaw@klawdev.com"> freelance and full-time employment.</a><div className="highlight"></div></span>
-                </div>
                 </div>
                 </div>
            </div>

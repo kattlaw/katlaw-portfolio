@@ -541,15 +541,6 @@
 
 }
 
-.connect-info-two {
-  padding-top: 20px;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: .5px;
-  font-weight: 400;
-  font-size: 1rem;
-  padding-top: 1rem;
-}
-
 .bottom-resume-button {
   margin-right: 3rem;
   margin-top: .2rem;
@@ -580,7 +571,6 @@
   right: 0;
   margin-right: 10rem;
   margin-top: -.94rem;
-  
 }
 
 
@@ -631,7 +621,6 @@
 
   .intro-background {
     margin-left: 10rem;
-  
   }
 
   .intro-projects {
@@ -647,10 +636,6 @@
   }
 
   .connect-info {
-    font-size: 1rem;
-  }
-
-  .connect-info-two {
     font-size: 1rem;
   }
 
@@ -801,10 +786,6 @@
   }
 
   .connect-info {
-    font-size: .9rem;
-  }
-
-  .connect-info-two {
     font-size: .9rem;
   }
 
