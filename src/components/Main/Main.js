@@ -88,7 +88,7 @@ const Main = () => {
     const spanTl = gsap.timeline(({
         scrollTrigger: {
             id: "main",
-            start: "center bottom",
+            start: "=+100",
             end: "bottom bottom",
         }
     }));

@@ -666,10 +666,6 @@
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
-  .background-layer .layer {
-    height: auto;
-  }
-
   #zigzag {
     top: 339px;
   }
@@ -763,8 +759,9 @@
 
   .bottom-container {
     width: 90%;
-    padding-left: 0rem;
+    padding-left: 0;
     padding-bottom: 5rem;
+    padding-top: 0;
   }
 
   .intouch-line {
@@ -775,10 +772,16 @@
     color: #ebeff0;
     font-size: 1.3rem;
     margin-left: 1rem;
+    margin-top: 3rem;
+  }
+
+  .intouch h1 {
+    margin-top: 1rem;
   }
 
   .intouch-wrapper {
    margin-left: 1rem;
+   margin-top: -1rem;
   }
 
   .intouch-resume {
@@ -796,6 +799,7 @@
 
   .bottom-resume-button {
     margin-right: .5rem;
+    padding-bottom: 1rem;
   }
 
   .pdf-icon {
