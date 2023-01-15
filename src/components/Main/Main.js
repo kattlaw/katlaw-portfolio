@@ -276,13 +276,15 @@ const Main = () => {
                 </div>
            </div>
            <div className="bottom-container">
+           <BsFileEarmarkPdf className="pdf-icon" />
+               <button 
+                    className="bottom-resume-button"
+                    onClick={onButtonClick}>
+                        Resume
+                </button>
                 <div className="intouch">
                     <h1>Let's Connect<span style={{color: "#222d3e"}}>.</span></h1>
-                    <BsFileEarmarkPdf className="pdf-icon" />
-                    <button className="bottom-resume-button"
-                    onClick={onButtonClick}>Resume</button>
                 </div>
-
                 <div className="intouch-line"></div>
                 <div className="intouch-wrapper">
                 <div className="intouch-resume">

@@ -469,7 +469,6 @@
   border-radius: 5px;
   height: 4px;
   background: #222d3e;
- 
 }
 
 .intouch-wrapper {
@@ -676,12 +675,20 @@
     top: 339px;
   }
 
+  #spring1 {
+    top: 525px
+  }
+
   #spring2 {
-    padding-left: 73%;
+    padding-left: 70%;
+  }
+
+  #right { 
+    top: 185px;
   }
 
   #up {
-    top: 590px;
+    top: 580px;
   }
 
   #backslash {
@@ -807,7 +814,6 @@
 
   .bottom-resume-button {
     margin-right: .5rem;
-    padding-bottom: 1rem;
   }
 
   .pdf-icon {
