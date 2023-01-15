@@ -666,11 +666,7 @@
 /*-- Extra Small Screens --*/
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
-
-  #main {
-    background-attachment: inherit;
-  }
-
+  
   #zigzag {
     top: 339px;
   }
@@ -814,9 +810,11 @@
 
   .bottom-resume-button {
     margin-right: .5rem;
+    margin-top: 1.6rem;
   }
 
   .pdf-icon {
     margin-right: 7rem;
+    margin-top: .5rem;
   }
  }
