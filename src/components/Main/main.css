@@ -217,7 +217,6 @@
   position: absolute;
   bottom: 0;
   margin-left: 1rem;
-  margin-bottom: .5rem;
 }
 
 .title-socials a {
@@ -672,7 +671,7 @@
   #main {
     background-attachment: inherit;
   }
-  
+
   #zigzag {
     top: 339px;
   }
@@ -686,7 +685,7 @@
   }
 
   #backslash {
-    top: 615px;
+    top: 595px;
   }
 
   .main-heading {
@@ -814,5 +813,4 @@
   .pdf-icon {
     margin-right: 7rem;
   }
-  
  }
