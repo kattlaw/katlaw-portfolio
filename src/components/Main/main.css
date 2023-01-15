@@ -2,6 +2,7 @@
   background-color: #222d3e;
   background-repeat: no-repeat; 
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
@@ -668,6 +669,10 @@
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
 
+  #main {
+    background-attachment: inherit;
+  }
+  
   #zigzag {
     top: 339px;
   }
@@ -677,11 +682,11 @@
   }
 
   #up {
-    top: 700px;
+    top: 590px;
   }
 
   #backslash {
-    top: 710px;
+    top: 615px;
   }
 
   .main-heading {
