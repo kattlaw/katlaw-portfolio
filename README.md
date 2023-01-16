@@ -9,8 +9,8 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
-    [Live Site](https://klawdev.com)
 
+[klawdev.com](https://klawdev.com)
 
 ## Built With 
     * React 18.2
