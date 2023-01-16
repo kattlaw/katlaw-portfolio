@@ -259,7 +259,7 @@ const Main = () => {
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>JSON</span>
                 <span>JQuery</span>
                 <span>NPM</span>
-                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Visual Studio</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>VS Code</span>
                 <span>Postman</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Expo</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span> 
