@@ -183,6 +183,8 @@ const Projects = () => {
                       </h3>
                 </button>
                       {showMore && <p>
+                        <a href="https://chatgpt-clone-eight.vercel.app">ChatGPT Clone</a><a href="https://github.com/kattlaw/chatgpt-clone" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <br />
                         <a href="https://github.com/kattlaw/Campsite-React-Project">Campsite Webpage</a>
                         <br />
                         <a href="https://github.com/kattlaw/nucampsiteServer">NuCamp Server</a>
