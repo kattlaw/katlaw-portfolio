@@ -219,6 +219,7 @@ const Main = () => {
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
+                <a href="https://katlawblog.vercel.app">Blog<span style={{color:"#78c4c8"}}>.</span></a>
             </div>
             <div className="title-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>
