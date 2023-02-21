@@ -1,6 +1,6 @@
 import './main.css';
 import { AiOutlineLoading } from 'react-icons/ai';
-import { BsLinkedin, BsGithub, BsSlashLg, BsFileEarmarkPdf } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsSlashLg } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { FaSlash } from 'react-icons/fa';
 import { BiDownArrow, BiRightArrow, BiUpArrow} from 'react-icons/bi';
@@ -243,17 +243,17 @@ const Main = () => {
             </div>
             <div className="tech-stack">
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Javascript</span>
-                <span>HTML</span>
+                <span>Next.js</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>CSS</span>
                 <span>Bootstrap</span>
-                <span>React</span>
-                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React Native</span>
-                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>GSAP</span>
-                <span>Redux</span>
+                <span>React Native</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Typescript</span>
+                <span>GSAP</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Git</span>
                 <span>Github</span>
                 <span>Node.js</span>
-                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>React-Router</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Tailwind</span>
                 <span>Express</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>MongoDB</span>
                 <span>REST</span>
@@ -262,7 +262,7 @@ const Main = () => {
                 <span>NPM</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>VS Code</span>
                 <span>Postman</span>
-                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Expo</span>
+                <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Sanity.io</span>
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span> 
             </div>
             <div className="intro-scroll">Scroll
@@ -277,12 +277,6 @@ const Main = () => {
                 </div>
            </div>
            <div className="bottom-container">
-           <BsFileEarmarkPdf className="pdf-icon" />
-               <button 
-                    className="bottom-resume-button"
-                    onClick={onButtonClick}>
-                        Resume
-                </button>
                 <div className="intouch">
                     <h1>Let's Connect<span style={{color: "#222d3e"}}>.</span></h1>
                 </div>
