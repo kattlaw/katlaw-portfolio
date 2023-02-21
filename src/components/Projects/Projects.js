@@ -1,5 +1,6 @@
 import './projects.css';
 import { useState, useLayoutEffect } from 'react';
+import Blog from '../../assets/images/Blog.png';
 import ZiaMia from '../../assets/images/ZiaMia.png';
 import StJohn from '../../assets/images/stjohn.png';
 import TicTacToe from '../../assets/images/tictactoe.png';
@@ -91,6 +92,12 @@ const Projects = () => {
             });
             tlTwo.from('.project-four-info', {
                  opacity: 0, duration: 1, delay: .1, y: -15
+            });
+            tlTwo.from('.project-five img', {   
+                opacity: 0, duration: 1, delay: .1, 
+            });
+            tlTwo.from('.project-five-info', {
+                 opacity: 0, duration: 1, delay: .1, y: -15
             })
         })
             return () => ctx.revert()
@@ -135,10 +142,26 @@ const Projects = () => {
                                 <a href="https://zia-mia.netlify.app"><BsGlobe2/></a>
                         </div>
                     </div>
+
                     <div className="project-two">
-                        <a href="https://travel-st-john.netlify.app"><img src={StJohn} alt="St. John Travel Website" /></a>
+                        <a href="https://katlawblog.vercel.app"><img src={Blog} alt="Blog site homepage" /></a>
                     </div>
                     <div className="project-two-info">
+                        <h3>B<span className="underline">ereaving Out Loud<span>.</span><div className="highlights"></div></span></h3>
+                        A personal blog built with Next.js, Typescript, Tailwind, and Sanity CMS. Sanity Studio and preview allows for real-time content publishing. Site also includes a comment engine
+                        so users can interact with posts. 
+                    <br />
+                        <div className="code-info">
+                            <a href="https://github.com/kattlaw/my-blog"><AiOutlineGithub /></a>
+                        
+                                <a href="https://katlawblog.vercel.app"><BsGlobe2/></a>
+                        </div>
+                    </div>
+
+                    <div className="project-three">
+                        <a href="https://travel-st-john.netlify.app"><img src={StJohn} alt="St. John Travel Website" /></a>
+                    </div>
+                    <div className="project-three-info">
                        <h3>S<span className="underline">t. John Travel.<div className="highlights"></div></span></h3>
                         A mock travel web page built with HTML, Javascript, CSS, React, Reactstrap, 
                         Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness, animations, and a ton of beautiful pictures.
@@ -148,10 +171,11 @@ const Projects = () => {
                                 <a href="https://travel-st-john.netlify.app"><BsGlobe2 /> </a> 
                         </div>  
                     </div>
-                    <div className="project-three">
+
+                    <div className="project-four">
                         <a href="https://klaw-tic-tac-toe.netlify.app"><img src={TicTacToe} alt="Tic Tac Toe app" /></a>
                     </div>
-                    <div className="project-three-info">
+                    <div className="project-four-info">
                         <h3>T<span className="underline">ic Tac Toe.<div className="highlights"></div></span></h3>
                         This game was built with HTML, Javascript, CSS, and React.
                         Features include: next turn prompter, named winner/if resulted in a tie, and a game reset button. 
@@ -161,10 +185,11 @@ const Projects = () => {
                                 <a href="https://klaw-tic-tac-toe.netlify.app"><BsGlobe2 /></a>
                         </div>
                     </div>
-                    <div className="project-four">
+
+                    <div className="project-five">
                         <a href="https://katlaw-quote-gen.netlify.app"><img src={Quotes} alt="Quote Generator App" /></a>
                     </div>
-                    <div className="project-four-info">
+                    <div className="project-five-info">
                         <h3>Q<span className="underline">uote Generator.<div className="highlights"></div></span></h3>
                         This project was built with HTML, Javascript, CSS, and React.
                         Quote button generator takes an array of quotes and renders them randomly. With each render, the quote and background colors also change at random.
@@ -174,6 +199,7 @@ const Projects = () => {
                                 <a href="https://katlaw-quote-gen.netlify.app"><BsGlobe2 /> </a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <section id="more-projects">
