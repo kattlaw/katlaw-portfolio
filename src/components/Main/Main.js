@@ -222,8 +222,8 @@ const Main = () => {
                 <a href="https://bereavingoutloud.com" target="_blank">Blog<span style={{color:"#78c4c8"}}>.</span></a>
             </div>
             <div className="title-socials">
-                <a href="http://github.com/kattlaw"><BsGithub /></a>
-                <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
+                <a href="http://github.com/kattlaw" target="_blank"><BsGithub /></a>
+                <a href="http://www.linkedin.com/in/katlawdev" target="_blank"><BsLinkedin /></a>
                 <a href="mailto:klaw@klawdev.com"><FiMail /></a>
             </div>
             <div className="mouse-scroll" ref={mouse}>
