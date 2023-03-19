@@ -106,13 +106,13 @@ useEffect(() => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/projects">Work</Link></li>
-                        <li><a href="https://katlawblog.vercel.app">Blog</a></li>
+                        <li><a href="https://bereavingoutloud.com" target="_blank">Blog</a></li>
                         <li><button onClick={onButtonClick}>Resume</button></li>
                     </ul>
                 </div>
                 <div className="menu-socials">
-                <a href="http://github.com/kattlaw"><BsGithub /></a>
-                <a href="http://www.linkedin.com/in/katlawdev"><BsLinkedin /></a>
+                <a href="http://github.com/kattlaw" target="_blank"><BsGithub /></a>
+                <a href="http://www.linkedin.com/in/katlawdev" target="_blank"><BsLinkedin /></a>
                 <a href="mailto:klaw@klawdev.com"><FiMail /></a>
             </div>
             </div>

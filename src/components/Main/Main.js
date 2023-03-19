@@ -215,11 +215,11 @@ const Main = () => {
                 Web Developer
             </div>
             <div className="pdf-button">
-                <button onClick={onButtonClick}>Resume</button><CgArrowLongRight className="right-arrow"/></div>
+                <button onClick={onButtonClick}>Download Resume</button><CgArrowLongRight className="right-arrow"/></div>
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
-                <a href="https://katlawblog.vercel.app">Blog<span style={{color:"#78c4c8"}}>.</span></a>
+                <a href="https://bereavingoutloud.com" target="_blank">Blog<span style={{color:"#78c4c8"}}>.</span></a>
             </div>
             <div className="title-socials">
                 <a href="http://github.com/kattlaw"><BsGithub /></a>

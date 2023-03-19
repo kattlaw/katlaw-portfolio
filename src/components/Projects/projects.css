@@ -189,7 +189,6 @@
 }
 
 
-
 .project-one, .project-two, .project-three {
     transition-duration: 1s;   
 }
@@ -197,7 +196,6 @@
 .project-one:hover, .project-two:hover, .project-three:hover {
     scale: 1.02;
 }
-
 
 .show-more {
     margin-left: 4rem;

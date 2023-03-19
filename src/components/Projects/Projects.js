@@ -115,7 +115,7 @@ const Projects = () => {
 
                 <div className="projects-grid">
                     <div className="project-one">
-                        <a href="https://zia-mia.netlify.app"><img src={ZiaMia} alt="Zia Mia Restaurant Website" /></a>
+                        <a href="https://zia-mia.netlify.app" target="_blank"><img src={ZiaMia} alt="Zia Mia Restaurant Website" /></a>
                     </div>
                     <div className="project-one-info">
                         <h3>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></h3>
@@ -124,14 +124,14 @@ const Projects = () => {
                             </div>
                     <br />
                         <div className="code-info">
-                            <a href="https://github.com/kattlaw/restaurant-site">GitHub</a>
+                            <a href="https://github.com/kattlaw/restaurant-site" target="_blank">GitHub</a>
                             <div> | </div>
-                            <a href="https://zia-mia.netlify.app">Live Site</a>
+                            <a href="https://zia-mia.netlify.app" target="_blank">Live Site</a>
                         </div>
                     </div>
 
                     <div className="project-two">
-                        <a href="https://bereavingoutloud.com"><img src={Blog} alt="Blog site homepage" /></a>
+                        <a href="https://bereavingoutloud.com" target="_blank"><img src={Blog} alt="Blog site homepage" /></a>
                     </div>
                     <div className="project-two-info">
                    
@@ -144,14 +144,14 @@ const Projects = () => {
                     </div>
                     <br />
                     <div className="code-info">
-                            <a href="https://github.com/kattlaw/my-blog"> Github</a>
+                            <a href="https://github.com/kattlaw/my-blog" target="_blank"> Github</a>
                             <div> | </div>
-                                <a href="https://bereavingoutloud.com"> Live Site</a>
+                                <a href="https://bereavingoutloud.com" target="_blank"> Live Site</a>
                         </div>
                     </div>
 
                     <div className="project-three">
-                        <a href="https://travel-st-john.netlify.app"><img src={StJohn} alt="St. John Travel Website" /></a>
+                        <a href="https://travel-st-john.netlify.app" target="_blank"><img src={StJohn} alt="St. John Travel Website" /></a>
                     </div>
                     <div className="project-three-info">
                        <h3>S<span className="underline">t. John Travel.<div className="highlights"></div></span></h3>
@@ -160,9 +160,9 @@ const Projects = () => {
                     </div>
                     <br />
                          <div className="code-info">
-                            <a href="https://github.com/kattlaw/stjohn-travel">Github</a>
+                            <a href="https://github.com/kattlaw/stjohn-travel" target="_blank">Github</a>
                             <div> | </div>
-                                <a href="https://travel-st-john.netlify.app">Live Site</a> 
+                                <a href="https://travel-st-john.netlify.app" target="_blank">Live Site</a> 
                         </div>  
                     </div>
 
@@ -176,22 +176,22 @@ const Projects = () => {
                       </h3>
                 </button>
                       {showMore && <p>
-                        <a href="https://chatgpt-clone-eight.vercel.app">Codex Clone</a><a href="https://github.com/kattlaw/chatgpt-clone" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <a href="https://chatgpt-clone-eight.vercel.app" target="_blank">Codex Clone</a><a href="https://github.com/kattlaw/chatgpt-clone" target="_blank" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
                         <br />
-                        <a href="https://katlaw-quote-gen.netlify.app">Quote Generator</a><a href="https://github.com/kattlaw/random-quotes-generator" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <a href="https://katlaw-quote-gen.netlify.app" target="_blank">Quote Generator</a><a href="https://github.com/kattlaw/random-quotes-generator" target="_blank" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
                         <br />
-                        <a href="https://klaw-tic-tac-toe.netlify.app">Tic-Tac-Toe Game</a><a href="https://github.com/kattlaw/tic-tac-toe" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <a href="https://klaw-tic-tac-toe.netlify.app" target="_blank">Tic-Tac-Toe Game</a><a href="https://github.com/kattlaw/tic-tac-toe" target="_blank" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
                         <br />
-                        <a href="https://github.com/kattlaw/Campsite-React-Project">Campsite Webpage</a>
+                        <a href="https://github.com/kattlaw/Campsite-React-Project" target="_blank">Campsite Webpage</a>
                         <br />
-                        <a href="https://github.com/kattlaw/nucampsiteServer">NuCamp Server</a>
+                        <a href="https://github.com/kattlaw/nucampsiteServer" target="_blank">NuCamp Server</a>
                         <br />
-                        <a href="https://github.com/kattlaw/React-Native-NuCamp-App">Mobile NuCamp Site</a>
+                        <a href="https://github.com/kattlaw/React-Native-NuCamp-App" target="_blank" >Mobile NuCamp Site</a>
                         <br />
-                        <a href="https://kl-color-guess-game.netlify.app">Color Game</a><a href="https://github.com/kattlaw/Color-Guessing-Game" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <a href="https://kl-color-guess-game.netlify.app" target="_blank">Color Game</a><a href="https://github.com/kattlaw/Color-Guessing-Game" target="_blank" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
                         <br />
-                        <a href="https://emoji-match-game.netlify.app/">Emoji Game</a>
-                        <a href="https://github.com/kattlaw/matching-game" style={{color: "#222d3e", paddingLeft:"15px"}}><AiOutlineGithub /></a>
+                        <a href="https://emoji-match-game.netlify.app/" target="_blank">Emoji Game</a>
+                        <a href="https://github.com/kattlaw/matching-game" target="_blank" style={{color: "#222d3e", paddingLeft:"15px"}}><AiOutlineGithub /></a>
                         </p>}
                   
                 </div>
