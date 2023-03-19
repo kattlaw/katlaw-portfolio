@@ -112,9 +112,14 @@
     color: #222d3e;
 }
 
+.project-description {
+    padding-top: 1rem;
+    padding: .5rem;
+}
+
 .code-info {
-    margin-top: 1rem;
     display: flex;
+    margin-top: 1rem;
     align-items: center;
     justify-content: center;
 }
@@ -122,9 +127,9 @@
 .code-info a {
     color: #222d3e;
     text-decoration: none;
-    font-size: 2rem;
-    font-size: 1.5rem;
+    font-size: .8rem;
     padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .code-info a:hover {
@@ -133,113 +138,66 @@
 
 .project-one {
     grid-area: 1/1;
-    align-items: center;
-    justify-items: center;
-    padding-top: 5px; 
 }
 
 .project-one-info {
     grid-area: 1/2; 
-    margin: 0 auto;
-    width: 80%;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
     font-family: 'Open Sans';
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: .5px;
     color:#222d3e;
 }
 
 .project-two {
-    grid-area: 2/2;
-    place-self: center;
-    margin: 0 auto;
+    grid-area: 2/1;
     margin-top: 5rem;
 }
 
 .project-two-info {
-    grid-area: 2/1; 
-    width: 80%;
+    grid-area: 2/2; 
+    width: 90%;
     font-family: 'Open Sans';
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: .5px;
     color:#222d3e;
-    margin: 0 auto;
-    text-align: left;
-    z-index: 1;
+    align-items: center;
+    justify-content: center;
     margin-top: 5rem;
-    margin-left: 3rem; 
+
 }
 
 .project-three {
     grid-area: 3/1;
     place-self: center;
-    margin-top: 5rem; 
+    margin-top: 5rem;
+    margin-bottom: 5rem; 
 }
 
 .project-three-info {
     grid-area: 3/2;
-    width: 80%;
+    width: 90%;
     font-family: 'Open Sans';
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: .5px;
     color:#222d3e;
-    margin: auto;
     margin-top: 5rem;
-    margin-left: 3rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.project-four {
-    grid-area: 4/2;
-    place-self: center;
-    margin: 0 auto;
-    margin-top: 5rem;
-}
 
-.project-four-info {
-    grid-area: 4/1;
-    width: 80%;
-    font-family: 'Open Sans';
-    font-size: 1.2rem;
-    letter-spacing: .5px;
-    color:#222d3e;
-    margin: 0 auto;
-    text-align: left;
-    z-index: 1;
-    margin-top: 5rem;
-    margin-left: 3rem; 
-}
 
-.project-five {
-    grid-area: 5/1;
-    place-self: center;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-
-.project-five-info {
-    grid-area: 5/2;
-    width: 80%;
-    font-family: 'Open Sans';
-    font-size: 1.2rem;
-    letter-spacing: .5px;
-    color:#222d3e;
-    text-align: auto;
-    margin-top: 5rem;
-    margin-left: 3rem;
-    margin-bottom: 5rem;
-}
-
-.project-one, .project-two, .project-three, .project-four, .project-five {
+.project-one, .project-two, .project-three {
     transition-duration: 1s;   
 }
 
-.project-one:hover, .project-three:hover, .project-four:hover, .project-five:hover {
-    filter:brightness(120%);
+.project-one:hover, .project-two:hover, .project-three:hover {
     scale: 1.02;
 }
 
-.project-two:hover {
-    scale: 1.02;
-}
 
 .show-more {
     margin-left: 4rem;
@@ -288,25 +246,13 @@
         width: 85%;
     }
 
-    .project-one-info, .project-two-info, .project-three-info, .project-four-info, .project-five-info {
-        font-size: 1.1rem;
-        width: 90%;
-        margin-left: 1rem;
-    }
-
     .project-two-info {
         margin-top: 7rem;
-        width: 100%;
+      
     }
 
     .project-three-info {
         margin-top: 7rem;
-    }
-
-    .project-five-info {
-        margin-top: 7rem;
-        width: 85%;
-        margin-bottom: 2rem;
     }
 
     .projects-grid h3 {
@@ -368,26 +314,18 @@
         width: 100%;
     }
 
-    .project-one, .project-two, .project-three, .project-four {
+    .project-one, .project-two, .project-three {
       align-items: center;
       margin: 2rem;
-     
     }
 
-    .project-one-info, .project-two-info, .project-three-info, .project-four-info {
+    .project-one-info, .project-two-info, .project-three-info {
         text-align: center;
         margin: 0 auto;
     }
 
-    .project-five {
-        align-items: center;
-        margin: 2rem;
-    }
-
-    .project-five-info {
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 5rem;
+    .project-three-info {
+        margin-bottom: 3rem;
     }
 
     #more-projects {
@@ -408,6 +346,6 @@
     }
 
     .show-more p a {
-        font-size: 1.2rem;
-    }
+        font-size: 1rem;
+    } 
 }

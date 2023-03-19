@@ -3,10 +3,7 @@ import { useState, useLayoutEffect } from 'react';
 import Blog from '../../assets/images/Blog.png';
 import ZiaMia from '../../assets/images/ZiaMia.png';
 import StJohn from '../../assets/images/stjohn.png';
-import TicTacToe from '../../assets/images/tictactoe.png';
-import Quotes from '../../assets/images/quotes.png';
 import { AiOutlineGithub } from 'react-icons/ai';
-import { BsGlobe2 } from 'react-icons/bs';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -22,33 +19,33 @@ const Projects = () => {
         const ctx = gsap.context(() => {
             workTl.from(".projects-background", {
                 ease: "power1.in",
-                duration: 1,
+                duration: .6,
                 x: "1000",
             });
             workTl.from(".projects-heading", {
                 opacity: 0,
                 ease: "power1.inOut",
-                duration: 1,
+                duration: .6,
                 x:"-10",
                 y:"-10"
             });
             workTl.from('.projects-line', {
                 opacity: 0,
                 ease: "power1.in",
-                duration: 1,
+                duration: .6,
                 x: "1000",
             });
             workTl.from('.code', {
                 opacity: 0,
                 ease:"power1.in",
-                duration: 1,
+                duration: .6,
                 x:"1000",
             }) 
             workTl.from('.projects-scroll', {
                 opacity: 0,
                 ease:"power1",
                 scale: 1.2,
-                duration: 1,
+                duration: .6,
                 y:"-300"
             });
         })
@@ -70,35 +67,23 @@ const Projects = () => {
 
         const ctx = gsap.context(() => {
             tlTwo.from('.project-one img', {
-                opacity: 0, duration: 1, 
+                opacity: 0, duration: .8, 
             });
             tlTwo.from('.project-one-info', {
-                 opacity: 0, duration: 1, y: -15
+                 opacity: 0, duration: .8, y: -15
             })
             tlTwo.from('.project-two img', {
-                 opacity: 0, duration: 1, delay: .1, 
+                 opacity: 0, duration: .8, delay: .1, 
             });
             tlTwo.from('.project-two-info', {
-                opacity: 0, duration: 1, delay: .1, y: -15
+                opacity: 0, duration: .8, delay: .1, y: -15
             });
             tlTwo.from('.project-three img', {
-                 opacity: 0, duration: 1, delay: .1, 
+                 opacity: 0, duration: .8, delay: .1, 
             });
             tlTwo.from('.project-three-info', {
-                 opacity: 0, duration: 1, delay: .1, y: -15
+                 opacity: 0, duration: .8, delay: .1, y: -15
             });
-            tlTwo.from('.project-four img', {   
-                opacity: 0, duration: 1, delay: .1, 
-            });
-            tlTwo.from('.project-four-info', {
-                 opacity: 0, duration: 1, delay: .1, y: -15
-            });
-            tlTwo.from('.project-five img', {   
-                opacity: 0, duration: 1, delay: .1, 
-            });
-            tlTwo.from('.project-five-info', {
-                 opacity: 0, duration: 1, delay: .1, y: -15
-            })
         })
             return () => ctx.revert()
           
@@ -127,34 +112,41 @@ const Projects = () => {
                 <div className="code-container">
                 <div className="code">&lt; <span style={{color:"#222d3e"}}>/</span> &gt;<span style={{color:"#222d3e"}}>.</span></div>
                 </div>
+
                 <div className="projects-grid">
                     <div className="project-one">
                         <a href="https://zia-mia.netlify.app"><img src={ZiaMia} alt="Zia Mia Restaurant Website" /></a>
                     </div>
                     <div className="project-one-info">
                         <h3>Z<span className="underline">ia Mia<span>.</span><div className="highlights"></div></span></h3>
-                        A mock restaurant web page built with HTML, Javascript, CSS, React, React-Hook-Form, and GSAP. Features a reservation form in a modal
-                        coded using React Context. This site is also mobile responsive.  
+                            <div className="project-description">
+                                An animated restaurant landing page with a reservation form. This page was created with React, CSS/HTML, and GSAP animation library. 
+                            </div>
                     <br />
                         <div className="code-info">
-                            <a href="https://github.com/kattlaw/restaurant-site"><AiOutlineGithub /></a>
-                        
-                                <a href="https://zia-mia.netlify.app"><BsGlobe2/></a>
+                            <a href="https://github.com/kattlaw/restaurant-site">GitHub</a>
+                            <div> | </div>
+                            <a href="https://zia-mia.netlify.app">Live Site</a>
                         </div>
                     </div>
 
                     <div className="project-two">
-                        <a href="https://katlawblog.vercel.app"><img src={Blog} alt="Blog site homepage" /></a>
+                        <a href="https://bereavingoutloud.com"><img src={Blog} alt="Blog site homepage" /></a>
                     </div>
                     <div className="project-two-info">
-                        <h3>B<span className="underline">ereaving Out Loud<span>.</span><div className="highlights"></div></span></h3>
-                        A personal blog built with Next.js, Typescript, Tailwind, and Sanity CMS. Sanity Studio and preview allows for real-time content publishing. Site also includes a comment engine
-                        so users can interact with posts. 
+                   
+                        <h3>B<span className="underline">ereaving Out Loud<span>.</span>
+                            <div className="highlights"></div></span>
+                        </h3>
+                        <div className="project-description">
+                        A personal blog that includes an RSS Feed, subscribe-by-email feature, as well as a commenting engine.
+                        This blog was created with Next.js, Typescript, and Tailwind CSS. The site is also integrated with Sanity CMS.
+                    </div>
                     <br />
-                        <div className="code-info">
-                            <a href="https://github.com/kattlaw/my-blog"><AiOutlineGithub /></a>
-                        
-                                <a href="https://katlawblog.vercel.app"><BsGlobe2/></a>
+                    <div className="code-info">
+                            <a href="https://github.com/kattlaw/my-blog"> Github</a>
+                            <div> | </div>
+                                <a href="https://bereavingoutloud.com"> Live Site</a>
                         </div>
                     </div>
 
@@ -163,42 +155,17 @@ const Projects = () => {
                     </div>
                     <div className="project-three-info">
                        <h3>S<span className="underline">t. John Travel.<div className="highlights"></div></span></h3>
-                        A mock travel web page built with HTML, Javascript, CSS, React, Reactstrap, 
-                        Swiper JS, Formik, Lightbox Gallery, and GSAP. App features mobile-responsiveness, animations, and a ton of beautiful pictures.
+                       <div className="project-description">
+                        A travel destination landing page featuring animations, a photo gallery, and a contact form. This page was built in React with HTML/CSS, Reactstrap, and GSAP.
+                    </div>
                     <br />
                          <div className="code-info">
-                            <a href="https://github.com/kattlaw/stjohn-travel"><AiOutlineGithub /></a>
-                                <a href="https://travel-st-john.netlify.app"><BsGlobe2 /> </a> 
+                            <a href="https://github.com/kattlaw/stjohn-travel">Github</a>
+                            <div> | </div>
+                                <a href="https://travel-st-john.netlify.app">Live Site</a> 
                         </div>  
                     </div>
 
-                    <div className="project-four">
-                        <a href="https://klaw-tic-tac-toe.netlify.app"><img src={TicTacToe} alt="Tic Tac Toe app" /></a>
-                    </div>
-                    <div className="project-four-info">
-                        <h3>T<span className="underline">ic Tac Toe.<div className="highlights"></div></span></h3>
-                        This game was built with HTML, Javascript, CSS, and React.
-                        Features include: next turn prompter, named winner/if resulted in a tie, and a game reset button. 
-                    <br />
-                        <div className="code-info">
-                            <a href="https://github.com/kattlaw/tic-tac-toe"><AiOutlineGithub /></a>
-                                <a href="https://klaw-tic-tac-toe.netlify.app"><BsGlobe2 /></a>
-                        </div>
-                    </div>
-
-                    <div className="project-five">
-                        <a href="https://katlaw-quote-gen.netlify.app"><img src={Quotes} alt="Quote Generator App" /></a>
-                    </div>
-                    <div className="project-five-info">
-                        <h3>Q<span className="underline">uote Generator.<div className="highlights"></div></span></h3>
-                        This project was built with HTML, Javascript, CSS, and React.
-                        Quote button generator takes an array of quotes and renders them randomly. With each render, the quote and background colors also change at random.
-                    <br />
-                        <div className="code-info">
-                            <a href="https://github.com/kattlaw/random-quotes-generator"><AiOutlineGithub /></a>
-                                <a href="https://katlaw-quote-gen.netlify.app"><BsGlobe2 /> </a>
-                        </div>
-                    </div>
                     
                 </div>
             </div>
@@ -210,6 +177,10 @@ const Projects = () => {
                 </button>
                       {showMore && <p>
                         <a href="https://chatgpt-clone-eight.vercel.app">Codex Clone</a><a href="https://github.com/kattlaw/chatgpt-clone" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <br />
+                        <a href="https://katlaw-quote-gen.netlify.app">Quote Generator</a><a href="https://github.com/kattlaw/random-quotes-generator" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
+                        <br />
+                        <a href="https://klaw-tic-tac-toe.netlify.app">Tic-Tac-Toe Game</a><a href="https://github.com/kattlaw/tic-tac-toe" style={{color: "#222d3e", paddingLeft: "15px"}}><AiOutlineGithub /></a>
                         <br />
                         <a href="https://github.com/kattlaw/Campsite-React-Project">Campsite Webpage</a>
                         <br />
