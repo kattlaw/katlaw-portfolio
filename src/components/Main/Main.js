@@ -220,11 +220,11 @@ const Main = () => {
             <div className="page-links">
                 <Link to="/about">About<span style={{color:"#78c4c8"}}>.</span></Link>
                 <Link to="/projects">Work<span style={{color:"#78c4c8"}}>.</span></Link>
-                <a href="https://bereavingoutloud.com" target="_blank">Blog<span style={{color:"#78c4c8"}}>.</span></a>
+                <a href="https://bereavingoutloud.com" target="_blank" rel="noreferrer">Blog<span style={{color:"#78c4c8"}}>.</span></a>
             </div>
             <div className="title-socials">
-                <a href="http://github.com/kattlaw" target="_blank"><BsGithub /></a>
-                <a href="http://www.linkedin.com/in/katlawdev" target="_blank"><BsLinkedin /></a>
+                <a href="http://github.com/kattlaw" target="_blank" rel="noreferrer"><BsGithub /></a>
+                <a href="http://www.linkedin.com/in/katlawdev" target="_blank" rel="noreferrer"><BsLinkedin /></a>
                 <a href="mailto:klaw@klawdev.com"><FiMail /></a>
             </div>
             <div className="mouse-scroll" ref={mouse}>
