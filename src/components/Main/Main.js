@@ -47,6 +47,7 @@ const Main = () => {
     const titleTl = gsap.timeline();
     const name = useRef();
     const mouse = useRef();
+    const ref = useRef(null);
 
     useEffect(() => {
         
@@ -94,7 +95,7 @@ const Main = () => {
     }));
    
     useEffect(() => {
-
+       
         const ctx = gsap.context(() => {
             spanTl.from(".intro-heading", {
                 opacity: 0,
@@ -145,11 +146,11 @@ const Main = () => {
         return () => ctx.revert()
     
     }, [spanTl]);
-
   
     const secondTl = gsap.timeline(({
+     
         scrollTrigger: {
-           trigger: ".intro-scroll-line",
+           trigger: ref.current,
            start: "center",
         }
     }));
@@ -266,7 +267,7 @@ const Main = () => {
                 <span style={{fontWeight: "bolder", fontSize:"1.5rem", color:"#000"}}>Android Studio</span> 
             </div>
             <div className="intro-scroll">Scroll
-                <div className="intro-scroll-line"></div>
+                <div className="intro-scroll-line" ref={ref}></div>
             </div>
             <div className="intro-container">
                 <div className="intro-background"></div>

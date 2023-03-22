@@ -1,5 +1,5 @@
 import './about.css';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { CgArrowLongRight } from 'react-icons/cg';
 import snorkel from '../../assets/images/snorkel.jpeg';
@@ -14,6 +14,7 @@ const About = () => {
     //gsap animation
 
     const aboutTl = gsap.timeline();
+    const headRef = useRef(null);
 
     useEffect(() => {
        
@@ -68,7 +69,7 @@ const About = () => {
 
     const mainTl = gsap.timeline(({
         scrollTrigger: {
-            trigger: "#about",
+            trigger: headRef.current,
             start: "15% top",
             end: "bottom bottom",
             //markers: true,
@@ -111,7 +112,7 @@ const About = () => {
 
     return (
         <div id="about">
-            <div className="heading-background"></div>
+            <div className="heading-background" ref={headRef}></div>
                 <h1 className="about-heading">About me<span style={{color: "#78c4c8"}}>.</span></h1>
             <div className="heading-line"></div>
             <div className="about-info">Just a girl who is <span style={{color: "#78c4c8"}}> pursing a career </span> in tech while having fun<span style={{color: "#78c4c8"}}> writing code</span>.</div>
